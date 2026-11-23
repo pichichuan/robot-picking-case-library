@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apotek 1 &#215; KNAPP · 拣选机器人案例库</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="hero"><div class="shell"><nav aria-label="页面导航"><a href="../#case-index">返回案例目录</a></nav><h1>Apotek 1 &#215; KNAPP</h1></div></header>
+<main class="shell"><article class="archive case-detail">
+<p>挪威 <strong>Lørenskog 的 Skårer 配送中心</strong>部署了 <strong>2 台 KNAPP Pick-it-Easy Robot</strong>，分别叫 <strong>Picksy</strong> 和 <strong>Pickle</strong>。两台合计最高 <strong>1,600 件/小时</strong>，单台最高 <strong>400 订单行/小时</strong>。机器人可处理约 <strong>60% 的 SKU</strong>，在 KNAPP 披露的拣选流程中承担约 <strong>12% 的商品件数</strong>。现场被拣商品的重量上限为 <strong>500 g/件</strong>。</p>
+<h2 id="section">一、项目信息</h2>
+<ul>
+<li><strong>地点与业务。</strong> 项目位于挪威奥斯陆都会区 <strong>Skårersletta 55, 1473 Lørenskog</strong>，是 Apotek 1 的医药批发配送主仓，服务药房、护理院和电商客户。KNAPP 在既有仓内扩建穿梭库，加入 A-frame、单件拣选机器人和自动复核设备。扩建方案主要承担药房及护理院订单，电商订单继续由原有区域处理。KNAPP 将此项目列为 <strong>PHOENIX 集团首次部署 Pick-it-Easy Robot</strong>。两台机器人最迟在 <strong>2026 年 4 月</strong>已运行，确切投产日期未披露。〔①〕 <a href="https://www.knapp.us/wp-content/uploads/2026/05/case-study-apotek-1.pdf">KNAPP 2026 年完整项目报告</a> · 〔②〕 <a href="https://virksomhet.brreg.no/nb/oppslag/underenheter/974881896">挪威企业登记资料</a> · 〔③〕 <a href="https://www.logistikkinside.no/apotek-1-knapp-lagerautomasjon/automatisering-gir-apotek-1-pusterom/1244305">《Logistikk Inside》2026 年 4 月现场采访</a></li>
+<li><strong>机器人怎么拣。</strong> <strong>OSR Shuttle Evo</strong> 和 <strong>A-frame</strong> 为两台机器人供货。机器人利用 AI 视觉识别商品、计算抓取点，并使用多种夹具处理<strong>纸盒、软包装和半透明塑料袋</strong>。放入目标箱时，系统按商品及箱内空间选择受控落料或轻放，随后由传感器检查结果。KNAPP 与 Covariant 的合作公告确认，Pick-it-Easy 产品线曾集成 <strong>Covariant Brain</strong>。Apotek 1 的现场报告确认使用 AI 视觉，但未注明本站的 AI 供应商和版本。〔①〕 · 〔④〕 <a href="https://www.knapp.com/en/newsroom/press/knapp-and-covariant-extend-their-success-story/">KNAPP 与 Covariant 合作公告</a></li>
+<li><strong>仓内怎么分工。</strong> 系统按库存可用性和效率安排拣选路径。高频药品由 <strong>A-frame</strong> 拣选，穿梭库直接为其补货；其余作业由单件机器人和人工货到人站分担。预拣商品可经 <strong>Itemizer Check</strong> 分离、读码并核对重量和尺寸，再合单、打包发运。仓内大部分输送和出库缓存设备由 <strong>SSI Schäfer</strong> 提供。KNAPP 提供 <strong>24/7 服务台、IT 监控和预防性维护</strong>。〔①、③〕</li>
+</ul>
+<h2 id="section-1">二、拣选机器人数据</h2>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>Apotek 1 Skårer 项目数据</th>
+<th>出处</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>型号和数量</strong></td>
+<td><strong>2 台 KNAPP Pick-it-Easy Robot</strong>，现场名称 <strong>Picksy、Pickle</strong></td>
+<td>①、③</td>
+</tr>
+<tr>
+<td><strong>单台拣选能力</strong></td>
+<td><strong>最高 400 订单行/小时/台</strong></td>
+<td>③</td>
+</tr>
+<tr>
+<td><strong>双机拣选能力</strong></td>
+<td><strong>合计最高 1,600 件/小时</strong>。订单行可包含多件商品，两项速度各按原单位记录</td>
+<td>①、③</td>
+</tr>
+<tr>
+<td><strong>可拣 SKU 覆盖率</strong></td>
+<td><strong>约 60%</strong>，为 KNAPP 披露的机器人可处理品项比例</td>
+<td>①</td>
+</tr>
+<tr>
+<td><strong>实际拣选件数占比</strong></td>
+<td><strong>约 12%</strong>，为 KNAPP 在项目拣选流程中披露的件数占比。两台机器人的独立日拣选量未披露</td>
+<td>①</td>
+</tr>
+<tr>
+<td><strong>被拣商品重量与尺寸</strong></td>
+<td><strong>单件最高 500 g</strong>。这是项目现场参数。商品长宽高范围、机械臂本体型号、夹具具体规格及工作站占地未披露</td>
+<td>①</td>
+</tr>
+<tr>
+<td><strong>运行与质量</strong></td>
+<td>两台机器人可 <strong>24 小时作业</strong>，拣后有传感器检查。独立抓取成功率和长期平均节拍未披露</td>
+<td>①</td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-2">三、落地仓库数据</h2>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>Apotek 1 Skårer 项目数据</th>
+<th>出处</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>仓储面积</strong></td>
+<td><strong>11,316 m²</strong>，为 KNAPP 完整报告中的仓储面积</td>
+<td>①，第 3 页</td>
+</tr>
+<tr>
+<td><strong>SKU 数量</strong></td>
+<td><strong>21,500 种</strong>，采用 KNAPP 对该配送中心的项目口径</td>
+<td>①，第 3 页</td>
+</tr>
+<tr>
+<td><strong>整仓日拣选量</strong></td>
+<td><strong>约 350,000 件/日、60,000 订单行/日</strong>，涵盖药房、护理院和电商作业</td>
+<td>①</td>
+</tr>
+<tr>
+<td><strong>穿梭库与库位</strong></td>
+<td><strong>OSR Shuttle Evo</strong>，<strong>140 台穿梭车、7 条货架线、69,664 个库位</strong>，采用双深位存储</td>
+<td>①、③</td>
+</tr>
+<tr>
+<td><strong>穿梭库供货能力</strong></td>
+<td><strong>4,200 订单行/小时</strong>。现场周转箱的<strong>箱/小时</strong>和托盘的<strong>托盘/小时</strong>未披露</td>
+<td>①，第 10 页</td>
+</tr>
+<tr>
+<td><strong>人工货到人工位</strong></td>
+<td><strong>11 个 Pick-it-Easy 工位</strong>，每工位从 <strong>2 个源箱</strong>拣入最多 <strong>5 个订单箱</strong>。约承担项目披露拣选件数的 <strong>45%</strong></td>
+<td>①、③</td>
+</tr>
+<tr>
+<td><strong>A-frame 自动拣选</strong></td>
+<td><strong>2 套</strong>中央输送带式 A-frame，合计 <strong>2,176 个通道、覆盖 1,260 种 SKU</strong>。KNAPP 公布约 <strong>3,000 件/小时</strong>，现场采访给出约 <strong>2,000 订单行/小时</strong>。约承担项目披露拣选件数的 <strong>30%</strong></td>
+<td>①、③</td>
+</tr>
+<tr>
+<td><strong>自动复核</strong></td>
+<td><strong>Itemizer Check 最高 3,000 件/小时</strong>，可对商品做六面读码，并实时核对重量与尺寸。<strong>99.5%</strong> 为该设备的读码率</td>
+<td>①，第 12 页</td>
+</tr>
+<tr>
+<td><strong>自动化率与人员</strong></td>
+<td>KNAPP 将<strong>中心整体自动化率列为 77%</strong>，将<strong>扩建方案口径列为 100%</strong>。项目报告列出配送中心 <strong>163 名员工</strong></td>
+<td>①</td>
+</tr>
+<tr>
+<td><strong>投资与回收期</strong></td>
+<td><strong>2023–2025 年</strong>自动化升级投入约 <strong>7,000 万挪威克朗</strong>。客户估计最近一轮投资回收期约 <strong>5.5 年</strong>，首次大型自动化投资回收期略超 <strong>3 年</strong>。机器人单独采购价格未披露</td>
+<td>③</td>
+</tr>
+</tbody>
+</table>
+<p><strong>SKU 还有一个不同口径。</strong> RELEX 在 2026 年披露 Apotek 1 两座配送中心的供应链计划业务涉及约 <strong>16,000 种 SKU</strong>。公开资料未说明这一数字与 KNAPP 项目报告的 <strong>21,500 种</strong>如何对齐。上表采用明确指向 Skårer 项目的 KNAPP 数值。 <a href="https://www.relexsolutions.com/news/apotek-1-to-unify-pharmacy-supply-chain-planning-across-norway-with-relex/">RELEX 与 Apotek 1 合作公告</a></p>
+<p><strong>现场视频</strong>可查看两台单件机器人、穿梭库、A-frame 和自动复核设备。 <a href="https://www.youtube.com/watch?v=v0ktJVZzgZY">KNAPP 官方项目视频</a> · <a href="https://youtu.be/s39jMibErPA">KNAPP Nordics 现场采访视频</a></p>
+<hr />
+<h2 id="section-3">投资回收期</h2>
+<p>现场报道引述客户物流负责人，两台机器人所在项目预计约 <strong>5.5 年</strong>回本。该数为项目预测，公开材料未给出可独立复算的单台投资及现金流。<a href="https://www.logistikkinside.no/apotek-1-knapp-lagerautomasjon/automatisering-gir-apotek-1-pusterom/1244305">现场采访</a></p>
+
+</article></main>
+<a class="top-link" href="../#case-index">返回目录</a>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brack.Alltron &#215; Nomagic · 拣选机器人案例库</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="hero"><div class="shell"><nav aria-label="页面导航"><a href="../#case-index">返回案例目录</a></nav><h1>Brack.Alltron &#215; Nomagic</h1></div></header>
+<main class="shell"><article class="archive case-detail">
+<p>下面整理的是目前公开资料能确认的内容。Nomagic 的案例页把项目描述为 **Pick（拣选）和 Pack（包装）**两类作业；第三方行业媒体则进一步说明，拣选机器人从 AutoStore 料箱取货后放入运输纸箱，自动完成单件订单的拣选与包装。</p>
+<h2 id="section">项目方案与作业流程</h2>
+<ul>
+<li><strong>机器人产品</strong>：Nomagic <strong>justPick</strong>。2023 年行业报道将 Brack.ch 项目中的机器人称为 <strong>Hugo</strong>，并称其属于 justPick 产品线。</li>
+<li><strong>上游设备</strong>：AutoStore 自动存储系统。机器人从 AutoStore 端口送来的料箱中拣选商品。</li>
+<li><strong>来源料箱</strong>：料箱可分隔成最多 <strong>8 个格位</strong>。这是 Brack.Alltron 案例页披露的料箱配置上限，并不代表机器人最多只能处理 8 个 SKU。</li>
+<li><strong>下游容器</strong>：行业报道描述机器人把商品放入运输纸箱，并可按节省体积的方式调整商品摆放方向。</li>
+<li><strong>订单作业</strong>：行业报道称系统可处理 <strong>batch size 1</strong> 的订单，即一次处理单个订单。</li>
+<li><strong>配套能力</strong>：报道提及 AI 视觉、Nomagic 软件和扫码器；Nomagic 案例页还提到为提升性能安装了辅助硬件，例如 <strong>item pusher（推料器）</strong>。公开资料没有详细说明推料器在该站的具体动作。</li>
+</ul>
+<p>主要来源：<a id="ref-1" href="https://nomagic.ai/case-study/brack-ch/">Nomagic Brack.Alltron 案例</a>；<a id="ref-2" href="https://invision-news.com/3d-bildverarbeitung-3db/automated-picking-at-autostore-systems/">inVISION 行业报道，2023 年 2 月</a>。</p>
+<h2 id="section-1">商品与现场挑战</h2>
+<p>Brack.Alltron 的商品种类广，订单可能包含多个 SKU，而且不同 SKU 可能需要不同抓取工具；商品组合还会随季节变化。机器人需要在料箱空间有限、格位分隔较多的情况下完成抓取，并适应仓库持续变化的存储流程。</p>
+<p>场地空间也是部署约束：Nomagic 称机器人工作站靠近 AS/RS，现场可用空间有限，因此交付了紧凑型工作站，并考虑安全及原有仓库作业。<a href="#ref-1">Nomagic Brack.Alltron 案例</a>。</p>
+<h2 id="section-2">已披露的数据</h2>
+<table>
+<thead>
+<tr>
+<th>项目数据</th>
+<th style="text-align: right;">公开信息</th>
+<th>口径与限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>料箱分隔</td>
+<td style="text-align: right;">最多 <strong>8 格</strong></td>
+<td>Brack.Alltron 案例页披露</td>
+</tr>
+<tr>
+<td>处理订单</td>
+<td style="text-align: right;"><strong>batch size 1</strong></td>
+<td>2023 年行业报道；指单个订单批次</td>
+</tr>
+<tr>
+<td>吞吐量</td>
+<td style="text-align: right;">最高 <strong>200 件/小时</strong></td>
+<td>2023 年行业报道所述的 Brack.ch 应用数据；报道没有说明这是当前持续实测值，也没有给出具体统计周期</td>
+</tr>
+<tr>
+<td>运行时段</td>
+<td style="text-align: right;">夜间、周末、周日及节假日等无人值守时段可运行</td>
+<td>Nomagic 2026 年公告再次确认其系统支持夜间和周日等自主班次；没有公布每周实际无人值守小时数</td>
+</tr>
+<tr>
+<td>机器人台数</td>
+<td style="text-align: right;">未披露</td>
+<td>Nomagic 案例页没有公开 Brack 现场拣选机器人总数</td>
+</tr>
+<tr>
+<td>运行精度、首抓成功率、可用率</td>
+<td style="text-align: right;">未披露项目现场数值</td>
+<td>不能用 Nomagic 其他产品页的通用宣传数据替代 Brack 项目实绩</td>
+</tr>
+<tr>
+<td>单循环时间、商品重量和尺寸边界</td>
+<td style="text-align: right;">未披露项目现场数值</td>
+<td>产品通用规格不等于 Brack 现场配置</td>
+</tr>
+</tbody>
+</table>
+<p><strong>吞吐量特别说明：<strong>Nomagic 当前案例页的“Operational Throughput”处没有显示具体数字。表中的 200 件/小时来自 2023 年的行业媒体报道，应作为</strong>历史公开的项目应用数据</strong>引用，不能直接当作 2026 年的当前产能或保证值。<a href="#ref-2">inVISION 报道</a>。</p>
+<h2 id="section-3">运行模式与合作进展</h2>
+<p>Nomagic 案例称，Pick 机器人可在没有现场人员支持的周日、节假日和清晨运行；Brack.Alltron 面临的一个具体问题是周末订单积压导致周一订单集中，增加周日和清晨的机器人班次有助于缓解高峰。<strong>这说的是机器人可以自主工作，不代表整个仓库无人运行。</strong><a href="#ref-1">Nomagic Brack.Alltron 案例</a>。</p>
+<p>后续进展方面，Nomagic 在 <strong>2026 年 5 月</strong>公告称，双方合作扩大到生产环境中的 VLA（视觉—语言—动作）系统，并提及继续扩大机器人对拣选、包装等履约流程的应用。公告没有披露新增机器人数量、更新后的项目吞吐量，或 VLA 分别部署在哪个具体拣选站。<a id="ref-3" href="https://nomagic.ai/news/nomagic-and-brack-alltron-expand-partnership-to-include-vision-language-action-systems-in-production">Nomagic 2026 年合作更新</a>。</p>
+
+</article></main>
+<a class="top-link" href="../#case-index">返回目录</a>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Woolworths &#215; KNAPP｜Auburn · 拣选机器人案例库</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="hero"><div class="shell"><nav aria-label="页面导航"><a href="../#case-index">返回案例目录</a></nav><h1>Woolworths &#215; KNAPP｜Auburn</h1></div></header>
+<main class="shell"><article class="archive case-detail">
+<p>截至 <strong>2026 年 11 月 20 日</strong>。正文先写项目和拣选流程，数据集中列在第二部分。文中的 <code>[1]</code> 等编号对应文末出处。</p>
+<h2 id="section">一、项目信息</h2>
+<h3 id="section-1">项目背景与上线过程</h3>
+<p><strong>Auburn Customer Fulfilment Centre（Auburn CFC）</strong> 位于澳大利亚新南威尔士州西悉尼 Auburn，地址为 <strong>11–13 Percy Street</strong>。这是 Woolworths 首个自动化线上订单履约中心，处理网上购买的食品杂货，支持预约送货、快速配送和 <strong>Direct to Boot</strong> 到场取货。Woolworths 设立该中心，是为了增加西悉尼线上履约能力，并为周边门店腾出更多快速配送和自提能力。[1][2][3][4]</p>
+<p>Woolworths 与 KNAPP 自 <strong>2019 年</strong>开始合作，Auburn 项目于 <strong>2021 年</strong>对外宣布，当时预计 <strong>2024 年</strong>投运。Woolworths 在 FY25 半年业绩中披露，场地已取得使用许可，自动化集成测试已完成。中心于 <strong>2025 年 5 月</strong>启用，<strong>5 月 19 日</strong>举行开业活动。FY25 全年业绩材料称订单量按计划爬坡，FY26 全年业绩材料给出了实际周履约量，见下表。[1][3][4][5][6][7]</p>
+<h3 id="section-2">机器人在仓内做什么</h3>
+<ul>
+<li><strong>货到人供料。</strong> KNAPP 的 <strong>Evo Shuttle</strong> 按拣选所需顺序存取货品。源料箱经输送线送到人工工位，另一条线输送顾客订单箱。屏幕提示员工从哪个源箱取货、放入哪个顾客订单箱。穿梭车系统覆盖常温、冷藏和冷冻区。[1][8][9]</li>
+<li><strong>机器人单件拣选。</strong> Auburn 部署的是 <strong>KNAPP Pick-it-Easy Robot</strong>。KNAPP 确认其采用 AI 识别和针对单件拣选设计的夹具，由机器人处理符合条件的商品。开业资料没有公布具体验收商品清单、夹具形式、视觉硬件型号或 AI 软件版本。<strong>目前没有 Auburn 项目级出处确认使用 Covariant Brain 或 RFM-1。</strong>[1][8][10]</li>
+<li><strong>自动开袋与订单箱贴标。</strong> 开业资料确认，自动设备把纸袋放入订单箱并打开，供员工或机器人把商品放进去。Woolworths 在开业前的听证材料中还描述了人工装袋工位，以及给顾客订单箱贴标的设备。纸袋自动准备属于已披露的上线配置，贴标及其他袋型的具体分流来自当时的设计说明。[1][8]</li>
+<li><strong>人工继续承担拣选和备货。</strong> Auburn 同时设有人工货到人工位和人工走拣区域。Woolworths 在听证中还列出补货、库存管理及熟食、烘焙、果蔬、海鲜等人工岗位。证词以大扫帚可能卡住输送线为例，说明部分商品需走人工流程，也提到危险品、油品和易燃品进入自动化区的限制。公开资料没有给出投运后的完整机器人商品白名单。[1][8][9]</li>
+<li><strong>多温区与设备运行边界。</strong> 承建商公布了冷藏和冷冻库温度，建筑方也描述了保温、制冷和温区隔离与自动化布局的配合。公开资料确认的是 <strong>Evo Shuttle 跨温区运行</strong>。两台拣选机械臂各自位于哪个温区、是否在冷冻环境下直接抓取，尚未披露。[1][9][11]</li>
+</ul>
+<h3 id="section-3">交付分工与后续合作</h3>
+<p><strong>Woolworths</strong> 负责履约运营，<strong>KNAPP</strong> 提供 E-Grocer 自动化方案及拣选、储存设备，<strong>Vaughan Constructions</strong> 负责建设，<strong>RP Infrastructure</strong> 参与工程管理、自动化调试支持和内部装修协调，<strong>nettletontribe</strong> 为建筑设计方。KNAPP 发布了开业现场访谈，项目公告也提供穿梭车、自动开袋机及拣选机器人的图片入口。[1][9][10][11][12]</p>
+<p>KNAPP 还披露为 Woolworths 在澳大利亚和新西兰实施了自动化微型履约中心，早期公开点名 <strong>Carrum Downs、Moorhouse、Penrose、Maroochydore</strong>，相关资料确认 Takeoff 微履约方案使用 KNAPP 穿梭技术。Woolworths 另已确认位于 <strong>Broadmeadows 的 Melbourne North CFC</strong> 将采用 KNAPP 自动化。此次查到的公开资料中，<strong>明确确认部署 Pick-it-Easy Robot 的站点是 Auburn</strong>，上述其他站点的同型号机器人配置尚未获得项目级确认。[1][3][8][13]</p>
+<h2 id="section-4">二、项目数据</h2>
+<table>
+<thead>
+<tr>
+<th>数据项</th>
+<th style="text-align: right;">数值</th>
+<th>口径与出处</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>单件拣选机器人</strong></td>
+<td style="text-align: right;"><strong>2 台</strong></td>
+<td>Auburn 上线配置，型号为 KNAPP Pick-it-Easy Robot。[1]</td>
+</tr>
+<tr>
+<td><strong>人工货到人拣选工位</strong></td>
+<td style="text-align: right;"><strong>16 个</strong></td>
+<td>人工操作的 Pick-it-Easy 工位。[1]</td>
+</tr>
+<tr>
+<td><strong>Evo Shuttle 穿梭车</strong></td>
+<td style="text-align: right;"><strong>超过 450 台</strong></td>
+<td>承建商披露的仓储穿梭车数量，覆盖各温区。[9]</td>
+</tr>
+<tr>
+<td><strong>机器人计划承担比例</strong></td>
+<td style="text-align: right;"><strong>约 5%</strong></td>
+<td><strong>2023 年投运前</strong>，Woolworths 代表在听证中给出的规划值。记录在 <em>“5 per cent of the order”</em> 后标注听不清，无法确认分母是整单、订单行、商品件数还是工作量，也未找到投运后实际占比。[8，PN167、PN472]</td>
+</tr>
+<tr>
+<td><strong>整仓实际履约量</strong></td>
+<td style="text-align: right;"><strong>约 30,000 单/周</strong></td>
+<td>Woolworths <strong>2026 年 8 月 26 日</strong>发布的 FY26 全年业绩材料披露。<strong>这是本次查到最近一笔 Auburn 站点级实际周单量。</strong>[7，第 15 页]</td>
+</tr>
+<tr>
+<td><strong>整仓设计能力</strong></td>
+<td style="text-align: right;"><strong>最高约 60,000 单/周</strong></td>
+<td>2025 年启用时公布的整仓能力，覆盖到家及订单自提，未拆分至两台机器人。[1][4][5]</td>
+</tr>
+<tr>
+<td><strong>早期规划能力</strong></td>
+<td style="text-align: right;"><strong>每周约 50,000 笔到家配送</strong></td>
+<td>2021 年项目发布时的规划口径，明确面向到家配送。[3]</td>
+</tr>
+<tr>
+<td><strong>西悉尼线上履约容量增幅</strong></td>
+<td style="text-align: right;"><strong>约 50%</strong></td>
+<td>开业披露的<strong>区域网络容量</strong>增幅。KNAPP 同一公告正文也使用了“超过 50%”的表述。[1][2]</td>
+</tr>
+<tr>
+<td><strong>线上服务需求增长</strong></td>
+<td style="text-align: right;"><strong>两年内超过 20%</strong></td>
+<td>Woolworths eComX 负责人在开业公告中引用的需求背景，未给出该增幅的详细统计范围。[1]</td>
+</tr>
+<tr>
+<td><strong>站点商品范围</strong></td>
+<td style="text-align: right;"><strong>超过 30,000 种商品</strong></td>
+<td>Woolworths 开业披露的<strong>全站商品范围</strong>。其中可由机器人处理的 SKU 数量未披露。[2]</td>
+</tr>
+<tr>
+<td><strong>站点人员</strong></td>
+<td style="text-align: right;"><strong>超过 600 人</strong></td>
+<td>Woolworths 开业披露的站点团队规模。2021 年 KNAPP 公告预计最多 <strong>250 个全职当量岗位</strong>、约 <strong>440 个施工岗位</strong>。同期政府评估另列 <strong>350 个运营岗位、150 个施工岗位</strong>。三组数字的阶段与计数口径不同。[2][3][14]</td>
+</tr>
+<tr>
+<td><strong>建筑面积与用地</strong></td>
+<td style="text-align: right;"><strong>开业披露约 22,000 m²</strong></td>
+<td>政府早期评估列用地 <strong>32,400 m²</strong>、申请建筑总面积 <strong>20,615 m²</strong>，其中仓库面积 <strong>19,260 m²</strong>。RP Infrastructure 项目页将设施描述为约 <strong>20,000 m²</strong>。[1][12][14]</td>
+</tr>
+<tr>
+<td><strong>现场库温</strong></td>
+<td style="text-align: right;"><strong>+2°C、+12°C、−24°C</strong></td>
+<td>承建商公布的两类冷藏空间及冷冻库设定温度。机械臂工作温度未披露。[9]</td>
+</tr>
+<tr>
+<td><strong>设施运行安排</strong></td>
+<td style="text-align: right;"><strong>24 小时/日、7 天/周</strong></td>
+<td>政府评估和建筑设计资料所述的设施级运营安排。机械臂实际运行小时数、停机和可用率未披露。[11][14]</td>
+</tr>
+<tr>
+<td><strong>收货、出货和自提</strong></td>
+<td style="text-align: right;"><strong>5 个入库月台、26 个出库月台、16 个车道自提位</strong></td>
+<td>承建商完工资料另列 <strong>293 个汽车及厢式车停车位</strong>。[9]</td>
+</tr>
+<tr>
+<td><strong>规划资本投资额</strong></td>
+<td style="text-align: right;"><strong>64,677,000 澳元</strong></td>
+<td>NSW 政府评估中的项目资本投资额（CIV）。最终结算、KNAPP 合同金额及两台机械臂单独采购价未披露。[14]</td>
+</tr>
+<tr>
+<td><strong>后续 Melbourne North 项目</strong></td>
+<td style="text-align: right;"><strong>设计 40,000 单/周，预计 FY28 上半年启用，资本开支约 2.7 亿澳元</strong></td>
+<td>周单量来自 FY25 披露，启用时间及最新资本开支估算来自 FY26 业绩材料。均为 <strong>Melbourne North</strong> 项目口径。[7][13]</td>
+</tr>
+</tbody>
+</table>
+<p><strong>仍缺的机器人实测数据</strong>包括单台每小时拣选量、平均循环时间、首抓及复拣成功率、错拣率、掉件或双抓率、人工介入率、实际上线 SKU 数量、商品尺寸和重量验收范围，以及机器人分担的实际订单行或件数。<strong>3 万单/周和 6 万单/周分别可以用于记录站点实际履约量与设计能力。</strong> 现有资料缺少把这两项换算为单台机器人节拍的分配数据。[1][7][8]</p>
+<h2 id="section-5">出处</h2>
+<ol>
+<li><a href="https://www.knapp.com/en/newsroom/press/woolworths-and-knapp-set-a-new-benchmark-in-e-grocery-fulfillment/">KNAPP｜Auburn 项目开业公告，设备配置、自动开袋及项目照片</a></li>
+<li><a href="https://www.linkedin.com/posts/woolworths-group_were-proud-to-announce-the-opening-of-our-activity-7330472856679505920-N6nL">Woolworths Group｜Auburn 开业发布，商品范围、团队和区域容量</a></li>
+<li><a href="https://www.knapp.com/en/newsroom/press/woolworths-to-partner-with-knapp-on-first-automated-online-fulfilment-center-in-western-sydney/">KNAPP｜2021 年 Auburn 合作公告，初期规划及微履约站点</a></li>
+<li><a href="https://www.woolworthsgroup.com.au/content/dam/wwg/investors/reports/f25/f25/2936263.pdf">Woolworths｜FY25 全年业绩演示，开业、业务爬坡及服务方式（PDF）</a></li>
+<li><a href="https://www.woolworthsgroup.com.au/content/dam/wwg/investors/reports/f25/h1/2855272.pdf">Woolworths｜FY25 半年业绩演示，使用许可和自动化集成测试（PDF）</a></li>
+<li><a href="https://retailworldmagazine.com.au/woolworths-boosts-shopping-convenience-for-western-sydney-customers/">Retail World｜2025 年 5 月 19 日开业活动报道</a></li>
+<li><a href="https://announcements.asx.com.au/asxpdf/20260826/pdf/07373ly9qw4z2y.pdf">Woolworths｜FY26 全年业绩演示，Auburn 实际周单量及 Melbourne North 更新（PDF）</a></li>
+<li><a href="https://www.fwc.gov.au/documents/transcripts/20230803_am202235.pdf">澳大利亚 Fair Work Commission｜2023 年 8 月 3 日听证记录，人工与机器人分工、开袋贴标及 5% 规划值（PDF）</a></li>
+<li><a href="https://www.vaughans.com.au/projects/woolworths-group-cfc">Vaughan Constructions｜完工案例，穿梭车数量、冷库温度、月台与停车位</a></li>
+<li><a href="https://www.youtube.com/watch?v=x27JtUTj2oI">KNAPP｜Woolworths Auburn 开业现场访谈视频</a></li>
+<li><a href="https://www.nettletontribe.com.au/project/woolworths-customer-fulfilment-centre-auburn/">nettletontribe｜Auburn 建筑设计案例，温区与自动化布局</a></li>
+<li><a href="https://rpinfrastructure.com.au/project/woolworths-customer-fulfilment-centre">RP Infrastructure｜项目管理、自动化调试支持及设施概况</a></li>
+<li><a href="https://www.woolworthsgroup.com.au/content/dam/wwg/investors/reports/f25/f25/2936255.pdf">Woolworths｜FY25 全年业绩公告，Melbourne North 采用 KNAPP 自动化及设计能力（PDF）</a></li>
+<li><a href="https://majorprojects.planningportal.nsw.gov.au/prweb/PRRestService/mp/01/getContent?AttachRef=SSD-10470%2120210624T222530.115+GMT">NSW 规划部门｜Auburn SSD-10470 评估报告，地址、面积、运营时段和资本投资额（PDF）</a></li>
+</ol>
+<hr />
+<h2 id="section-6">数据补充与口径说明</h2>
+<p><strong>2 台是 Woolworths 悉尼 Auburn CFC 在 2025 年 5 月启用时的项目配置。</strong> 项目于 <strong>5 月 19 日</strong>举行开业活动。KNAPP 在 <strong>2025 年 6 月 24 日</strong>发布的开业公告中明确确认，现场配置了 <strong>2 台 Pick-it-Easy Robot</strong>，用于自动单件拣选。 <a href="https://retailworldmagazine.com.au/woolworths-boosts-shopping-convenience-for-western-sydney-customers/">开业活动报道</a> · <a href="https://www.knapp.com/en/newsroom/press/woolworths-and-knapp-set-a-new-benchmark-in-e-grocery-fulfillment/">KNAPP 项目公告</a></p>
+<p>两台机器人的具体安装和首次投入运营日期，公开资料未披露。</p>
+
+</article></main>
+<a class="top-link" href="../#case-index">返回目录</a>
+</body>
+</html>

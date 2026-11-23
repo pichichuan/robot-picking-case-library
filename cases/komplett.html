@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Komplett &#215; Nomagic · 拣选机器人案例库</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="hero"><div class="shell"><nav aria-label="页面导航"><a href="../#case-index">返回案例目录</a></nav><h1>Komplett &#215; Nomagic</h1></div></header>
+<main class="shell"><article class="archive case-detail">
+<p>以下以 <strong>justPick 拣选项目</strong>为主。Komplett 后续还公开了 Nomagic <strong>Pack 包装机器人</strong>案例，我把它单独标出，避免把包装系统的能力误算成拣选机器人的数据。</p>
+<h2 id="justpick">justPick：项目方案与流程</h2>
+<ul>
+<li><strong>客户与场地</strong>：Komplett 是北欧电商零售商，项目在挪威 Sandefjord 的物流中心。2024 年 Nomagic 公告称计划部署 <strong>两台 justPick 机器人臂</strong>，接入 Komplett 已有的 AutoStore；2025 年系统集成商 ITO 称拣选机器人已上线。2026 年行业报道也描述了现场运行的 AI 拣选与放置机器人，但没有公布最新的机器人台数。<a id="ref-1" href="https://nomagic.ai/komplett-no-cooperates-with-nomagic/">Nomagic 项目公告</a> · <a id="ref-2" href="https://ito.no/se-komplett-groups-automation-video">ITO 上线说明</a> · <a id="ref-3" href="https://www.amnytt.no/komplett-logistikkautomatisering-naa-med-ki-drevne-roboter.6749061-304919.html">AMNYTT 现场报道</a></li>
+<li><strong>作业流程</strong>：AutoStore 把商品送到机器人工作站，机器人从料箱中取出商品，放入顾客订单纸箱，并按规则尽量减少箱内空隙。现场机器人由 ABB 工业机械臂承载，Nomagic 提供机器人控制系统、视觉和抓取方案。<a href="#ref-3">AMNYTT 现场报道</a></li>
+<li><strong>商品范围</strong>：主要是游戏和消费电子商品。报道提及 Komplett 商品目录约 <strong>13,000 种电子产品</strong>；这是零售商品目录规模，不能理解为所有 SKU 都已经通过机器人处理验证。</li>
+<li><strong>抓取与感知</strong>：Nomagic 公告提到可更换的吸盘式抓手；2026 年现场报道进一步描述机器人会按商品选择并自动安装吸盘抓手，使用机器视觉、3D 相机和其他光学传感器分析抓取，并可根据过往经验调整动作。报道给出的抓取吸附容差约 <strong>1 cm</strong>。</li>
+<li><strong>料箱与商品数量</strong>：2026 年报道说 AutoStore 料箱可向机器人工作站提供最多 <strong>8 件商品</strong>。报道没有说明这是否等于一次连续作业可完成的拣选数，因此不宜把它写成“8 件/循环”。</li>
+<li><strong>订单处理</strong>：Nomagic 的 2024 年公告说系统可支持单个订单拣选，也可创建批次；现场报道描述机器人把商品直接放进顾客订单箱。订单批量、并行订单数和客户箱尺寸没有在公开资料中完整列出。</li>
+</ul>
+<h2 id="section">公开数据与边界</h2>
+<table>
+<thead>
+<tr>
+<th>数据项</th>
+<th style="text-align: right;">公开信息</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>初期计划部署</td>
+<td style="text-align: right;"><strong>2 台 justPick 机器人臂</strong></td>
+<td>2024 年公告披露的是计划数；后续资料确认项目上线，但未更新现场总台数。</td>
+</tr>
+<tr>
+<td>Komplett 零售商品目录</td>
+<td style="text-align: right;">约 <strong>13,000 种电子产品</strong></td>
+<td>2026 年行业报道提供的业务背景，不等于机器人已覆盖全部 SKU。</td>
+</tr>
+<tr>
+<td>仓库日均出货</td>
+<td style="text-align: right;">约 <strong>12,000 件/日</strong></td>
+<td>是整个 Sandefjord 仓库的出货量，不是机器人产能。</td>
+</tr>
+<tr>
+<td>仓库峰值处理量</td>
+<td style="text-align: right;">最高约 <strong>2,000 件/小时</strong></td>
+<td>同样是仓库整体业务数据，不能当作单台机器人吞吐量。</td>
+</tr>
+<tr>
+<td>AutoStore</td>
+<td style="text-align: right;">约 <strong>74,000 个储位</strong>、16 层、约 <strong>5,446 m³</strong>，99 台 AutoStore 机器人</td>
+<td>是仓库既有存储系统规模，不是 Nomagic 拣选机器人数量。</td>
+</tr>
+<tr>
+<td>输送线</td>
+<td style="text-align: right;">全场超过 <strong>2 公里</strong></td>
+<td>仓库背景设施。</td>
+</tr>
+<tr>
+<td>机器人吞吐量</td>
+<td style="text-align: right;"><strong>未披露</strong></td>
+<td>找到的现场报道没有给出单台或工作站每小时拣选量。不要把 Komplett 全仓峰值当作机器人指标。</td>
+</tr>
+<tr>
+<td>项目现场准确率、首抓成功率、可用率</td>
+<td style="text-align: right;"><strong>未披露</strong></td>
+<td>Nomagic 通用产品宣传数据不能替代该项目实测。</td>
+</tr>
+<tr>
+<td>商品重量和尺寸边界、单循环时间</td>
+<td style="text-align: right;"><strong>未披露</strong></td>
+<td>公开案例没有列出 Komplett 现场配置的具体边界。</td>
+</tr>
+</tbody>
+</table>
+<p>以上仓库与业务数据来自 2026 年 AMNYTT 报道；Nomagic 的项目公告和官方案例没有公开这些现场指标。 <a href="#ref-3">AMNYTT 现场报道</a> · <a href="#ref-1">Nomagic 项目公告</a></p>
+<h2 id="section-1">运行效果与项目相关进展</h2>
+<p>报道说，机器人会优先把较大、较重的商品放到订单箱底部，并尽量压缩空隙。现场受访者表示，机器人在订单高峰时很有帮助，项目目标是应对季节波动和业务增长，而非替代员工。<a href="#ref-3">AMNYTT 现场报道</a></p>
+<p>报道还提到，机器人友好程度会在新商品入库前通过视觉尺寸扫描检查；符合条件的商品会在 IT 系统中标记为可由机器人处理。报道称 <strong>99% 的商品符合其机器人友好标准</strong>，但没有说明统计范围、测试周期或该比例是否代表已经实现的机器人 SKU 覆盖率。</p>
+<p>现场报道另称，箱内空间优化配合 Komplett 自有包装线后，每天可少运送 <strong>一个集装箱</strong>，每年预计节省 <strong>17 吨塑料</strong>。这是仓库整体包装与运输方案的结果，不能单独归因于 justPick 机器人。</p>
+<h2 id="pack">与 Pack 项目的区别</h2>
+<p>Nomagic 在 2025 年发布的 Komplett 官方案例，标题和内容聚焦 <strong>Pack 包装机器人</strong>：将设备接入 AutoStore、输送线和 SAP 流程，强调 24/7 自动包装、条码／IMEI／二维码扫描及视觉检查。该页没有给出拣选机器人的现场吞吐量或准确率。<a id="ref-4" href="https://nomagic.ai/case-study/komplett_robot/">Nomagic Komplett Pack 案例</a></p>
+<hr />
+<h2 id="section-2">数据补充与口径说明</h2>
+<p>Komplett 的 Sandefjord 主仓库总面积<strong>接近 30,000 平方米</strong>。这是整个仓库面积，不是 Nomagic 机器人工作站的占地面积；工作站面积未公开。<a href="#ref-3">AMNYTT 现场报道</a></p>
+<hr />
+<h2 id="section-3">数据补充与口径说明</h2>
+<p>Komplett 的商品目录约有 <strong>13,000 种电子产品</strong>。但这不是已确认由 Nomagic 机器人实际处理的 SKU 数量；公开资料没有披露机器人覆盖的确切 SKU 数。<a href="#ref-3">AMNYTT 对 Komplett 仓库的报道</a></p>
+<p>同一报道还称，约 <strong>99% 的商品符合机器人友好筛选标准</strong>。这表示商品通过了入库前的适配检查，不等于已全部纳入机器人拣选，也不能据此换算实际覆盖 SKU 数。</p>
+
+</article></main>
+<a class="top-link" href="../#case-index">返回目录</a>
+</body>
+</html>

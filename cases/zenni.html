@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zenni Optical &#215; OSARO · 拣选机器人案例库</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="hero"><div class="shell"><nav aria-label="页面导航"><a href="../#case-index">返回案例目录</a></nav><h1>Zenni Optical &#215; OSARO</h1></div></header>
+<main class="shell"><article class="archive case-detail">
+<blockquote>
+<p><strong>项目归类：机器人装袋系统（Robotic Bagging）</strong>。它自动抓取已装入眼镜盒的订单商品、读取条码、放入出货袋并贴标，属于履约流程末端的“拣选＋装袋”自动化；不是从仓库货架取货的 AMR 项目。</p>
+</blockquote>
+<p>以下把项目事实与量化数据分开。相同来源只列一次链接；数据项用来源编号对应。</p>
+<h2 id="section">一、项目与机器人信息</h2>
+<h3 id="section-1">项目背景、地点与时间线</h3>
+<p>OSARO 与 Zenni Optical 合作，将机器人装袋系统部署在 Zenni 位于美国加州 Novato 的履约中心，自动化原先由人工完成的包装末端流程。Zenni 的处方眼镜订单与客户处方相关，订单准确性要求高；当时还面临线上订单增长、人工短缺和包装步骤影响吞吐的问题。[1]</p>
+<ul>
+<li>**2022 年 6 月：**OSARO 宣布计划部署 <strong>3 套 OSARO Robotic Bagging Systems</strong>。</li>
+<li>**2023 年：**OSARO 与 Cognex 公布 Zenni 现场部署方案及条码读取挑战的解决方式。</li>
+<li>**2026 年：**FANUC 的案例资料再次描述该系统及投入运行后的结果，并列出 FANUC 机器人具体型号。[4]</li>
+<li>项目后续资料称，加州业务服务美国西部；当时计划将俄亥俄州业务纳入后续自动化，但公开资料没有确认俄亥俄部署是否已完成。[3]</li>
+</ul>
+<h3 id="section-2">作业流程</h3>
+<ol>
+<li>机器人抓取装有眼镜的保护盒，避开盒上的条码区域。</li>
+<li>机器人将眼镜盒转动、调整角度，使条码进入读码器视野。</li>
+<li>Cognex 读码器读取眼镜盒上的唯一条码，将订单与商品对应。</li>
+<li>机器人把眼镜盒放进 Pregis 自动装袋设备。</li>
+<li>系统封袋、贴标，再将包裹送上输送线进入发货流程。[2][3][4]</li>
+</ol>
+<h3 id="section-3">机器人单元组成</h3>
+<p>公开资料披露的单元组成如下：</p>
+<ul>
+<li>**机器人本体：**FANUC M-10 系列机械臂。FANUC 后续案例具体列出 <strong>M-10iD/12</strong>，为六轴机器人。</li>
+<li>**拣选软件：**OSARO SightWorks 视觉与机器人控制软件，负责识别、抓取和动作控制。</li>
+<li>**引导相机：**FRAMOS 相机为机器人提供视觉引导。</li>
+<li>**条码读取：**Cognex DataMan 固定式图像读码器。Cognex 案例页将产品方案标为 <strong>DataMan 370</strong>；OSARO 资料则称 DataMan 固定式读码器。</li>
+<li>**照明：**Cognex 高强度 LED 照明，含高功率集成照明组件，帮助读取眼镜盒内或透过塑料外壳的条码。</li>
+<li>**装袋设备：**Pregis Sharp 自动装袋机。</li>
+<li>**单元基础设施：**NPSG Global 与 OSARO 技术团队协作搭建。[2][3][4]</li>
+</ul>
+<p>**难点在条码读取。**Zenni 标志性的蓝色半透明眼镜盒使一些传统读码器难以稳定读取条码。机器人抓取时需要控制握持位置，并旋转或调整眼镜盒，让条码在读码器视野中出现；读码器与照明共同解决扫描问题。[2][3]</p>
+<h3 id="section-4">项目价值与已披露状态</h3>
+<p>OSARO 在 2022 年将其称为机器人与自动装袋设备协同处理独立客户订单的行业首创应用。项目的业务目标包括减少重复人工操作、应对劳动力短缺，并确保正确眼镜盒进入正确的客户出货袋。[1]</p>
+<p>FANUC 2026 年案例显示，该方案已用于 Zenni 履约作业；Zenni 表示人工包装步骤减少、吞吐提高，扫描错误接近于零。公开资料未披露当前运行的机器人单元总数、连续运行时长或各单元的利用率。[4]</p>
+<h2 id="section-5">二、项目公开数据</h2>
+<table>
+<thead>
+<tr>
+<th>数据项</th>
+<th style="text-align: right;">公开数值/口径</th>
+<th>来源与说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>初始部署计划</td>
+<td style="text-align: right;"><strong>3 套</strong>机器人装袋系统</td>
+<td>[1] 2022 年 OSARO 公告中的计划数量；未见公开更新后的在役总数。</td>
+</tr>
+<tr>
+<td>项目地点</td>
+<td style="text-align: right;">Novato，加州</td>
+<td>[1][2][3]</td>
+</tr>
+<tr>
+<td>机器人处理能力</td>
+<td style="text-align: right;"><strong>350–410 个眼镜盒/小时</strong>；OSARO 后续称单套系统最高 <strong>410 个/小时</strong></td>
+<td>[2][3]；“350–410”是案例描述范围，“最高 410”是系统能力口径。</td>
+</tr>
+<tr>
+<td>吞吐提升</td>
+<td style="text-align: right;"><strong>提高 80%</strong></td>
+<td>[2][3][4]。公开材料未给出对比测试的完整基线、统计周期和订单组合。</td>
+</tr>
+<tr>
+<td>人工配置</td>
+<td style="text-align: right;">每个机器人单元由 <strong>3 人降至 2 人</strong></td>
+<td>[3]，指监控机器人单元所需人员配置，不等于整个履约中心减少一人。</td>
+</tr>
+<tr>
+<td>人工包装步骤</td>
+<td style="text-align: right;"><strong>5 步降至 2 步</strong></td>
+<td>[4]，按包装工作流程步骤计数。</td>
+</tr>
+<tr>
+<td>人工处理基线</td>
+<td style="text-align: right;">最快员工每班处理 <strong>不到 1,800 副眼镜</strong></td>
+<td>[3]。资料未说明班次具体时长。</td>
+</tr>
+<tr>
+<td>团队处理能力</td>
+<td style="text-align: right;">人工团队每分钟约 <strong>10 个订单</strong></td>
+<td>[1] 项目公告提及的 Zenni 团队能力；不能直接与机器人“眼镜盒/小时”当成同一口径比较。</td>
+</tr>
+<tr>
+<td>条码读码率</td>
+<td style="text-align: right;">OSARO 报告 <strong>99%</strong>；Cognex 案例报告 <strong>超过 99.5%</strong>，另一处摘要标为 <strong>99.5%</strong></td>
+<td>[2][3]。不同页面口径略有差异，不合并为单一精确值。</td>
+</tr>
+<tr>
+<td>系统处理准确率</td>
+<td style="text-align: right;">Cognex 案例摘要称 <strong>100%</strong>；正文另称系统准确率达到 <strong>99.9%</strong></td>
+<td>[3]。同一案例页存在不同表述，应保留原始口径，不应把读码率与订单处理准确率混为一谈。</td>
+</tr>
+<tr>
+<td>错误率变化</td>
+<td style="text-align: right;">从每 <strong>100,000</strong> 件约 <strong>20</strong> 个错误，降至每 <strong>100,000</strong> 件少于 <strong>3</strong> 个</td>
+<td>[3]。这是该案例对自动化前后错误数的描述。</td>
+</tr>
+<tr>
+<td>机械臂负载</td>
+<td style="text-align: right;"><strong>12 kg</strong></td>
+<td>[4]，FANUC M-10iD/12 产品规格。</td>
+</tr>
+<tr>
+<td>机械臂工作半径</td>
+<td style="text-align: right;"><strong>1,441 mm</strong></td>
+<td>[4]，FANUC M-10iD/12 产品规格；是机器人型号规格，不是整个工作单元尺寸。</td>
+</tr>
+<tr>
+<td>读码器布置</td>
+<td style="text-align: right;"><strong>4 个</strong> Cognex 读码器，约呈 <strong>C 形</strong>安装</td>
+<td>[3]，用于从不同方向读取由机器人旋转呈现的条码。</td>
+</tr>
+<tr>
+<td>Zenni 累计销量背景</td>
+<td style="text-align: right;">2022 公告称超过 <strong>4,500 万副</strong>；FANUC 2026 页面称超过 <strong>5,100 万副镜架</strong></td>
+<td>[1][4]。统计口径分别是“眼镜副数”和“镜架数”，时间也不同，不宜直接比较增幅。</td>
+</tr>
+<tr>
+<td>Zenni 年销量背景</td>
+<td style="text-align: right;">每年约 <strong>600–700 万副</strong>，且保持两位数增长</td>
+<td>[4]。这是客户规模背景，不是机器人单元产量。</td>
+</tr>
+</tbody>
+</table>
+<p>**准确率指标需谨慎引用：**不同材料分别使用“读码率”“系统处理准确率”“错误数/十万件”等口径；其中 Cognex 案例页摘要和正文也分别出现 100% 与 99.9% 的系统准确率表述。用于竞品表时建议分别保留原始指标和来源，避免统称为“机器人抓取成功率”。</p>
+<h2 id="section-6">三、公开资料没有披露的参数</h2>
+<p>以下项目级指标没有在上述公开资料中找到：</p>
+<ul>
+<li>每次抓取的单循环时间、机器人空闲率或节拍分布</li>
+<li>抓取成功率、掉落率、错放率等机器人动作指标</li>
+<li>实际处理 SKU 数、盒型/条码种类和样本量</li>
+<li>单元占地、功耗、设备总价、运维成本和投资回收期</li>
+<li>三套系统是否全部达到相同产能，或后续是否增加系统</li>
+<li>俄亥俄州计划的实际部署状态</li>
+</ul>
+<h2 id="section-7">来源（每个链接仅列一次）</h2>
+<p>[1] <a href="https://www.osaro.com/blog/osaro-and-zenni-deploy-robotic-bagging-system">OSARO：OSARO 与 Zenni 部署机器人装袋系统（2022）</a><br />
+[2] <a href="https://www.osaro.com/blog/cognex-brings-scanning-expertise-to-osaro-partners-alliance">OSARO：Cognex 加入 OSARO 合作伙伴联盟及 Zenni 读码方案（2023）</a><br />
+[3] <a href="https://31230.on21yb.com/en/why-cognex/customer-success-stories/how-osaro-automated-zenni-opticals-distribution-process-with-cognex-barcode-readers">Cognex：OSARO 如何为 Zenni 自动化眼镜分拣与出货流程</a><br />
+[4] <a href="https://www.fanucamerica.com/case-studies/how-zenni-optical-built-a-faster-smarter-more-scalable-fulfillment-line">FANUC America：Zenni 如何构建更快、更可扩展的履约产线（2026）</a></p>
+
+</article></main>
+<a class="top-link" href="../#case-index">返回目录</a>
+</body>
+</html>

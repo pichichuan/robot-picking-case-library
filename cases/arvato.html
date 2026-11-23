@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arvato &#215; Nomagic · 拣选机器人案例库</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="hero"><div class="shell"><nav aria-label="页面导航"><a href="../#case-index">返回案例目录</a></nav><h1>Arvato &#215; Nomagic</h1></div></header>
+<main class="shell"><article class="archive case-detail">
+<p><strong>Arvato × Nomagic 项目采用 justPick，在德国多特蒙德的 AutoStore 端口同时承担订单拣选和退货回补。</strong> 项目称为 <strong>ASPP（AutoStore Port Picking）</strong>，属于“订单拣选＋退货入库”，并非 ASOS 那种口袋分拣机供料。</p>
+<p><strong>公开数据集中如下：</strong></p>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>已披露数据</th>
+<th>口径与出处</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>项目地点</td>
+<td><strong>Dortmund，多特蒙德，德国</strong></td>
+<td>服务多个时尚客户的配送中心。<a id="ref-1" href="https://arvato.com/about/insights/we-collaborate-with-robot-specialist-nomagic">Arvato 项目公告</a></td>
+</tr>
+<tr>
+<td>配送中心面积</td>
+<td><strong>30,000 m²</strong></td>
+<td>整个配送中心面积；机器人工作站面积未披露。<a href="#ref-1">项目公告</a></td>
+</tr>
+<tr>
+<td>合作公告日期</td>
+<td><strong>2024 年 1 月 25 日</strong></td>
+<td>当时公告为 ASPP 试点，未明确首次上线日期。<a href="#ref-1">项目公告</a></td>
+</tr>
+<tr>
+<td>机器人产品</td>
+<td><strong>Nomagic justPick</strong></td>
+<td>接入 AutoStore，兼顾订单履约与退货回补。<a href="#ref-1">项目公告</a></td>
+</tr>
+<tr>
+<td>订单拣选技术吞吐量</td>
+<td><strong>550 件/小时</strong></td>
+<td>Arvato 官网对多特蒙德拣选机器人公布的数据；未给出长期持续平均值或测试条件。<a id="ref-2" href="https://arvato.com/our-focus/automated-warehouses">Arvato 自动化介绍</a></td>
+</tr>
+<tr>
+<td>退货回补技术吞吐量</td>
+<td><strong>420 件/小时</strong></td>
+<td>与订单拣选为不同作业模式，不能相加。<a href="#ref-2">自动化介绍</a></td>
+</tr>
+<tr>
+<td>周转车配置</td>
+<td><strong>2 辆</strong></td>
+<td>一辆作业时，另一辆可更换，以减少批量拣选中断。<a id="ref-3" href="https://nomagic.ai/case-study/arvato/">Nomagic 案例</a></td>
+</tr>
+<tr>
+<td>机器人数量</td>
+<td><strong>最新总数未披露</strong></td>
+<td>首期公告以一台 justPick 试点描述，并计划后续增加；未找到后续实际总数。<a href="#ref-1">项目公告</a></td>
+</tr>
+<tr>
+<td>SKU 数量、覆盖率</td>
+<td><strong>未披露</strong></td>
+<td>无该项目明确数值</td>
+</tr>
+<tr>
+<td>准确率、首抓成功率、可用率</td>
+<td><strong>未披露</strong></td>
+<td>无该项目明确百分比</td>
+</tr>
+<tr>
+<td>商品尺寸、重量范围</td>
+<td><strong>未披露</strong></td>
+<td>无项目现场边界</td>
+</tr>
+<tr>
+<td>循环时间、工位面积</td>
+<td><strong>未披露</strong></td>
+<td>不以吞吐量反推循环时间</td>
+</tr>
+<tr>
+<td>投资额、租赁费、回收期</td>
+<td><strong>未披露</strong></td>
+<td>未找到该项目具体金额或周期</td>
+</tr>
+</tbody>
+</table>
+<p><strong>应用场景、功能与客户价值：</strong></p>
+<table>
+<thead>
+<tr>
+<th>客户需求／场景</th>
+<th>项目已披露的功能与能力</th>
+<th>对客户的价值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>从 AutoStore 为订单备货</strong></td>
+<td>支持单件订单拣选；Nomagic 案例还明确包含批量拣选。</td>
+<td>自动承担重复取货工作，提高订单处理能力。</td>
+</tr>
+<tr>
+<td><strong>退货重新入库</strong></td>
+<td>同一机器人还承担退货回补 AutoStore。</td>
+<td>一套设备覆盖出库和回补两类作业，提高设备利用率。</td>
+</tr>
+<tr>
+<td><strong>紧密竖放的袋装服装难以吸取</strong></td>
+<td>配置夹钳式 <strong>finger gripper（手指夹具）</strong>，处理吸盘难以抓取的竖放塑料袋包装。</td>
+<td>适应小格位、高密度存储方式，扩大可处理商品范围。</td>
+</tr>
+<tr>
+<td><strong>商品和格位大小不同</strong></td>
+<td>按商品及料箱格位大小自动换抓手；在 AutoStore Carousel Port 换箱期间完成吸盘／夹具切换。</td>
+<td>利用换箱时间换工具，减少额外等待。</td>
+</tr>
+<tr>
+<td><strong>退货需要分类</strong></td>
+<td>视觉系统对退回的 T 恤等商品进行颜色识别，并自主选择分组。</td>
+<td>将退货整理与后续拣选流程衔接。</td>
+</tr>
+<tr>
+<td><strong>避免一次抓起多件</strong></td>
+<td>退货作业中进行 <strong>RFID 扫描</strong>，检查是否存在多件同抓，并支持库存管理；扫描在运动过程中完成。</td>
+<td>提高数量核对和库存记录的可靠性。</td>
+</tr>
+<tr>
+<td><strong>换周转车容易打断作业</strong></td>
+<td>双周转车交替使用；采用激光安全光幕替代换车区域的门。</td>
+<td>简化换车、减少等待，并为未来 AGV 接驳预留条件。</td>
+</tr>
+<tr>
+<td><strong>保留现有仓储设施</strong></td>
+<td>Arvato 称方案可在不改变既有基础设施的条件下，同时实现订单拣选和退货回补。</td>
+<td>降低改造需求，便于接入现有流程。</td>
+</tr>
+<tr>
+<td><strong>晚班和夜班持续处理订单</strong></td>
+<td>Arvato 将自主处理客户订单、特别是晚班和夜班列为项目价值。</td>
+<td>延长可作业时段；实际无人干预时长未披露。</td>
+</tr>
+</tbody>
+</table>
+<p>功能依据：<a href="#ref-1">Arvato 项目公告</a> · <a href="#ref-2">Arvato 自动化介绍</a> · <a href="#ref-3">Nomagic Arvato 案例</a></p>
+<p><strong>这个案例没有明确披露“放置时节省箱内体积”的功能。</strong> 它最突出的能力是<strong>一站兼顾订单拣选与退货回补、竖放服装夹取、RFID 防多件同抓、双车交替，以及换箱期间自动换工具</strong>。上述 550／420 件每小时也是 Arvato 对该现场机器人公布的技术数据，可与其他项目区别引用。</p>
+<hr />
+<h2 id="section">数据补充与口径说明</h2>
+<p>该项目应用于 <strong>服装时尚行业的电商仓储物流</strong>。</p>
+<p>Arvato 作为第三方物流服务商，在多特蒙德配送中心为多个时尚客户服务；Nomagic justPick 主要处理服装商品（如 T 恤、袋装服饰），执行<strong>订单拣选和退货回补入库</strong>。<a href="#ref-1">Arvato 官方项目公告</a></p>
+
+</article></main>
+<a class="top-link" href="../#case-index">返回目录</a>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>apo.com Group &#215; RightHand Robotics · 拣选机器人案例库</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="hero"><div class="shell"><nav aria-label="页面导航"><a href="../#case-index">返回案例目录</a></nav><h1>apo.com Group &#215; RightHand Robotics</h1></div></header>
+<main class="shell"><article class="archive case-detail">
+<p>以下整理的是 <strong>apo.com Group 在荷兰 Duiven 物流中心的拣选机器人项目</strong>，不是瑞典 Apotea 的项目。公开资料能确认的主力拣选机器人是 <strong>RightHand Robotics 的 RightPick</strong>。</p>
+<h2 id="section">1. 项目概况</h2>
+<p>apo.com Group 把 <strong>AutoStore 箱式存储系统</strong>与 <strong>RightPick 单件拣选机器人</strong>连接起来：AutoStore 将装有商品的料箱送到拣选工位，RightPick 从料箱中取出单件商品，扫码后放入订单纸箱。Duiven 的拣选工位由 apo.com Group 参与设计，系统于 2020 年投入使用。RightHand Robotics 称，这套机器人还用于收货环节；外部报道重点描述的是出库订单拣选。<a href="https://righthandrobotics.com/resources/apo-com-group-netherlands">RightHand Robotics 案例</a>、<a href="https://logistik-heute.de/en/news/interview-how-robots-apo-com-group-pick-orders-supported-ai-">LOGISTIK HEUTE 采访</a></p>
+<h2 id="section-1">2. 设备和各方分工</h2>
+<table>
+<thead>
+<tr>
+<th>系统或公司</th>
+<th>在项目中的作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>RightPick / RightHand Robotics</strong></td>
+<td>从料箱中拣取单件药品或其他商品，扫描并放入订单纸箱。</td>
+</tr>
+<tr>
+<td><strong>AutoStore</strong></td>
+<td>储存和搬运料箱，将商品送到拣选工位；它本身不是单件拣选机械臂。</td>
+</tr>
+<tr>
+<td><strong>apo.com Group</strong></td>
+<td>提出并参与设计拣选单元与作业流程；公司称有自有软件，用于灵活整合不同机器人厂商。</td>
+</tr>
+<tr>
+<td><strong>Klinkhammer Intralogistics</strong></td>
+<td>提供控制技术、物料流控制、库位管理、仓库管理软件和可视化，并优化系统调度。</td>
+</tr>
+<tr>
+<td><strong>KNAPP</strong></td>
+<td>处理另一类商品的自动化存储和拣选，尤其是低频、长尾药品；不是 RightPick。</td>
+</tr>
+</tbody>
+</table>
+<p>RightHand Robotics 介绍，apo.com Group 的创新团队在 2019 年构思了 AutoStore 与 RightPick 的组合，并与其共同开发定制拣选工位。<a href="https://righthandrobotics.com/integrations-and-workflows/autostore">RightHand Robotics 的 AutoStore 集成案例</a> Klinkhammer 的项目资料也列出其物料流与仓库管理软件，以及机器人从多个料箱向目标纸箱拣货的流程。<a href="https://www.klinkhammer.com/fileadmin/user_upload/Pdfs/Klinkhammer-Referenzblatt-Apo-logistics-E.pdf">Klinkhammer 项目资料</a></p>
+<h2 id="section-2">3. 作业流程和货品范围</h2>
+<p>公开采访描述的流程是：订单纸箱先送到拣选单元，同时 AutoStore 将 <strong>6 个料箱</strong>送到工位；系统根据可用订单组成批次，再由 RightPick 执行拣选。出库端会用视觉系统检查纸箱内商品数量。apo.com Group 还表示，计划将视觉系统用于持续盘点。<a href="https://logistik-heute.de/en/news/interview-how-robots-apo-com-group-pick-orders-supported-ai-">LOGISTIK HEUTE 采访</a></p>
+<p>2024 年的行业报道说，AutoStore 主要储存周转较快的商品，例如布洛芬、扑热息痛、阿司匹林类止痛药、降压药、胃药、伤口药膏、眼药水和化妆品。当时报道的商品范围超过 75,000 种，其中约 25,000 种为处方药、50,000 种为非处方商品。低频和较少订购的药品则由 <strong>两套 KNAPP Store</strong> 系统处理；报道给出的容量为 100,000 个药盒，处理能力最高约 1,000 次拣选/小时。<a href="https://www.klinkhammer.com/fileadmin/Presse_Pdf/LO0724_06-11_Reportage-Aprocom_Klinkhammer_Low.pdf">LOGISTRA 2024 专题 PDF</a></p>
+<h2 id="section-3">4. 已公开的数量和性能数据</h2>
+<table>
+<thead>
+<tr>
+<th>时间与来源</th>
+<th>公开数据</th>
+<th>应如何理解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024，LOGISTRA/Klinkhammer</td>
+<td>约 <strong>15 个 RightHand Robotics 拣选单元</strong>；现有机器人每天可完成 <strong>60,000–80,000 次拣选</strong>；系统架构可扩展至 45 个工位。</td>
+<td>“拣选次数”不是订单数；60,000–80,000 是报道中的设备能力，不等于每天实际产量。</td>
+</tr>
+<tr>
+<td>2024，LOGISTRA/Klinkhammer</td>
+<td>AutoStore 有 <strong>85,000 个料箱、113 台 AutoStore 机器人</strong>。</td>
+<td>这是 AutoStore 存储搬运设备数量，不是 RightPick 数量。</td>
+</tr>
+<tr>
+<td>2025 年 4 月，apo.com Group COO 接受采访</td>
+<td>Duiven 每天约处理 <strong>25,000 个全自动订单</strong>，名义能力可升至 <strong>30,000 个订单/天</strong>；约 95% 的订单由机器辅助拣选。</td>
+<td>这是订单量和订单自动化比例，与“单件拣选次数”口径不同。</td>
+</tr>
+<tr>
+<td>2025 年 11 月，apo.com Group 官方新闻稿</td>
+<td>Duiven 有 <strong>17 台 RightHand Robotics AI 拣选单元机器人</strong>，累计完成 <strong>5,000 万次 AI 拣选</strong>。</td>
+<td>这是官方公布的累计拣选里程碑。</td>
+</tr>
+<tr>
+<td>2025 年 11 月，apo.com Group 官方新闻稿</td>
+<td>当时约 <strong>95% 的 picks 自动处理</strong>，目标在 2029 年升至 <strong>98.5%</strong>；Duiven 总处理能力计划从 25,000 提升至 <strong>超过 100,000 单/天</strong>。</td>
+<td>这是公司整体自动化比例和扩建目标，不是 RightPick 单机成功率或单机产能。</td>
+</tr>
+<tr>
+<td>2025 年 11 月，apo.com Group 官方新闻稿</td>
+<td>两个物流中心合计每天最多发出 <strong>52,000 个包裹</strong>；新 KNAPP 设备可自动处理每天额外 20,000 个包裹。</td>
+<td>包裹数、订单数、拣选次数是不同指标。</td>
+</tr>
+</tbody>
+</table>
+<p>数据来自不同年份，且“拣选次数、订单数、包裹数、设计能力、实际处理量”口径不同，因此不宜直接横向比较。<a href="https://www.klinkhammer.com/fileadmin/Presse_Pdf/LO0724_06-11_Reportage-Aprocom_Klinkhammer_Low.pdf">LOGISTRA 2024 报道</a>、<a href="https://logistik-heute.de/en/news/interview-how-robots-apo-com-group-pick-orders-supported-ai-">LOGISTIK HEUTE 2025 采访</a>、<a href="https://group-apo.com/en/2025/11/10/expansion-technology-leadership-pharmaceutical-logistics-duiven/">apo.com Group 2025 官方公告</a></p>
+<h2 id="section-4">5. 项目更迭时间线</h2>
+<ul>
+<li><strong>2019 年</strong>：apo.com Group 创新团队提出 AutoStore 与 RightHand Robotics 的组合方案，并与 RightHand Robotics 开发定制拣选工位。<a href="https://righthandrobotics.com/integrations-and-workflows/autostore">RightHand Robotics</a></li>
+<li><strong>2020 年</strong>：Duiven 自动化物流中心投入运营。<a href="https://group-apo.com/en/company/strategy/">apo.com Group 公司介绍</a></li>
+<li><strong>2022 年</strong>：RightHand Robotics 发布 apo.com Group 项目视频，介绍 RightPick 与 AutoStore 的结合。<a href="https://www.youtube.com/watch?v=8qjlQxN09zo">项目视频</a></li>
+<li><strong>2024 年</strong>：行业专题报道约 15 个 RightHand Robotics 工位、85,000 个 AutoStore 料箱和 113 台 AutoStore 机器人。<a href="https://www.klinkhammer.com/fileadmin/Presse_Pdf/LO0724_06-11_Reportage-Aprocom_Klinkhammer_Low.pdf">LOGISTRA 专题</a></li>
+<li><strong>2025 年</strong>：apo.com Group 官方确认 17 台 RightHand Robotics 机器人累计完成 5,000 万次 AI 拣选，并宣布扩大处方药处理能力。<a href="https://group-apo.com/en/2025/11/10/expansion-technology-leadership-pharmaceutical-logistics-duiven/">官方公告</a></li>
+</ul>
+<h2 id="section-5">6. 还有哪些信息没有公开</h2>
+<p>现有公开资料<strong>没有明确说明</strong> Duiven 现场使用的 RightPick 具体代际或型号，也没有披露单台机器人节拍、逐 SKU 首次抓取成功率、抓取失败率、采购价格和详细 API/上位机接口。因此，不能仅凭该项目的“95% 自动化”或“5,000 万次拣选”推断 RightPick 的单机准确率。</p>
+<p>此外，Nomagic 在自己的 2025 年公告中把 <strong>Apo.com</strong> 列为客户之一，但没有说明具体部署地点、设备数量或作业流程。就 Duiven 这套 AutoStore 拣选线而言，目前能从 apo.com Group 的官方资料确认的机器人仍是 RightHand Robotics 的 17 台拣选机器人。<a href="https://nomagic.ai/news/nomagic-secures-44-million-investment-to-drive-ai-innovation-in-robotics/">Nomagic 公告</a></p>
+<h3 id="section-6">资料入口</h3>
+<ul>
+<li><a href="https://group-apo.com/en/company/strategy/">apo.com Group：Duiven 物流中心与 17 台机器人介绍</a></li>
+<li><a href="https://group-apo.com/en/2025/11/10/expansion-technology-leadership-pharmaceutical-logistics-duiven/">apo.com Group：2025 年扩产及 5,000 万次拣选公告</a></li>
+<li><a href="https://righthandrobotics.com/resources/apo-com-group-netherlands">RightHand Robotics：apo.com Group 项目案例</a></li>
+<li><a href="https://righthandrobotics.com/integrations-and-workflows/autostore">RightHand Robotics：AutoStore 与 apo.com Group 的定制流程</a></li>
+<li><a href="https://logistik-heute.de/en/news/interview-how-robots-apo-com-group-pick-orders-supported-ai-">LOGISTIK HEUTE：2025 年 COO 采访</a></li>
+<li><a href="https://www.klinkhammer.com/fileadmin/Presse_Pdf/LO0724_06-11_Reportage-Aprocom_Klinkhammer_Low.pdf">LOGISTRA/Klinkhammer：2024 年物流中心专题 PDF</a></li>
+<li><a href="https://www.youtube.com/watch?v=8qjlQxN09zo">RightHand Robotics：apo.com Group 项目视频</a></li>
+</ul>
+<hr />
+<h2 id="section-7">数据补充与口径说明</h2>
+<h2 id="apo.com-group">apo.com Group 药品拣选机器人：公开数字摘录</h2>
+<p>以下聚焦荷兰 <strong>Duiven 物流中心的 RightHand Robotics 拣选机器人</strong>。数字按“现场规模、机器人数量、产能、扩建目标”整理，并区分实际运营数据与规划值。</p>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th style="text-align: right;">公开数字</th>
+<th>时间与口径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>物流中心面积</strong></td>
+<td style="text-align: right;">约 <strong>20,000 平方米</strong></td>
+<td>Duiven 物流中心面积；RightHand Robotics 也将其描述为约 220,000 平方英尺。</td>
+</tr>
+<tr>
+<td><strong>RightHand Robotics 拣选单元</strong></td>
+<td style="text-align: right;"><strong>2024 年约 15 个；2025 年 11 月为 17 台</strong></td>
+<td>2025 年 apo.com Group 确认，17 台 AI 拣选单元机器人完成了累计 5,000 万次拣选。</td>
+</tr>
+<tr>
+<td><strong>累计机器人拣选量</strong></td>
+<td style="text-align: right;"><strong>5,000 万次</strong></td>
+<td>截至 apo.com Group 2025 年 11 月公布的里程碑；是累计拣选次数，不是订单数。</td>
+</tr>
+<tr>
+<td><strong>机器人拣选能力</strong></td>
+<td style="text-align: right;"><strong>每天约 60,000–80,000 次拣选</strong></td>
+<td>2024 年行业报道援引 apo.com Group COO，指当时已安装机器人设备的能力，不等于每天实际拣选量。</td>
+</tr>
+<tr>
+<td><strong>每日订单处理量</strong></td>
+<td style="text-align: right;">约 <strong>25,000 单/天</strong>；名义能力约 <strong>30,000 单/天</strong></td>
+<td>2025 年 4 月 COO 接受采访时披露的 Duiven 站点数据；口径是订单，不是单件拣选次数。</td>
+</tr>
+<tr>
+<td><strong>订单自动化比例</strong></td>
+<td style="text-align: right;">约 <strong>95%</strong></td>
+<td>2025 年资料分别以“Duiven 约 95% 订单由机器辅助拣选”或“约 95% picks 自动处理”描述。它是站点流程指标，不能当作 RightPick 的抓取成功率。</td>
+</tr>
+<tr>
+<td><strong>料箱与供料</strong></td>
+<td style="text-align: right;"><strong>85,000 个 AutoStore 料箱</strong>；工作站同时接收 <strong>6 个料箱</strong></td>
+<td>料箱由 AutoStore 系统存取和送站；它们不是拣选机械臂。</td>
+</tr>
+<tr>
+<td><strong>扩展空间</strong></td>
+<td style="text-align: right;">系统可扩至 <strong>45 个拣选工位</strong></td>
+<td>2024 年报道提到仓库采用冗余架构，并可扩建到 45 个工位；这是扩展能力，不代表已安装数量。</td>
+</tr>
+<tr>
+<td><strong>快周转商品范围</strong></td>
+<td style="text-align: right;">商品目录超过 <strong>75,000 个品项</strong>，其中约 <strong>25,000 个处方药品项、50,000 个非处方品项</strong></td>
+<td>2024 年报道的站点商品范围；AutoStore 主要服务快周转商品。</td>
+</tr>
+<tr>
+<td><strong>传送系统</strong></td>
+<td style="text-align: right;">约 <strong>1.2 公里</strong></td>
+<td>apo.com Group 对 Duiven 物流中心传送系统的介绍。</td>
+</tr>
+</tbody>
+</table>
+<p>面积和料箱数据见 <a href="https://group-apo.com/en/company/strategy/">apo.com Group 物流介绍</a>；2024 年机器人数量、日拣选能力及可扩展工位数见 <a href="https://www.klinkhammer.com/fileadmin/Presse_Pdf/LO0724_06-11_Reportage-Aprocom_Klinkhammer_Low.pdf">LOGISTRA 2024 专题报道</a>；2025 年订单量和六料箱工作站流程见 <a href="https://logistik-heute.de/en/news/interview-how-robots-apo-com-group-pick-orders-supported-ai-">LOGISTIK HEUTE 对 COO 的采访</a>；17 台机器人和 5,000 万次累计拣选见 <a href="https://group-apo.com/en/2025/11/10/expansion-technology-leadership-pharmaceutical-logistics-duiven/">apo.com Group 2025 年公告</a>。</p>
+<h3 id="section-8">关于“产能提升”</h3>
+<p>公开资料<strong>没有给出一组可以直接对比、并明确归因于 RightPick 的项目改造前后产能数字</strong>。目前能确认的是：2024 年报道给出已安装机器人每天 <strong>60,000–80,000 次拣选能力</strong>；2025 年采访给出 Duiven 约 <strong>25,000 单/天实际处理量</strong>、约 <strong>30,000 单/天名义能力</strong>。</p>
+<p>apo.com Group 另计划到 <strong>2029 年将 Duiven 总订单处理能力从约 25,000 单/天提高到超过 100,000 单/天</strong>。这属于整个站点的扩建目标，包含新的仓储和拣选设备，不能归结为 RightHand Robotics 单独带来的产能提升。该公告还称，2025 年新投入的 KNAPP 设备将增加每天 <strong>20,000 件</strong>自动拣选能力；这部分是 KNAPP 系统的贡献。<a href="https://group-apo.com/en/2025/11/10/expansion-technology-leadership-pharmaceutical-logistics-duiven/">官方扩建公告</a></p>
+<p><strong>选型或案例表可简写为：</strong>“Duiven 医药物流中心，约 20,000 m²；2025 年配有 17 台 RightHand Robotics AI 拣选单元，累计完成 5,000 万次拣选；2024 年报道的机器人设备能力为 60,000–80,000 次/日。站点 2025 年约处理 25,000 单/日，机器人系统扩容空间可达 45 个工位。”</p>
+
+</article></main>
+<a class="top-link" href="../#case-index">返回目录</a>
+</body>
+</html>

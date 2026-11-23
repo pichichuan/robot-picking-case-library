@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ELECOM &#215; Mujin · 拣选机器人案例库</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="hero"><div class="shell"><nav aria-label="页面导航"><a href="../#case-index">返回案例目录</a></nav><h1>ELECOM &#215; Mujin</h1></div></header>
+<main class="shell"><article class="archive case-detail">
+<h2 id="section">1. 合作项目概况</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>公开信息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>客户</td>
+<td>ELECOM Co., Ltd.（エレコム株式会社）</td>
+</tr>
+<tr>
+<td>Mujin方案</td>
+<td>MujinRobot Piece Picker（ピースピッカー）</td>
+</tr>
+<tr>
+<td>应用环节</td>
+<td><strong>总拣选（Total Picking）后，机器人将单件商品投入分拣机（Sorter Induction）</strong></td>
+</tr>
+<tr>
+<td>处理商品</td>
+<td>混装在容器中的电气设备；案例特别提到有异形商品</td>
+</tr>
+<tr>
+<td>项目所在地</td>
+<td>神奈川县；Mujin案例未公开具体仓库名称</td>
+</tr>
+<tr>
+<td>项目目标</td>
+<td>自动化分拣机投料，提高处理能力</td>
+</tr>
+<tr>
+<td>现场公开节拍</td>
+<td><strong>每小时900次以上抓取（900 picks/h以上）</strong></td>
+</tr>
+<tr>
+<td>公开技术方案</td>
+<td>Mujin运动规划与3D视觉；识别混装容器内商品位置后抓取</td>
+</tr>
+<tr>
+<td>动作特点</td>
+<td>案例称采用“抓取后直接放置”的 Pick &amp; Drop 方式，放置动作简单，有助于提高吞吐量</td>
+</tr>
+</tbody>
+</table>
+<p>以上项目与现场数据来自<a href="https://www.mujin.co.jp/example/elecom/">Mujin的ELECOM案例页</a>。</p>
+<h2 id="mujinpiece-picker">2. Mujin公开的Piece Picker标准参数</h2>
+<p>下表是Mujin产品页公布的<strong>单载模式标准规格</strong>，属于产品参数，不能直接视为ELECOM现场逐项采用的配置。</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th style="text-align: right;">Mujin公布规格</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>最高处理能力</td>
+<td style="text-align: right;">1,000件/小时</td>
+</tr>
+<tr>
+<td>工件最大尺寸</td>
+<td style="text-align: right;">350 × 300 × 300 mm</td>
+</tr>
+<tr>
+<td>工件最小尺寸</td>
+<td style="text-align: right;">30 × 30 × 20 mm</td>
+</tr>
+<tr>
+<td>最大重量</td>
+<td style="text-align: right;">2.0 kg</td>
+</tr>
+<tr>
+<td>最大适配容器内尺寸</td>
+<td style="text-align: right;">550 × 380 × 380 mm</td>
+</tr>
+<tr>
+<td>电源</td>
+<td style="text-align: right;">200 V、1.5 kVA；或100 V、25 A</td>
+</tr>
+<tr>
+<td>压缩空气</td>
+<td style="text-align: right;">依所用末端执行器而异</td>
+</tr>
+<tr>
+<td>环境温度</td>
+<td style="text-align: right;">0–40℃</td>
+</tr>
+<tr>
+<td>环境湿度</td>
+<td style="text-align: right;">20–80% RH，无结露</td>
+</tr>
+<tr>
+<td>安装环境</td>
+<td style="text-align: right;">室内</td>
+</tr>
+<tr>
+<td>地面承重</td>
+<td style="text-align: right;">静载荷至少1.0 t/㎡</td>
+</tr>
+</tbody>
+</table>
+<p>规格来源：<a href="https://www.mujin.co.jp/solution/distribution/picking/">MujinRobot Piece Picker产品页</a>。</p>
+<h2 id="section-1">3. 已确认数据与不可混用的指标</h2>
+<ul>
+<li>**ELECOM案例实绩：900 picks/h以上。**这是Mujin针对ELECOM案例披露的吞吐数据。</li>
+<li>**产品标准上限：1,000 pcs/h。**这是Piece Picker产品页给出的标准能力。</li>
+<li>两个数字的口径和测试条件没有在公开资料中进一步说明，因此不能据此认定ELECOM现场持续运行在每小时900件，也不能把1,000件/小时写成ELECOM的现场实绩。</li>
+</ul>
+<h2 id="section-2">4. 相关技术能力</h2>
+<p>Mujin的产品资料还介绍了以下Piece Picker通用能力：3D视觉识别、机器人运动规划、按商品重量和状态调整搬运速度、处理同一SKU的不同包装外观、条码读取，以及使用吸附式夹具和更换不同末端执行器。这些属于<strong>产品层面的公开功能</strong>；资料没有逐项确认它们在ELECOM现场的实际配置。<a href="https://www.mujin.co.jp/solution/distribution/picking/">产品资料</a></p>
+<h2 id="elecom">5. ELECOM物流中心信息：与本项目的关系尚未确认</h2>
+<p>ELECOM官网目前列有神奈川物流中心，地址为神奈川县相模原市中央区田名3700-3；但Mujin案例只写到“神奈川县”，<strong>没有明确说项目安装在该中心</strong>。<a href="https://www.elecom.co.jp/company/bases/index.html">ELECOM事業拠点</a></p>
+<p>ELECOM的一份公司介绍资料还提到，其神奈川物流中心使用了上方相机识别商品、由机器人自动投入的Piece Sorter系统，并称该系统有助于省人化和防止出货错误。资料没有点名Mujin，因而不能确认这套系统就是Mujin案例中的设备。<a href="https://www.elecom.co.jp/download/web_catalog/pdf/business/DS-36D016DS.pdf">ELECOM公司介绍资料 PDF</a></p>
+<h2 id="section-3">6. 公开资料未披露的现场数据</h2>
+<p>目前找到的公开资料没有给出以下ELECOM项目数据：</p>
+<ul>
+<li>机器人及工作站数量、具体机器人型号和末端夹具型号</li>
+<li>启用时间、日运行时长、班次和实际日处理量</li>
+<li>现场商品SKU数量、尺寸重量分布及适配比例</li>
+<li>首次抓取成功率、误投率、设备稼动率和商品破损率</li>
+<li>投入项目后减少的人员数量、成本节约额或投资回收期</li>
+</ul>
+<p>**结论：**公开信息可以确认ELECOM在神奈川县有一项Mujin Piece Picker应用，用于把混装电气设备投入分拣机，Mujin披露的案例能力为900次抓取/小时以上。现场规模、运营质量指标和投资回报数据尚未公开。</p>
+
+</article></main>
+<a class="top-link" href="../#case-index">返回目录</a>
+</body>
+</html>

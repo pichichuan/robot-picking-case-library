@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FIEGE Group &#215; Nomagic · 拣选机器人案例库</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="hero"><div class="shell"><nav aria-label="页面导航"><a href="../#case-index">返回案例目录</a></nav><h1>FIEGE Group &#215; Nomagic</h1></div></header>
+<main class="shell"><article class="archive case-detail">
+<h2 id="section">作业分支</h2>
+<ul>
+<li><strong>justPick</strong>负责 AutoStore 订单拣选。</li>
+<li><strong>justInduct</strong>向口袋分拣机供料。两套设备在同一合作项目下记录。</li>
+</ul>
+<hr />
+<h2 id="section-1">项目数据</h2>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th style="text-align: right;">公开数据</th>
+<th>口径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>部署地点</strong></td>
+<td style="text-align: right;">Greven-Reckenfeld，德国</td>
+<td>FIEGE 物流中心</td>
+</tr>
+<tr>
+<td><strong>上线时间</strong></td>
+<td style="text-align: right;"><strong>2023 年 12 月中旬</strong></td>
+<td>FIEGE 于 2023 年 12 月 19 日公告：两套系统已验收并投入运行</td>
+</tr>
+<tr>
+<td><strong>机器人数量</strong></td>
+<td style="text-align: right;"><strong>2 台机器人臂</strong></td>
+<td>1 台 justPick、1 台 justInduct</td>
+</tr>
+<tr>
+<td><strong>料箱隔格</strong></td>
+<td style="text-align: right;"><strong>2、4 或 6 格</strong></td>
+<td>料箱使用纸板隔板；方向和材料各异</td>
+</tr>
+<tr>
+<td><strong>拣选准确率</strong></td>
+<td style="text-align: right;"><strong>99.8%</strong></td>
+<td>Nomagic 社交媒体贴文公布；未说明测试周期、SKU 范围或计算方法</td>
+</tr>
+<tr>
+<td><strong>整体生产率变化</strong></td>
+<td style="text-align: right;"><strong>提升 150%</strong></td>
+<td>同一贴文公布；比较的是人工处理转为 AutoStore 加机器人臂后的整体变化，非 justPick 单机贡献</td>
+</tr>
+<tr>
+<td><strong>justPick 吞吐量</strong></td>
+<td style="text-align: right;"><strong>未披露</strong></td>
+<td>未找到该现场的件/小时数据</td>
+</tr>
+<tr>
+<td><strong>单循环时间</strong></td>
+<td style="text-align: right;"><strong>未披露</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>商品重量、尺寸范围</strong></td>
+<td style="text-align: right;"><strong>未披露</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>机器人工作站占地</strong></td>
+<td style="text-align: right;"><strong>未披露</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>前期硬件资本支出</strong></td>
+<td style="text-align: right;"><strong>0 CAPEX</strong></td>
+<td>Nomagic 称采用 RaaS 硬件租赁模式；租金和合同金额未披露</td>
+</tr>
+</tbody>
+</table>
+<p>来源：<a id="ref-1" href="https://www.fiege.com/en/newsroom/fiege-installs-intelligent-picking-robots">FIEGE 官方公告</a> · <a id="ref-2" href="https://nomagic.ai/case-study/fiege/">Nomagic 项目案例</a> · <a id="ref-3" href="https://www.linkedin.com/posts/nomagic_warehouseautomation-robotics-ai-activity-7212031991569907712-WeRP">Nomagic 项目贴文</a></p>
+<h2 id="justpick">justPick 拣选单元</h2>
+<ul>
+<li>**作业场景：**在 AutoStore 端口拣选工具、耗材及 DIY 商品。FIEGE 的案例还提到重型工具套件和批量拣选到目标周转车。</li>
+<li>**抓取与适配：**机器人使用吸盘抓手；Nomagic 称专用抓手可快速切换。justPick 还适配了带弹簧底板的周转车，以衔接 FIEGE 现有流程。</li>
+<li>**料箱处理：**料箱可能分成 2、4 或 6 格，隔板方向和材料也有变化；这要求机器人在小格位内完成抓取和放置。</li>
+<li>**客户价值：**自动承担重复拣选任务，接入现有 AutoStore 和周转车流程；RaaS 模式降低了项目的前期硬件资本支出。</li>
+</ul>
+<h2 id="section-2">同一项目中的另一套设备</h2>
+<p>justInduct 是现场第二台机器人，负责把服装装入口袋分拣机，不属于 justPick 的拣选数据。Nomagic 称 justInduct 无需在仓库控制系统（WCS）侧进行集成。服装无塑料袋、条码被遮挡等挑战出现在 FIEGE 合作案例整体说明中，公开资料没有逐项说明由哪台机器人处理。<a href="#ref-2">Nomagic 项目案例</a></p>
+<hr />
+<h2 id="section-3">数据补充与口径说明</h2>
+<p>以下聚焦于 FIEGE 与 Nomagic 在德国 Greven-Reckenfeld 物流中心合作的 <strong>justPick 拣选单元</strong>。公开资料确认现场有两台 Nomagic 机器人臂，但分别承担 <strong>justPick 拣选</strong>和 <strong>justInduct 分拣机供料</strong>；两者的现场指标不能混算。<a href="#ref-1">FIEGE 官方公告</a></p>
+<h2 id="section-4">项目信息</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>公开信息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>客户与地点</strong></td>
+<td>FIEGE，Greven-Reckenfeld 物流中心，德国。</td>
+</tr>
+<tr>
+<td><strong>部署规模</strong></td>
+<td>FIEGE 于 2023 年 12 月宣布，两台机器人臂已通过实际环境验收并投入运行；一台 justPick、一台 justInduct。</td>
+</tr>
+<tr>
+<td><strong>拣选机器人</strong></td>
+<td>justPick，部署在新 AutoStore 系统的一个端口。FIEGE 称其拣选工具和耗材；Nomagic 案例还提到 DIY 商品、重型工具套件及批量拣选。</td>
+</tr>
+<tr>
+<td><strong>来源与去向</strong></td>
+<td>从 AutoStore 料箱拣货；项目中也使用周转车转移商品。Nomagic 案例提到 Pick 机器人适配了带弹簧底板的周转车，以接入 FIEGE 原有人工流程。</td>
+</tr>
+<tr>
+<td><strong>料箱结构</strong></td>
+<td>FIEGE 的料箱可使用纸板隔板分成 <strong>2、4 或 6 格</strong>，隔板的方向和材料也有变化。</td>
+</tr>
+<tr>
+<td><strong>抓取方式</strong></td>
+<td>FIEGE 公告称机器人臂使用吸盘抓手；Nomagic 称为具体作业适配的抓手可快速切换。</td>
+</tr>
+<tr>
+<td><strong>作业模式</strong></td>
+<td>包含批量拣选；Nomagic 称方案利用现场已有设备，支持在 AS/RS 内外的商品转移。</td>
+</tr>
+</tbody>
+</table>
+<p>上述 justPick 部署和集成信息见 <a href="#ref-1">FIEGE 官方公告</a> 与 <a href="#ref-2">Nomagic 的 FIEGE 案例</a>。</p>
+<h2 id="section-5">应用场景、需求与客户价值</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>justPick 项目对应情况</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>应用场景</strong></td>
+<td>3PL 物流中心内，从 AutoStore 料箱拣选工具、耗材和其他 DIY 商品，并支持批量拣选到周转车。</td>
+</tr>
+<tr>
+<td><strong>客户需求</strong></td>
+<td>处理品类多、重量较大的工具套件；适应料箱多格分隔及隔板方向变化；与已有 AutoStore 和周转车流程衔接；降低重复拣选工作。</td>
+</tr>
+<tr>
+<td><strong>功能与能力</strong></td>
+<td>通过吸盘抓取商品；可按商品和任务切换适配抓手；机器人与现场周转车流程相配合。FIEGE 将其与既有 AutoStore 集成。</td>
+</tr>
+<tr>
+<td><strong>客户价值</strong></td>
+<td>自动承担重复性拣选，让员工转向其他工作；使用 RaaS 租赁模式，Nomagic 案例称 FIEGE 无需前期硬件资本支出；项目目标是提高处理效率并降低运营成本。</td>
+</tr>
+</tbody>
+</table>
+<p>FIEGE 官方表示，机器人旨在提高客户订单处理的吞吐能力，并减少员工执行重复任务。<a href="#ref-1">FIEGE 官方公告</a></p>
+<h2 id="section-6">已公开的指标</h2>
+<ul>
+<li>**部署数量：**两台机器人臂，justPick 与 justInduct 各一台。两台设备已在现场运行。<a href="#ref-1">FIEGE 官方公告</a></li>
+<li>**拣选准确率：99.8%。**这一数值出现在 Nomagic 的项目社交媒体贴文中；贴文未披露测量方法、统计周期或 SKU 范围，适合作为厂商渠道公布的项目指标引用，不宜视为有完整测试口径的第三方验证结果。<a href="#ref-3">Nomagic 项目贴文</a></li>
+<li><strong>整体生产率提升：150%。<strong>同一贴文称，从人工处理转为 AutoStore 与机器人臂后，整体生产率提高 150%。这是</strong>仓储系统整体变化</strong>的结果，不能单独归因于 justPick。</li>
+<li>**刚性投资：**Nomagic 案例称 FIEGE 采用硬件租赁的 RaaS 模式，无需前期资本支出；未公开租金、合同年限或投资回收期。<a href="#ref-2">Nomagic 的 FIEGE 案例</a></li>
+</ul>
+<h2 id="justinduct">同一合作中另一台机器人：justInduct</h2>
+<p>justInduct 不是上述 AutoStore 拣选单元：它连接口袋分拣机，负责把服装放入分拣袋。Nomagic 案例称该设备无需在仓库控制系统（WCS）侧进行集成工作。遮挡条码、无塑料袋服装等问题出现在 FIEGE 合作案例的整体技术挑战中；公开材料没有将这些挑战逐一分配给某一台机器人，因此不宜都写成 justPick 的单机能力。<a href="#ref-2">Nomagic 的 FIEGE 案例</a></p>
+<h2 id="justpick-1">未公开的 justPick 参数</h2>
+<p>Nomagic 的公开案例没有给出 FIEGE 现场 justPick 的<strong>每小时拣选量、单循环时间、商品重量和尺寸边界、现场 SKU 数、机器人工作站面积或准确率的测试口径</strong>。案例页的吞吐量栏未显示具体数值，所以不能把 Nomagic 的通用产品指标当作 FIEGE 项目的实测产能。</p>
+
+</article></main>
+<a class="top-link" href="../#case-index">返回目录</a>
+</body>
+</html>

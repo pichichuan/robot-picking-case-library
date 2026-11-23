@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EDEKA NORDfrische &#215; KNAPP · 拣选机器人案例库</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="hero"><div class="shell"><nav aria-label="页面导航"><a href="../#case-index">返回案例目录</a></nav><h1>EDEKA NORDfrische &#215; KNAPP</h1></div></header>
+<main class="shell"><article class="archive case-detail">
+<h2 id="section">一、项目信息</h2>
+<p><strong>EDEKA NORDfrische 于 2026 年在德国 Lüttow-Valluhn 的肉制品冷链配送中心接入 2 台 KNAPP Pick-it-Easy Robot。</strong> 两台机器人在 <strong>+2 °C</strong> 环境中逐包拣选鲜肉、香肠和冷切肉制品，主要处理<strong>中、低周转商品</strong>，单台最高 <strong>450 次拣选/小时</strong>。现场同时使用人工货到人工位和 Pick-to-Light 亮灯拣选工位。〔1〕〔2〕</p>
+<ul>
+<li><strong>项目背景。</strong> 运营方为 <strong>Fleischwerk EDEKA Nord GmbH</strong>。配送中心紧邻肉制品加工厂，同时接收外部供应商的商品，面向德国北部的 EDEKA 和 MARKTKAUF 门店供货。物流扩建于 <strong>2019 年完工</strong>，同年 11 月开始配送首批自助销售鲜肉，<strong>2020 年新物流中心投用</strong>。原系统预留了机器人位置，2026 年两台设备可以分别接入现有输送和仓储系统。〔1〕〔2〕〔4〕〔5〕〔6〕</li>
+<li><strong>机器人怎么拣。</strong> AI 视觉系统识别包装形状、表面和重量特征，据此选择抓取点和处理方式。机器人从源周转箱逐件取货，放入 <strong>3 个目标箱之一</strong>，并自动扫描条码、记录单件实际重量，省去额外的人工称重步骤。KNAPP 披露，系统会利用拣选反馈持续改进识别和抓取策略。〔1〕〔2〕</li>
+<li><strong>机器人如何接入全仓。</strong> 自产商品经输送线进入仓库，外部商品经收货、拆垛和拆箱叠后进入穿梭库。快周转商品主要走人工 Pick-to-Light，中低周转商品可由货到人工位或机器人处理。<strong>KiSoft AppSuite</strong> 决定每件商品放入哪个订单箱，兼顾箱内空间及品类分隔规则。订单箱随后按门店和配送线路排序，自动堆叠到滚笼车、托盘或保温容器上。〔1〕〔2〕〔3〕</li>
+<li><strong>客户价值和后续计划。</strong> EDEKA 表示，机器人支持按需全天拣选，有助于应对订单波动，降低对现场人员可用性的依赖，并减轻重复拣取和称重的工作量。中心负责人表示正在考虑用更多机器人替换 <strong>4 个人工工位</strong>。公开资料披露的部署数量仍为 <strong>2 台</strong>。〔1〕〔2〕</li>
+<li><strong>Covariant 的参与情况。</strong> KNAPP 与 Covariant 已公开确认在 Pick-it-Easy Robot 产品上合作。EDEKA 项目资料确认了 KNAPP 设备、AI 视觉和 KiSoft，<strong>这两台设备是否搭载 Covariant Brain，项目资料未披露</strong>。〔1〕〔2〕〔7〕</li>
+</ul>
+<h2 id="section-1">二、拣选机器人数据</h2>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>EDEKA NORDfrische 项目数据</th>
+<th>出处</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>设备型号</td>
+<td><strong>KNAPP Pick-it-Easy Robot</strong>，单件拣选机器人</td>
+<td>〔1〕〔2〕</td>
+</tr>
+<tr>
+<td>部署数量</td>
+<td><strong>2 台</strong>，2026 年集成。7 月已有官方现场视频，具体投运日未披露</td>
+<td>〔1〕〔2〕〔11〕</td>
+</tr>
+<tr>
+<td>单台拣选能力</td>
+<td><strong>最高 450 次/小时</strong>。10 月新闻稿表述为约 450 次/小时，案例页明确为上限</td>
+<td>〔1〕〔2〕</td>
+</tr>
+<tr>
+<td>双机合计能力</td>
+<td><strong>理论最高 900 次/小时</strong>，按两台同时达到单机上限计算。实际双机吞吐未披露</td>
+<td>〔1〕〔2〕，计算值</td>
+</tr>
+<tr>
+<td>作业时段</td>
+<td><strong>可按需 24 小时 × 7 天运行</strong>。实际开机时长和利用率未披露</td>
+<td>〔1〕〔2〕</td>
+</tr>
+<tr>
+<td>作业环境</td>
+<td><strong>恒温 +2 °C</strong>，生鲜肉制品冷链环境</td>
+<td>〔1〕〔2〕</td>
+</tr>
+<tr>
+<td>拣选对象</td>
+<td>包装鲜肉、香肠、冷切肉制品，涵盖不同包装、重量及表面特征，主要为<strong>中、低周转商品</strong></td>
+<td>〔1〕〔2〕</td>
+</tr>
+<tr>
+<td>单机拣选方式</td>
+<td>从 <strong>1 个源周转箱</strong>逐件取货，投放到 <strong>3 个目标箱之一</strong></td>
+<td>〔2〕</td>
+</tr>
+<tr>
+<td>附带工序</td>
+<td>自动扫商品条码、记录每件商品实际重量</td>
+<td>〔1〕〔2〕</td>
+</tr>
+<tr>
+<td>机器人可拣 SKU 数与覆盖率</td>
+<td><strong>未披露</strong>。约 2,500 种是配送中心全仓商品范围</td>
+<td>〔1〕〔2〕</td>
+</tr>
+<tr>
+<td>商品尺寸及重量范围</td>
+<td><strong>未披露</strong>。现场机械臂、夹具、相机型号及机器人单元占地也未披露</td>
+<td>〔1〕〔2〕</td>
+</tr>
+<tr>
+<td>实际运营表现</td>
+<td>平均拣选速度、日拣选量、拣选准确率、异常率、人工接管率、节省工时、机器人投资额和回收期均未披露</td>
+<td>〔1〕〔2〕</td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-2">三、落地仓库数据</h2>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>Lüttow-Valluhn 冷链配送中心</th>
+<th>出处</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>场地地址</td>
+<td><strong>Am Heisterbusch 24, 19246 Lüttow-Valluhn，德国</strong></td>
+<td>〔4〕</td>
+</tr>
+<tr>
+<td>配送中心规模</td>
+<td><strong>约 8,000 m²</strong>，为 KNAPP 公布的冷链物流系统面积</td>
+<td>〔1〕〔2〕</td>
+</tr>
+<tr>
+<td>早期扩建建筑参数</td>
+<td>建筑总楼面面积约 <strong>9,900 m²</strong>，高架仓高 <strong>28 m</strong>，建筑封闭体积约 <strong>119,200 m³</strong>。早期物流扩建工程造价<strong>超过 4,000 万欧元</strong></td>
+<td>〔8〕</td>
+</tr>
+<tr>
+<td>仓内温度</td>
+<td>配送中心恒温 <strong>+2 °C</strong></td>
+<td>〔1〕〔2〕</td>
+</tr>
+<tr>
+<td>全仓 SKU 数</td>
+<td><strong>约 2,500 种</strong>鲜肉、香肠和冷切肉制品</td>
+<td>〔1〕〔2〕</td>
+</tr>
+<tr>
+<td>服务门店</td>
+<td><strong>约 650 家</strong>，为 2026 年项目披露的配送网络规模</td>
+<td>〔1〕〔2〕</td>
+</tr>
+<tr>
+<td>门店下单及履约时长</td>
+<td><strong>每店每天最多 4 单</strong>。订单在 <strong>12–16 小时</strong>内处理并发运</td>
+<td>〔2〕</td>
+</tr>
+<tr>
+<td>周转箱吞吐</td>
+<td><strong>峰值最多 40,000 箱/日</strong>，口径为全仓在高峰日为门店配送备妥的周转箱量。日均箱量、每小时箱量及托盘吞吐未披露</td>
+<td>〔1〕〔3〕〔9〕</td>
+</tr>
+<tr>
+<td>穿梭库容量</td>
+<td><strong>约 70,000 个周转箱货位</strong>，早期技术资料给出 <strong>10 条巷道、24 层</strong>。系统亦用于暂存已完成的订单箱</td>
+<td>〔1〕〔3〕</td>
+</tr>
+<tr>
+<td>人工拣选配置</td>
+<td>早期配置为 <strong>4 个 Pick-it-Easy 人工货到人工位</strong>和 <strong>16 个快周转 Pick-to-Light 工位</strong>。2026 年仍采用两种人工拣选方式</td>
+<td>〔2〕〔3〕</td>
+</tr>
+<tr>
+<td>入库及输送配置</td>
+<td>早期配置为 <strong>6 个人工拆垛位</strong>和 <strong>1 套自动拆垛及拆箱叠设备</strong>，自动设备可一次分离 <strong>2 个箱</strong>。输送系统为 <strong>Streamline、Powerline</strong></td>
+<td>〔3〕</td>
+</tr>
+<tr>
+<td>出库堆叠配置</td>
+<td>早期资料披露 <strong>6 台自动堆叠机</strong>，可将订单箱装载到滚笼车、托盘或保温容器</td>
+<td>〔1〕〔3〕</td>
+</tr>
+<tr>
+<td>周转箱供货数量</td>
+<td>Utz 向本项目提供 <strong>160,000 个 E-Performance 可循环周转箱</strong>，采用食品级材料，支持清洗、通风及 GS1 编码追踪。该数为供应商交付总量</td>
+<td>〔9〕</td>
+</tr>
+<tr>
+<td>空箱回收配套</td>
+<td>EDEKA 2024 年报披露，肉制品工厂增建了<strong>超过 1,700 m²</strong>的空箱接收大厅，与 2023 年购置的周转箱清洗设备配套</td>
+<td>〔10〕</td>
+</tr>
+</tbody>
+</table>
+<p><strong>用于案例横向对比的口径</strong>：填 <strong>8,000 m²、2 台、单机最高 450 次/小时、全仓约 2,500 个 SKU、机器人 SKU 覆盖率未披露、全仓峰值 40,000 周转箱/日</strong>。其中 <strong>40,000 箱/日</strong>是门店配送的备货箱量，<strong>450 次/小时</strong>是单台机器人的商品拣取节拍。</p>
+<h2 id="section-3">四、出处与现场视频</h2>
+<ul>
+<li>〔1〕<a href="https://www.knapp.com/en/newsroom/press/automated-meat-processing-robotics-edeka/">KNAPP 2026 年 10 月项目新闻稿</a> · 10 月 15 日发布，10 月 29 日更新</li>
+<li>〔2〕<a href="https://www.knapp.com/en/insights/case-studies/pick-it-easy-robot-edeka-nordfrische/">KNAPP 2026 年机器人项目案例</a> · 拣选节拍、机器人流程、门店履约和后续扩容</li>
+<li>〔3〕<a href="https://www.knapp.com/wp-content/uploads/KNAPP_EDEKA_NORDfrische_Center_de.pdf">KNAPP 初期自动化仓技术案例 PDF</a> · 巷道、工位、拆垛、堆叠及软件配置</li>
+<li>〔4〕<a href="https://verbund.edeka/karriere/edeka-als-arbeitgeber/unternehmen-im-ueberblick/fleischwerk-edeka-nord-gmbh/">EDEKA 官方运营主体及站点资料</a> · 地址、服务区域和门店品牌</li>
+<li>〔5〕<a href="https://verbund.edeka/verbund/no/gesch%C3%A4ftsberichte/edekanord_gb2019_web-2.pdf#page=13">EDEKA Nord 2019 年年报，第 13 页</a> · 施工完工和首次配送</li>
+<li>〔6〕<a href="https://www.edeka-gutfleischnord.de/gutfleisch-programm/">EDEKA Gutfleisch 官方时间线</a> · 2020 年新物流中心投用</li>
+<li>〔7〕<a href="https://www.knapp.com/en/newsroom/press/knapp-and-covariant-extend-their-success-story/">KNAPP 与 Covariant 的产品合作公告</a></li>
+<li>〔8〕<a href="https://www.brendebach.de/projekte/uebersicht/69-erweiterung-edeka-center-fleischwerk-luettow-valluhn/">Brendebach 原物流扩建工程资料</a> · 建筑参数及原扩建工程造价</li>
+<li>〔9〕<a href="https://www.utzgroup.com/gb/en/references/case-studies/edeka-fresh-food-logistics-with-e-performance-bins/">Utz 项目周转箱案例</a> · 供箱数量和峰值备货箱量</li>
+<li>〔10〕<a href="https://edekanord-gb2024.corporate-report.net/documents/EDEKANord_GB2024.pdf#page=8">EDEKA Nord 2024 年年报，第 8 页</a> · 空箱回收配套</li>
+<li>〔11〕<a href="https://www.youtube.com/watch?v=bSseFMFo64E">KNAPP 2026 年 7 月现场视频</a> · <strong>00:59</strong> 机器人拣选，<strong>01:31</strong> 出库准备，<strong>02:56</strong> KiSoft 软件</li>
+</ul>
+
+</article></main>
+<a class="top-link" href="../#case-index">返回目录</a>
+</body>
+</html>

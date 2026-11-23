@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shufersal Online &#215; KNAPP · 拣选机器人案例库</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="hero"><div class="shell"><nav aria-label="页面导航"><a href="../#case-index">返回案例目录</a></nav><h1>Shufersal Online &#215; KNAPP</h1></div></header>
+<main class="shell"><article class="archive case-detail">
+<p><strong>Modi’in 配送中心已确认部署 KNAPP Pick-it-Easy Robot，用于把食品逐件拣入纸袋。</strong> KNAPP 也为 <strong>Kadima–Tzoran</strong> 建设了自动化履约中心。Kadima 的公开资料确认了货到人拣选和自动套纸袋，单件拣选机械臂的部署情况未披露。</p>
+<h2 id="section">一、项目信息</h2>
+<ul>
+<li><strong>合作与落地。</strong> Shufersal Online 是以色列超市集团 Shufersal 的线上食品零售业务。双方于 <strong>2018 年</strong>签订自动化协议，KNAPP 负责两站的系统供应、建设及后续维护，Programa 参与前期物流规划。Kadima 由现有仓库改造，<strong>2021 年 8 月上线，2022 年 4 月达到满产</strong>。Modi’in 于 <strong>2023 年 3 月开始商业运营</strong>，主要服务大特拉维夫地区的线上杂货配送。〔①〕 <a href="https://mayafiles.tase.co.il/rpdf/1734001-1735000/P1734231-00.pdf">Shufersal 2025 年报</a> · 〔②〕 <a href="https://www.knapp.com/en/newsroom/press/israels-fuhrende-supermarkt-kette-shufersal-automatisiert-mit-knapp/">KNAPP 签约与规划公告</a> · 〔③〕 <a href="https://mayafiles.tase.co.il/rpdf/1488001-1489000/P1488740-00.pdf">Shufersal 2022 年管理层报告</a> · 〔④〕 <a href="https://www.prnewswire.com/news-releases/shufersal-reports-today-the-financial-results-for-the-second-quarter-and-the-first-half-of-2023-and-continues-the-positive-trend-301906405.html">Shufersal 2023 年中报公告</a></li>
+<li><strong>单件机器人怎么拣。</strong> Modi’in 的 <strong>Pick-it-Easy Robot</strong> 通过机器视觉识别源箱内的商品并计算抓取点，用食品专用夹具将易损商品轻放到购物纸袋里。KNAPP 的食品版技术资料说明，该系列使用 <strong>Covariant AI</strong>，多相机辅助识别，系统随拣选累积经验，并可按商品重量和易损性安排袋内位置，例如先放较重的商品。Modi’in 的现场案例确认了视觉抓取与装袋功能，未披露本站软件版本。2026 年项目报道将该设备称为首台面向在线食品零售部署的单件拣选机器人。〔⑤〕 <a href="https://www.knapp.com/en/insights/case-studies/highly-automated-online-fulfillment-for-all-temperature-zones/">KNAPP Modi’in 项目案例</a> · 〔⑥〕 <a href="https://www.knapp.com/en/insights/blog/logistics-innovations-grocery-e-commerce/">KNAPP 食品机器人技术说明</a> · 〔⑦〕 <a href="https://warehousenews.co.uk/2026/02/knapp-automation-fulfils-online-grocery-orders/">2026 年现场项目报道</a></li>
+<li><strong>人、机器和冷链如何衔接。</strong> 到货后由员工拆包换箱，<strong>Streamline</strong> 输送线将货箱送入 <strong>Evo Shuttle</strong> 或直接送往拣选区。自动套袋机先在订单箱内放入并撑开纸袋，之后由员工或机器人装入商品。冷冻商品可在比冷冻库温度更高的区域拣选，软件按商品主数据控制离开冷冻区的允许时间，发货前加装带冰袋的箱盖。订单箱再按配送路线及送达顺序自动排序、叠箱。〔⑤、⑦〕</li>
+<li><strong>软件和扩建。</strong> 现场采用 <strong>KiSoft WMS、WCS、SRC、Transport、SCADA、Analytics、Genomix、CMMS 和 Pick-to-Light</strong>，KNAPP 远程控制中心提供全天候监控。<strong>接近 100% 自动化</strong>是项目最终扩建目标。收货端使用机器人自动拆箱换箱也是双方讨论过的方向，公开资料未确认已投运。〔⑤、⑥〕</li>
+</ul>
+<h2 id="section-1">二、拣选机器人数据</h2>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>Modi’in</th>
+<th>Kadima–Tzoran</th>
+<th>出处</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>单件拣选机器人型号及数量</strong></td>
+<td><strong>至少 1 台 KNAPP Pick-it-Easy Robot</strong>。2026 年报道明确描述现场有一台，未公布完整设备清单</td>
+<td>单件拣选机械臂型号与数量未披露</td>
+<td>②、⑤、⑥、⑦</td>
+</tr>
+<tr>
+<td><strong>机器人单机拣选能力</strong></td>
+<td>单机平均、峰值、日拣选量均未披露。项目公布的 <strong>600 件/小时</strong>对应 <strong>Evo Shuttle 与货到人工位</strong>的拣选表现，原文未细分每工位统计口径</td>
+<td>未披露</td>
+<td>⑦</td>
+</tr>
+<tr>
+<td><strong>商品重量、长宽高和夹具</strong></td>
+<td>确认使用<strong>食品专用夹具</strong>和视觉定位，直接将商品放进纸袋。现场适用商品的重量、长宽高范围，以及机械臂型号、夹具规格和工位占地未披露</td>
+<td>未披露</td>
+<td>⑤、⑥、⑦</td>
+</tr>
+<tr>
+<td><strong>机器人 SKU 覆盖率</strong></td>
+<td>Shufersal 高管曾表示，对适合机器人处理的线上食品品项的<strong>早期评估从约 15% 提高到接近 50%</strong>。现场实际覆盖率及抓取成功率未披露</td>
+<td>未披露</td>
+<td>〔⑧〕 <a href="https://www.knapp.com/en/solutions/sectors/food/">KNAPP 食品行业方案及 Shufersal 高管访谈</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-2">三、落地仓库数据</h2>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>Modi’in</th>
+<th>Kadima–Tzoran</th>
+<th>出处</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>场地面积</strong></td>
+<td><strong>约 43,000 m²</strong>，为 Shufersal 披露的配送中心总面积。冷链技术案例另列<strong>约 27,300 m² 仓储面积</strong>。Shufersal 年报的建设协议另列约 <strong>40,000 m² 物流建筑主体</strong>及约 <strong>6,000 m² 办公楼</strong></td>
+<td><strong>约 8,000 m²</strong>，采用 Shufersal 年报的已建面积</td>
+<td>①、④；〔⑨〕 <a href="https://www.frischelogistik.com/tiefkuehlautomatisierung-neu-gedacht/">Frischelogistik 冷链项目数据</a></td>
+</tr>
+<tr>
+<td><strong>两站合计面积</strong></td>
+<td>双站合计总建筑面积 <strong>约 50,000 m²</strong>，截至 <strong>2026 年 6 月底</strong></td>
+<td>同左</td>
+<td>〔⑩〕 <a href="https://mayafiles.tase.co.il/rpdf/1766001-1767000/P1766686-00.pdf">Shufersal 2026 年半年度报告</a></td>
+</tr>
+<tr>
+<td><strong>SKU 数量</strong></td>
+<td><strong>约 19,500 种</strong>可订购商品</td>
+<td>未找到可核实的单仓 SKU 数</td>
+<td>⑦、⑨</td>
+</tr>
+<tr>
+<td><strong>订单处理和配送量</strong></td>
+<td><strong>平均约 6,800 单/日，最高 7,820 单/日</strong>。商业运营爬坡阶段，Shufersal 于 <strong>2023 年 8 月</strong>披露实际约 <strong>3,000 次配送/日</strong></td>
+<td>Shufersal 时任 CEO 于 <strong>2022 年</strong>披露实际约 <strong>2,400 次配送/日</strong>，未找到更新的同口径数据</td>
+<td>④、⑤、⑨；〔⑪〕 <a href="https://www.calcalist.co.il/shopping/article/sy6thumpi">Calcalist 对 Shufersal CEO 的采访</a></td>
+</tr>
+<tr>
+<td><strong>订单处理时间</strong></td>
+<td>现场运营负责人称，完成一笔订单由传统人工约 <strong>60 分钟</strong>缩短至约 <strong>10 分钟</strong>，为中心作业流程口径</td>
+<td>未披露</td>
+<td>⑦</td>
+</tr>
+<tr>
+<td><strong>仓库温区</strong></td>
+<td><strong>4 个温区</strong>。干货常温 <strong>+22°C</strong>、易腐鲜品 <strong>+15°C</strong>、冷藏 <strong>+4°C</strong>、冷冻 <strong>−24°C</strong>。这是 KNAPP 首个投入客户使用的冷冻食品 Evo Shuttle 仓</td>
+<td>未找到单站温区参数</td>
+<td>⑤、⑦、⑨</td>
+</tr>
+<tr>
+<td><strong>工作站与包装设备</strong></td>
+<td><strong>30 个拆包换箱工位、29 个人工货到人拣选工位、4 台自动套纸袋机</strong>。每个订单箱预放 <strong>1–2 个纸袋</strong>，KNAPP 公布整套套袋系统<strong>最高 2,900 袋/小时</strong></td>
+<td>确认采用自动套纸袋技术，设备数量和节拍未披露</td>
+<td>⑤、⑥、⑦；〔⑫〕 <a href="https://www.linkedin.com/posts/knapp-ag_warehouseautomation-risetonewdimensions-activity-7403738220233936897-idAF">KNAPP 自动套袋系统数据</a></td>
+</tr>
+<tr>
+<td><strong>周转箱、托盘吞吐与库位</strong></td>
+<td>未披露<strong>箱/小时、托盘/小时、穿梭车数量或总箱位</strong>。已知穿梭库承担货箱存取、拣选供货和订单暂存</td>
+<td>未披露同口径数据</td>
+<td>②、⑤、⑦</td>
+</tr>
+<tr>
+<td><strong>设备线路与月台</strong></td>
+<td>业主披露安装约 <strong>20 km 的自动化设备线路</strong>。建设方列出 <strong>15 个进货卸货口、30 个配送车辆装货口</strong></td>
+<td>未披露</td>
+<td>〔⑬〕 <a href="https://www.amot.co.il/assets/modiin-logistics-complex/">业主 Amot 项目资料</a> · 〔⑭〕 <a href="https://ashcrete.ashtromconstruction.co.il/en/projects/amot-shufersal-modiin">工程承包方项目资料</a></td>
+</tr>
+<tr>
+<td><strong>项目投资</strong></td>
+<td>两站建设及自动化<strong>合计约 7 亿以色列新谢克尔</strong>，未披露单件拣选机器人的采购价格</td>
+<td>同左</td>
+<td>⑪</td>
+</tr>
+</tbody>
+</table>
+<p><strong>用于横向对比时，Modi’in 的仓库面积填约 43,000 m²，仓储面积另记约 27,300 m²。</strong> 单机拣选能力填“未披露”。<strong>600 件/小时</strong>填在货到人工位拣选表现，<strong>最高 7,820 单/日</strong>填在整仓订单处理能力。</p>
+<p><strong>官方现场视频</strong>分别展示两站的履约流程。 <a href="https://www.youtube.com/watch?v=19k9WX_JlJc">Modi’in，2024 年发布</a> · <a href="https://www.youtube.com/watch?v=vojXig9XHA8">Kadima–Tzoran，2022 年发布</a></p>
+
+</article></main>
+<a class="top-link" href="../#case-index">返回目录</a>
+</body>
+</html>

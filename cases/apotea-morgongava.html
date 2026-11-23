@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apotea &#215; RightHand Robotics｜Morgong&#229;va 与 Varberg · 拣选机器人案例库</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="hero"><div class="shell"><nav aria-label="页面导航"><a href="../#case-index">返回案例目录</a></nav><h1>Apotea &#215; RightHand Robotics｜Morgong&#229;va 与 Varberg</h1></div></header>
+<main class="shell"><article class="archive case-detail">
+<p>这里的 <strong>Apotea AB</strong> 是瑞典线上药房 Apotea 的运营公司。它在 <strong>Morgongåva</strong> 和 <strong>Varberg</strong> 两处物流中心部署了 RightHand Robotics 的单件拣选机器人，但两处的仓储系统和集成方案不同。</p>
+<h2 id="section">1. 两处项目概览</h2>
+<table>
+<thead>
+<tr>
+<th>物流中心</th>
+<th>机器人方案</th>
+<th>与存储系统的衔接</th>
+<th>公开披露的规模</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Morgongåva</strong></td>
+<td><strong>RightPick 3</strong>，作为 Element Logic 的 <strong>eOperator</strong> 拣选方案集成</td>
+<td>与 AutoStore 的 CarouselPort 配合：AutoStore 送来料箱，机器人逐件取货并放入出库订单箱</td>
+<td>AutoStore 有 20,000 个料箱、30 台 R5 机器人、4 个 CarouselPort；其中 <strong>3 个端口由拣选机器人服务</strong>。项目初期披露的设计处理能力为 800 个订单行/小时。</td>
+</tr>
+<tr>
+<td><strong>Varberg</strong></td>
+<td>RightHand Robotics 的 RightPick 系统；<strong>公开资料未说明具体代际</strong></td>
+<td>与 SSI Schäfer 的 <strong>SSI Cuby 单层穿梭系统</strong>集成：机器人从 SSI 来源料箱取货，必要时扫描条码，再放入指定目标料箱/纸箱</td>
+<td>2025 年开仓报道确认 <strong>5 台 RightHand Robotics 拣选机器人</strong>，单台标称可拣 <strong>450 个订单行/小时</strong>。</td>
+</tr>
+</tbody>
+</table>
+<p>Morgongåva 的 AutoStore 数据来自 AutoStore 和 Element Logic 的项目资料；RightPick 3 型号由 RightHand Robotics 2022 年公告确认。<a href="https://www.autostoresystem.com/cases/apotea-online-pharmacy-warehouse-automation-solution">AutoStore 项目案例</a>、<a href="https://www.elementlogic.net/us/cases/online-pharmacy-apotea-with-the-worlds-first-robot-piece-picking-solution-integrated-with-autostore/">Element Logic 项目案例</a>、<a href="https://www.globenewswire.com/news-release/2022/05/26/2451332/0/en/apotea-deploys-rightpick-3-item-handling-system-from-righthand-robotics-to-expedite-operations-for-consumers.html">RightHand Robotics 2022 年公告</a></p>
+<h2 id="section-1">2. 两个项目分别怎么工作</h2>
+<h3 id="morgongavaautostore-eoperator-rightpick-3">Morgongåva：AutoStore + eOperator + RightPick 3</h3>
+<p>AutoStore 负责储存和搬运料箱，RightPick 3 负责从送到端口的料箱里<strong>逐件拣取订单商品</strong>。项目采用四个 CarouselPort，其中三个与机器人拣选单元配合；系统设计为 24 小时运行。Apotea 当时希望借此处理药品及其他非处方商品订单，并提高订单处理能力。<a href="https://www.autostoresystem.com/cases/apotea-online-pharmacy-warehouse-automation-solution">AutoStore 案例</a></p>
+<p><strong>eOperator 是 Element Logic 的集成拣选方案名称，不是机械臂型号。</strong> Element Logic 表示，eOperator 将 RightHand Robotics 的 RightPick 单件拣选技术与 Element Logic 的软件结合，并可与 AutoStore、eManager 及其他仓库管理软件集成。<a href="https://www.elementlogic.net/solutions-and-services-77/robotic-piece-picking/">Element Logic：eOperator 方案说明</a></p>
+<p><a id="varberg"></a></p>
+<h3 id="varbergssi-cuby-rightpick">Varberg：SSI Cuby + RightPick</h3>
+<p>RightHand Robotics 在 2024 年宣布与 Apotea 扩大合作，计划在 Varberg 新中心部署 RightPick，并与 SSI Schäfer 合作。其公告描述的流程是：机器人在输送线末端接收 SSI 来源料箱，按需扫描商品条码，再把商品放入指定目标容器。<a href="https://righthandrobotics.com/the-latest/apotea-expands-agreement-with-righthand-robotics-to-deploy-rightpick-item-handling-system-in-new-logistics-center">RightHand Robotics：Varberg 项目公告</a></p>
+<p>Varberg 不是 AutoStore 项目。SSI Schäfer 公布的方案包括 Cuby 穿梭系统、自动化小件存储、A-Frame、输送系统、WAMAS WCS 和 RightHand Robotics 拣选机器人。<a href="https://www.ssi-schaefer.com/sv-se/newsroom/nyheter/apotea-och-ssi-schaefer-fortsaetter-l%C3%A5ngsiktigt-samarbete-nytt-lager-i-varberg-1821098">SSI Schäfer 项目说明</a></p>
+<h2 id="section-2">3. 公开的性能与规模数据</h2>
+<ul>
+<li><strong>Morgongåva AutoStore 初期方案</strong>：20,000 个料箱，可扩展到 25,000 个；30 台 R5 机器人；4 个 CarouselPort，其中 3 个配置拣选机器人；初期预计处理能力为 <strong>800 个订单行/小时</strong>。<a href="https://www.autostoresystem.com/cases/apotea-online-pharmacy-warehouse-automation-solution">AutoStore 案例</a></li>
+<li><strong>Morgongåva 拣选型号</strong>：RightHand Robotics 于 2022 年公告安装的是 <strong>RightPick 3</strong>。公告称机器人适用于药品和非处方商品的单件拣选，但未披露单机速度、准确率或各 SKU 的自动化覆盖率。<a href="https://www.globenewswire.com/news-release/2022/05/26/2451332/0/en/apotea-deploys-rightpick-3-item-handling-system-from-righthand-robotics-to-expedite-operations-for-consumers.html">RightHand Robotics 公告</a></li>
+<li><strong>Varberg 机器人数量与节拍</strong>：2025 年开仓报道确认安装 <strong>5 台 RightHand Robotics 拣选机器人</strong>，单台能力为 <strong>450 个订单行/小时</strong>；报道还称，它们可处理四种纸箱规格。<a href="https://dagenslogistik.se/invigningsfest-for-apotea-i-varberg/">Dagens Logistik 开仓报道</a></li>
+<li><strong>Varberg 整体物流中心</strong>：面积约 30,000 平方米；项目报道披露系统可处理超过 30,000 个 SKU、每天超过 50,000 个订单和 150,000 个订单行，并可扩展至每天 70,000 个订单。这些是<strong>整座物流中心</strong>的能力，不是五台机器人单独完成的订单量。<a href="https://www.ssi-schaefer.com/lt/1981532-1981532">SSI Schäfer 项目公告</a>、<a href="https://dagenslogistik.se/invigningsfest-for-apotea-i-varberg/">Dagens Logistik 报道</a></li>
+</ul>
+<p>注意：<strong>订单行/小时、订单/天、包裹/月不是同一种指标</strong>；订单行也不等于机器人抓取次数。公开资料没有给出两座仓库当前的 RightPick 机器人总代际配置、抓取成功率、产品 SKU 覆盖率、机器人实际平均节拍或设备价格。</p>
+<h2 id="section-3">4. 项目时间线</h2>
+<ul>
+<li><strong>2019 年</strong>：Apotea 开始推进仓库自动化，SSI Schäfer 后来介绍其 Morgongåva 的 A-Frame 自动拣选从这一阶段开始。</li>
+<li><strong>2022 年</strong>：RightHand Robotics 宣布在 Morgongåva 部署 <strong>RightPick 3</strong>；同年 12 月，AutoStore、Element Logic、RightHand Robotics 和 Apotea 举行系统启用活动。</li>
+<li><strong>2023 年</strong>：Morgongåva 扩容。Apotea 招股文件称，完成扩建后总日处理能力约为 <strong>100,000 单</strong>；SSI Schäfer 表示其 A-Frame 系统可处理最多约 70% 的订单——这是另一套拣选设备，不能算作 RightPick 的机器人份额。<a href="https://ir.apotea.se/media/Apotea%20AB%20%28publ%29%20-%20Offering%20Circular.pdf">Apotea 招股文件</a>、<a href="https://www.ssi-schaefer.com/en-za/trends-insights/case-studies/pharma-logistics-apotea">SSI Schäfer 关于 Apotea A-Frame 的资料</a></li>
+<li><strong>2024 年</strong>：RightHand Robotics 宣布与 Apotea 扩大合作，为 Varberg 新物流中心提供 RightPick 系统，并与 SSI Schäfer 集成。</li>
+<li><strong>2025 年</strong>：Varberg 新中心正式启用；报道确认五台 RightHand Robotics 拣选机器人，并披露单台 450 个订单行/小时。<a href="https://www.ssi-schaefer.com/lt/1981532-1981532">SSI Schäfer 开仓公告</a>、<a href="https://dagenslogistik.se/apoteas-varberg-lager-ar-i-drift/">Dagens Logistik 报道</a></li>
+</ul>
+<h2 id="section-4">5. 需要区分的名称</h2>
+<ul>
+<li><strong>RightPick 3</strong>：RightHand Robotics 的机器人拣选产品名；Morgongåva 2022 年项目可确认使用这一代。</li>
+<li><strong>RightPick</strong>：RightHand Robotics 在 Varberg 项目公告中使用的产品名称；公开来源没有标出具体版本，因此不宜写成 RightPick 3。</li>
+<li><strong>eOperator</strong>：Element Logic 提供的集成拣选方案，底层结合 RightPick 技术和 Element Logic 软件；不是 RightHand Robotics 的另一个机器人品牌。</li>
+<li><strong>AutoStore</strong>：Morgongåva 的箱式存储与料箱搬运系统，不是单件拣选机械臂。</li>
+<li><strong>SSI Cuby / A-Frame / WAMAS</strong>：Varberg 项目的存储、拣选和控制系统组件；SSI Schäfer 是该项目的系统供应与集成方。</li>
+</ul>
+<h2 id="section-5">6. 资料与视频</h2>
+<ul>
+<li><a href="https://righthandrobotics.com/resources/apotea">RightHand Robotics：Apotea 项目案例</a></li>
+<li><a href="https://www.youtube.com/watch?v=SnZnHQrNtvo">RightPick 3 在 Apotea 的演示视频</a></li>
+<li><a href="https://www.elementlogic.net/se/cases/apotea-forst-med-integrerat-robotplock-i-autostore/">Element Logic：Morgongåva 项目案例</a></li>
+<li><a href="https://www.autostoresystem.com/cases/apotea-online-pharmacy-warehouse-automation-solution">AutoStore：Apotea 仓库案例</a></li>
+<li><a href="https://righthandrobotics.com/the-latest/apotea-expands-agreement-with-righthand-robotics-to-deploy-rightpick-item-handling-system-in-new-logistics-center">RightHand Robotics：Varberg 扩大合作公告</a></li>
+<li><a href="https://www.ssi-schaefer.com/sv-se/newsroom/nyheter/apotea-och-ssi-schaefer-fortsaetter-l%C3%A5ngsiktigt-samarbete-nytt-lager-i-varberg">SSI Schäfer：Varberg 方案说明</a></li>
+<li><a href="https://dagenslogistik.se/invigningsfest-for-apotea-i-varberg/">Dagens Logistik：Varberg 开仓与机器人数量、节拍报道</a></li>
+<li><a href="https://dagenslogistik.se/apoteas-varberg-lager-ar-i-drift/">Dagens Logistik：Varberg 开始发货报道</a></li>
+</ul>
+<hr />
+<h2 id="section-6">数据补充与口径说明</h2>
+<p>截至 <strong>2026 年第三季度</strong>，Apotea 在 <strong>Morgongåva</strong> 和 <strong>Varberg</strong> 两座有 RightHand Robotics 拣选机器人的物流中心运营。以下分开列出机器人方案数据和整座仓库的数据，避免把仓库总产能都算到拣选机器人头上。</p>
+<h2 id="morgongavaautostore-eoperatorrightpick">Morgongåva：AutoStore + eOperator/RightPick</h2>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th style="text-align: right;">公开数字</th>
+<th>口径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>物流中心面积</td>
+<td style="text-align: right;"><strong>38,000 m²</strong></td>
+<td>整个 Morgongåva 物流中心</td>
+</tr>
+<tr>
+<td>RightHand 拣选机器人</td>
+<td style="text-align: right;">初期项目为 <strong>3 台</strong></td>
+<td>2022 年安装的是 <strong>RightPick 3</strong>，作为 Element Logic 的 eOperator 方案集成</td>
+</tr>
+<tr>
+<td>AutoStore 设备</td>
+<td style="text-align: right;"><strong>20,000 个料箱</strong>，可扩至 25,000 个；<strong>30 台 R5 机器人</strong>；<strong>4 个 CarouselPort</strong></td>
+<td>其中 3 个 CarouselPort 由单件拣选机器人服务；R5 是搬运 AutoStore 料箱的机器人，不是 RightPick 拣选臂</td>
+</tr>
+<tr>
+<td>初期处理能力</td>
+<td style="text-align: right;"><strong>800 个订单行/小时</strong></td>
+<td>Element Logic 公布的系统初期估算，不是 RightPick 单机节拍</td>
+</tr>
+<tr>
+<td>整仓产能变化</td>
+<td style="text-align: right;">约 <strong>60,000 单/天升至 100,000 单/天</strong></td>
+<td>Apotea 招股文件记录的 2023 年 Morgongåva 扩建结果，涉及整仓自动化扩建，不能单独归因于 RightPick</td>
+</tr>
+</tbody>
+</table>
+<p>以上初期配置和 800 订单行/小时来自 <a href="https://www.elementlogic.net/news/online-pharmacy-apotea-invests-in-autostore-and-robotic-piece-picking-solution-from-element-logic/">Element Logic 项目资料</a>；RightPick 3 型号见 <a href="https://www.globenewswire.com/news-release/2022/05/26/2451332/0/en/apotea-deploys-rightpick-3-item-handling-system-from-righthand-robotics-to-expedite-operations-for-consumers.html">RightHand Robotics 2022 年公告</a>；2023 年总产能变化见 <a href="https://ir.apotea.se/media/Apotea%20AB%20%28publ%29%20-%20Offering%20Circular.pdf">Apotea 招股文件</a>。</p>
+<h2 id="varbergssi-schafer-righthand-robotics">Varberg：SSI Schäfer + RightHand Robotics</h2>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th style="text-align: right;">公开数字</th>
+<th>口径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>物流中心面积</td>
+<td style="text-align: right;"><strong>30,000 m²</strong></td>
+<td>整个新仓库</td>
+</tr>
+<tr>
+<td>RightHand 拣选机器人</td>
+<td style="text-align: right;"><strong>5 台</strong></td>
+<td>2025 年开仓报道确认</td>
+</tr>
+<tr>
+<td>单台拣选能力</td>
+<td style="text-align: right;"><strong>450 个订单行/小时</strong></td>
+<td>报道的单台能力；5 台简单相乘为理论 <strong>2,250 行/小时</strong>，这不是公布的整线实测速度</td>
+</tr>
+<tr>
+<td>其他核心设备</td>
+<td style="text-align: right;"><strong>4 个货到人拣选站</strong>；Cuby 有 <strong>174 台穿梭车、约 87,000 个存储位</strong>；另有 <strong>3 套 A-Frame、2,800 多条商品通道、约 45,000 个存储位</strong></td>
+<td>全仓自动化配置，不是 RightHand 机器人数量</td>
+</tr>
+<tr>
+<td>整仓设计能力</td>
+<td style="text-align: right;"><strong>50,000 单/天、超过 150,000 个订单行/天</strong>；可扩至 <strong>70,000 单/天</strong></td>
+<td>Varberg 整体仓库设计能力</td>
+</tr>
+<tr>
+<td>新仓新增能力</td>
+<td style="text-align: right;">约 <strong>50,000 单/天</strong></td>
+<td>Apotea 规划新增的整仓处理能力；不是五台 RightHand 机器人的单独产能</td>
+</tr>
+</tbody>
+</table>
+<p>机器人数量、单台速度和配套设备来自 <a href="https://dagenslogistik.se/invigningsfest-for-apotea-i-varberg/">Dagens Logistik 开仓报道</a>；整仓产能见 <a href="https://www.ssi-schaefer.live/en-za/newsroom/news/new-logistics-center-inaugurated-in-varberg-sweden-ssi-schaefer-provides-apotea-with-a-fully-automated-warehouse">SSI Schäfer 项目公告</a>。</p>
+<p>Varberg 的机器人从 SSI 来源料箱取商品、必要时扫描条码，再放入指定目标位置；它采用 <strong>SSI Cuby 穿梭系统</strong>，不是 AutoStore。公开资料没有说明 Varberg RightPick 的具体代际。<a href="https://righthandrobotics.com/the-latest/apotea-expands-agreement-with-righthand-robotics-to-deploy-rightpick-item-handling-system-in-new-logistics-center">RightHand Robotics 项目公告</a></p>
+<h2 id="section-7">实际爬坡数据</h2>
+<p>Apotea 2025 年报告称，Varberg 在 <strong>2025 年第三季度单日处理过 10,000 单</strong>，第四季度最高发出 <strong>21,000 个包裹/日</strong>。到 2026 年第一季度，单日最高发货量约 <strong>27,000 个包裹</strong>；第二季度管理层报告 Varberg 日生产水平已超过 <strong>30,000 单</strong>。2026 年第三季度，Apotea 表示公司约 <strong>40% 的包裹从 Varberg 发出</strong>，并于 9 月创下全公司单日超过 <strong>90,000 个包裹</strong>的纪录。<a href="https://storage.mfn.se/fa07042c-8531-4172-9a3f-2d5ce6bd9cc5/arsredovisning-2025.pdf">Apotea 2025 年年报</a>、<a href="https://www.inderes.dk/en/transcripts?transcript=apotea-webcast-q226">2026 年第二季度经营说明</a>、<a href="https://view.news.eu.nasdaq.com/view?id=bdbc3fda33d071f54726a1bee8e812f39&amp;lang=en&amp;src=listed">2026 年第三季度报告</a></p>
+<p>这些是<strong>仓库或公司级的实际出货/处理数据</strong>，并非 RightHand 机器人单独完成的数量。公开资料还没有披露两座仓库当前的 RightHand 机器人总数、逐台实际运行速度、机器人抓取成功率，或自动化前后可单独归因于 RightPick 的增产比例。</p>
+
+</article></main>
+<a class="top-link" href="../#case-index">返回目录</a>
+</body>
+</html>

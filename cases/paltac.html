@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PALTAC &#215; RightHand Robotics · 拣选机器人案例库</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="hero"><div class="shell"><nav aria-label="页面导航"><a href="../#case-index">返回案例目录</a></nav><h1>PALTAC &#215; RightHand Robotics</h1></div></header>
+<main class="shell"><article class="archive case-detail">
+<h2 id="paltac-righthand-roboticsrightpick">PALTAC × RightHand Robotics（RightPick）拣选项目</h2>
+<p><strong>项目地点：<strong>PALTAC 的 <strong>RDC Saitama（埼玉RDC）</strong>，位于日本埼玉县杉户町。PALTAC 是日用品、化妆品和一般用药品批发商；此项目拣的是</strong>单件商品</strong>，不是整箱或物流包裹。商品从储存托盘送到拣选工位后，由机器人或员工拣入订单托盘。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>公开资料</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>合作与投运</strong></td>
+<td>双方于 <strong>2019 年 3 月</strong>宣布合作；RDC Saitama 于 <strong>2019 年 11 月</strong>开始运营。</td>
+</tr>
+<tr>
+<td><strong>机器人产品与数量</strong></td>
+<td>RightHand Robotics 的 <strong>RightPick 2</strong>。2019 年开仓报道确认导入 <strong>10 台</strong>；RightHand 的案例页称现场安装了多个工位。</td>
+</tr>
+<tr>
+<td><strong>处理商品规模</strong></td>
+<td>PALTAC 中心常态库存 <strong>2 万种以上商品</strong>，每年近 <strong>1 万种商品更替</strong>。RDC Saitama 报道列出的处理商品数为 <strong>2 万 SKU</strong>。</td>
+</tr>
+<tr>
+<td><strong>仓库规模</strong></td>
+<td>RDC Saitama 占地约 <strong>67,000 m²</strong>，建筑地板面积约 <strong>45,000 m²</strong>。</td>
+</tr>
+<tr>
+<td><strong>中心出货规模</strong></td>
+<td>开仓报道预计年出货额约 <strong>1,200 亿日元</strong>；按报道所述每天运行约 <strong>15 小时</strong>估算。该数字是整个物流中心的规划规模，不是 RightPick 的产值或产能。</td>
+</tr>
+<tr>
+<td><strong>人员生产率</strong></td>
+<td>RDC Saitama 的<strong>散件出货</strong>人员生产率目标为传统中心的 <strong>2.5 倍</strong>；包含整箱出货在内的中心整体生产率预计为 <strong>2.3 倍</strong>。这些是中心整体指标，不能全部归因于 RightPick。</td>
+</tr>
+<tr>
+<td><strong>后续实际表现</strong></td>
+<td>PALTAC 2022 年综合报告称，RDC Saitama 自 <strong>2020 年 10 月后</strong>，散件拣选人员生产率稳定达到传统模式的 <strong>2 倍以上</strong>。这是新物流模式的实绩，未单独拆分 RightPick 的贡献。</td>
+</tr>
+<tr>
+<td><strong>人员规模对比</strong></td>
+<td>开仓报道说，新中心约 <strong>300 名</strong>兼职员工常态作业；按传统作业方式估算约需 <strong>800 人</strong>。这是中心人员规模比较，不是 RightPick 单机替代人数。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="section">机器人具体做什么</h3>
+<p>RightPick 2 从储存托盘中识别并抓取订单所需的单件商品，再放入拣选托盘。工位采用<strong>机器人与人工并行</strong>：员工也参与拣选，因此这不是完全无人化工作站。PALTAC 选择它，主要是为了处理随机堆放、形状和重量各异的商品。</p>
+<p>公开资料提到 RightPick 使用兼具<strong>吸取和手指夹持</strong>能力的夹爪；无需逐件预先登记商品，也不需要为每种商品单独编写抓取程序。项目公告把这些能力列为适合 PALTAC 多品种散件拣选的原因。</p>
+<h3 id="section-1">节拍和适用品类：公开信息的边界</h3>
+<p>目前可查到的 PALTAC 项目资料确认了 <strong>10 台</strong>和整体生产率改善，但<strong>没有公布这 10 台在现场的单机稳定件/小时、实际订单行/小时或成功率</strong>。RightHand 对 RightPick 系列宣传过最高 <strong>1,200 件/小时</strong>，但这是厂商的产品级速度指标，不能当作 PALTAC 现场实测数据。</p>
+<p>PALTAC 方面在开仓报道中表示，如果不以速度为优先，机器人当时大约能拣选商品范围的<strong>一半</strong>；不同商品的适配度不同，有些容易抓取，有些需要多次重试。这个比例是受访者对当时适用范围的描述，不代表最终商品覆盖率或拣选成功率。</p>
+<h3 id="section-2">需要与其他机器人区分</h3>
+<p>埼玉RDC里还部署了其他厂商的<strong>整箱拆垛、整箱拣选和装箱/码垛机器人</strong>。例如报道中的 <strong>99.8% 箱件识别率、平均 700 箱/小时</strong>属于整箱拣选设备，不能算作 RightPick 的参数。RightPick 对应的是<strong>散件（piece）拣选</strong>。</p>
+<p><strong>资料来源：</strong><a href="https://f.irbank.net/pr/20190319/140120190319492220.pdf">PALTAC 与 RightHand Robotics 合作公告</a>、<a href="https://md-next.jp/13687">RDC Saitama 开仓与 RightPick 2 项目报道</a>、<a href="https://www.paltac.co.jp/pdf/ir/library/integrated_report/backnumber_2022_en.pdf">PALTAC 2022 综合报告</a>、<a href="https://righthandrobotics.com/resources/paltac-corporation-japan">RightHand Robotics 的 PALTAC 案例页</a>。</p>
+<hr />
+<h2 id="section-3">数据补充与口径说明</h2>
+<p>把<strong>项目情况</strong>和<strong>数字数据</strong>分开列。这里的对象限定为 <strong>PALTAC 与 RightHand Robotics 合作的 RightPick 散件拣选项目</strong>；埼玉RDC的整箱拣选机器人等其他设备不混在里面。</p>
+<h2 id="section-4">一、项目与产品信息</h2>
+<ul>
+<li>**客户：**PALTAC，日本日用品、化妆品和一般用药品批发商。</li>
+<li>**项目地点：**RDC Saitama（埼玉RDC），位于埼玉县杉户町。</li>
+<li>**合作方：**RightHand Robotics（RHR）。</li>
+<li>**产品：**RightPick 2，属于散件拣选机器人系统。双方于 2019 年 3 月宣布合作，项目是 RightPick 首次进入日本市场的部署。</li>
+<li><strong>作业内容：<strong>从储存托盘中抓取订单所需的单件商品，再放入拣选托盘；作业对象是</strong>单件商品</strong>，不是整箱，也不是物流包裹。</li>
+<li>**工作方式：**机器人和人工共同完成散件拣选。RDC Saitama 的拣选工位采用 RightPick 机器人与人工并行的方式。</li>
+<li>**商品特点：**商品在容器中可能随机摆放，形状、重量不同，且 SKU 数量多。</li>
+<li>**产品特点：**夹爪结合吸取和手指夹持；无需预先逐件登记商品，也不必针对每种商品单独编写抓取程序。</li>
+<li>**系统定位：**RightPick 是集成式散件拣选方案，包含机器人抓取硬件与控制软件；项目公告说明其与商品输送、拣选工作站配合运行。</li>
+</ul>
+<p>来源：<a href="https://f.irbank.net/pr/20190319/140120190319492220.pdf">PALTAC 与 RHR 合作公告</a>、<a href="https://md-next.jp/13687">项目开仓报道</a>、<a href="https://righthandrobotics.com/resources/paltac-corporation-japan">RHR 的 PALTAC 案例页</a>。</p>
+<h2 id="section-5">二、公开数字数据</h2>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th style="text-align: right;">数值</th>
+<th>口径说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RightPick 2 部署数量</td>
+<td style="text-align: right;"><strong>10 台</strong></td>
+<td>RDC Saitama 的项目报道确认；这是机器人数量。</td>
+</tr>
+<tr>
+<td>RDC Saitama 开始运营时间</td>
+<td style="text-align: right;"><strong>2019 年 11 月</strong></td>
+<td>PALTAC 综合报告记载。</td>
+</tr>
+<tr>
+<td>RDC Saitama 占地面积</td>
+<td style="text-align: right;"><strong>约 67,000 m²</strong></td>
+<td>整个物流中心的占地面积。</td>
+</tr>
+<tr>
+<td>RDC Saitama 建筑面积</td>
+<td style="text-align: right;"><strong>约 45,000 m²</strong></td>
+<td>整个物流中心的建筑地板面积。</td>
+</tr>
+<tr>
+<td>处理商品规模</td>
+<td style="text-align: right;"><strong>约 20,000 SKU</strong></td>
+<td>开仓报道对 RDC Saitama 的商品规模描述。</td>
+</tr>
+<tr>
+<td>PALTAC 中心常态库存</td>
+<td style="text-align: right;"><strong>20,000 种以上</strong></td>
+<td>合作公告对 PALTAC 物流中心库存品种的描述。</td>
+</tr>
+<tr>
+<td>每年商品更替</td>
+<td style="text-align: right;"><strong>近 10,000 种</strong></td>
+<td>合作公告描述的商品更新规模。</td>
+</tr>
+<tr>
+<td>RDC Saitama 预计年出货额</td>
+<td style="text-align: right;"><strong>约 1,200 亿日元</strong></td>
+<td>开仓报道中的中心规划数据，不是 RightPick 的产值。</td>
+</tr>
+<tr>
+<td>中心运行时间估算</td>
+<td style="text-align: right;"><strong>约 15 小时</strong></td>
+<td>开仓报道用于估算中心出货额的运行时间口径。</td>
+</tr>
+<tr>
+<td>散件出货人员生产率目标</td>
+<td style="text-align: right;"><strong>传统中心的 2.5 倍</strong></td>
+<td>RDC Saitama 整体散件出货生产率目标，不是单独的 RightPick 指标。</td>
+</tr>
+<tr>
+<td>中心整体生产率目标</td>
+<td style="text-align: right;"><strong>传统中心的 2.3 倍</strong></td>
+<td>包含整箱出货等作业的中心整体目标。</td>
+</tr>
+<tr>
+<td>后续散件拣选生产率</td>
+<td style="text-align: right;"><strong>传统模式的 2 倍以上</strong></td>
+<td>PALTAC 2022 年综合报告称，2020 年 10 月后稳定实现；属于新物流模式的整体表现。</td>
+</tr>
+<tr>
+<td>员工人数对比</td>
+<td style="text-align: right;"><strong>约 300 人 vs 约 800 人</strong></td>
+<td>开仓报道对新中心常态兼职员工人数及传统方式所需人数的估算，不代表机器人单独替代人数。</td>
+</tr>
+<tr>
+<td>当时估计的机器人适用品类比例</td>
+<td style="text-align: right;"><strong>约一半</strong></td>
+<td>PALTAC 负责人表示，若不优先考虑速度，机器人当时大约可以拣选一半商品；不是最终适配率或成功率。</td>
+</tr>
+</tbody>
+</table>
+<p>面积、SKU、出货额和人员生产率等数据来自<a href="https://md-next.jp/13687">埼玉RDC开仓报道</a>；投运时间及后续生产率数据见<a href="https://www.paltac.co.jp/pdf/ir/library/integrated_report/backnumber_2022_en.pdf">PALTAC 2022 综合报告</a>；机器人数量及适用品类描述见<a href="https://md-next.jp/13687">开仓报道</a>。</p>
+<h2 id="rightpick">三、RightPick 的速度数据与项目实绩分开看</h2>
+<ul>
+<li><strong>PALTAC现场单机速度：<strong>公开资料中</strong>未查到</strong> RightPick 在该项目的单机稳定件/小时、订单行/小时或实际成功率。</li>
+<li>**RightPick产品级速度：**厂商资料宣传过最高 <strong>1,200 件/小时</strong>，属于产品级或测试条件下的速度数据，<strong>不能当作 PALTAC 现场实测值</strong>。</li>
+<li>**现场项目结果：**公开的量化结果主要是埼玉RDC整体的散件出货人员生产率达到传统模式 <strong>2 倍以上</strong>；资料没有把其中多少提升单独归因于 10 台 RightPick。</li>
+</ul>
+<p>另需区分：埼玉RDC还配置了其他厂商的整箱拣选、拆垛和装箱设备。报道中的整箱识别率、箱/小时等数字属于这些设备，<strong>不属于 RightPick 散件拣选机器人</strong>。</p>
+<hr />
+<h2 id="section-6">数据补充与口径说明</h2>
+<p>有。<strong>RightHand Robotics 官方发布了 PALTAC RDC Saitama 的案例视频</strong>：</p>
+<p><a href="https://www.youtube.com/watch?v=tGYVsr-pBgw">观看：RightHand Robotics video case study — PALTAC Corporation</a></p>
+<p><a href="https://www.youtube.com/watch?v=tGYVsr-pBgw"><img src="https://img.youtube.com/vi/tGYVsr-pBgw/hqdefault.jpg" alt="PALTAC × RightHand Robotics 案例视频缩略图" /></a></p>
+<p>视频展示了埼玉RDC内多台 RightPick 工位和散件拣选作业。RightHand 的<a href="https://righthandrobotics.com/resources/paltac-corporation-japan">官方案例页</a>也嵌入了该项目视频，并确认这些工位部署在 RDC Saitama。</p>
+<p>还有<a href="https://ircms.irstreet.com/contents/data_file.php?brand=347&amp;filename=pdf_file.pdf&amp;folder_contents=42908&amp;src_data=285244&amp;template=1907">一张 PALTAC 现场照片</a>，能看到 RightPick 机械臂正在抓取商品。照片来自项目相关的公司资料。</p>
+<p>注意：搜索时也会看到 PALTAC 的 <strong>8台整箱拣选机器人</strong>视频，那是另一套设备，不是 RightPick 散件拣选系统。</p>
+<hr />
+<h2 id="section-7">数据补充与口径说明</h2>
+<p>PALTAC 的 **RDC Saitama（埼玉RDC）**场地占地约 <strong>67,000 平方米</strong>，建筑面积约 <strong>45,000 平方米</strong>。前者是土地面积，后者是建筑楼面面积。<a href="https://md-next.jp/13687">开仓报道</a></p>
+
+</article></main>
+<a class="top-link" href="../#case-index">返回目录</a>
+</body>
+</html>

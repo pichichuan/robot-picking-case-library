@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>鴻池運輸 &#215; OSARO · 拣选机器人案例库</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="hero"><div class="shell"><nav aria-label="页面导航"><a href="../#case-index">返回案例目录</a></nav><h1>鴻池運輸 &#215; OSARO</h1></div></header>
+<main class="shell"><article class="archive case-detail">
+<h2 id="section">项目概况</h2>
+<p>这是鴻池運輸（Konoike Transport）与 OSARO 在**鴻池技术研究所创新中心（KITIC）**开展的仓库自动化联合验证项目，合作中还接入了 <strong>inVia Robotics 的 AMR</strong>。项目目标是验证 AMR 与单件拣选机器人之间的协同，让货物从仓储货架自动流转到拣选和出库环节。合作方称其为当时日本首个此类 AMR 联动仓库自动化作业原型；“日本首个”是双方截至 2022 年 2 月的自述。<a href="https://www.konoike.net/news/news_file/file/2022022100.pdf">鴻池运輸公告</a> · <a href="https://www.osaro.com/blog/a-robotic-first-in-japan">OSARO 项目介绍</a></p>
+<h2 id="section-1">已披露的项目与机器人信息</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>公开信息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>时间</strong></td>
+<td>计划从 <strong>2022 年 1 月起，约 6 个月</strong>。鴻池运輸于 2022 年 2 月发布公告；同年 6 月的 KITIC 参观介绍中仍将该项目列为合作实验。公开资料未提供验收日期或最终项目报告。</td>
+</tr>
+<tr>
+<td><strong>地点</strong></td>
+<td>鴻池技术研究所创新中心（KITIC）。该中心位于东京品川的东京货运站 WEST 物流设施内，是自动化设备开发与验证场地。<a href="https://www.konoike.net/news/news_file/file/2022070800.pdf">鴻池运輸 2022 年介绍</a></td>
+</tr>
+<tr>
+<td><strong>合作分工</strong></td>
+<td>鴻池运輸提供物流场景和验证环境；OSARO 提供带 AI 视觉系统的拣选机器人；inVia Robotics 提供 AMR。公开资料没有披露集成商、控制系统供应商或机器人本体品牌/型号。</td>
+</tr>
+<tr>
+<td><strong>作业流程</strong></td>
+<td>① AMR 前往存有订单商品的货架；② AMR 取出储物箱并送到拣选工位；③ OSARO 机器人从箱中抓取目标商品，放到另一个待发货箱中。</td>
+</tr>
+<tr>
+<td><strong>目标商品</strong></td>
+<td>项目公告称要验证对<strong>透明、易变形、反光、不规则形状</strong>商品的识别和抓取，也包括商品在箱中散乱堆放的情况。未公开具体 SKU 清单、商品重量、尺寸、材料占比或测试样本数量。</td>
+</tr>
+<tr>
+<td><strong>视觉/AI</strong></td>
+<td>鴻池方面选择 OSARO 的原因包括：按时间序列自动收集多模态 AI 数据并自动学习，以及融合多个 AI 模型推理结果以支持拣选。公开资料未披露相机型号、传感器配置、模型架构或数据规模。</td>
+</tr>
+<tr>
+<td><strong>系统定位</strong></td>
+<td>是模块化、可适配既有仓储系统的履约自动化原型，重点验证多家机器人方案协同后产生的接口、流程和现场导入问题。项目目标之一是为后续实际部署识别并解决问题。</td>
+</tr>
+</tbody>
+</table>
+<p>以上流程、应用场景和技术描述来自<a href="https://www.konoike.net/news/news_file/file/2022022100.pdf">鴻池运輸与 OSARO 的联合公告</a>及<a href="https://www.osaro.com/blog/a-robotic-first-in-japan">OSARO 项目说明</a>。鴻池运輸在公告中还提到，曾对多种拣选 AI 技术进行比较，并认为 OSARO 在自动学习和复杂场景拣选方面适合变化频繁的物流现场。</p>
+<h2 id="section-2">公开披露的数据与缺口</h2>
+<p><strong>项目相关公开资料未披露</strong>以下量化结果：</p>
+<ul>
+<li>每小时拣选量、单次循环时间或 AMR 搬运节拍</li>
+<li>首次抓取成功率、最终拣选准确率、错拣/掉落率</li>
+<li>人工介入次数、节省人数或效率提升比例</li>
+<li>测试 SKU 数、测试时长、运行小时数、设备数量</li>
+<li>项目投资额、系统报价、投资回收期</li>
+<li>6 个月验证后的正式部署、商业合同或复制推广结果</li>
+</ul>
+<p>因此，现有资料足以还原<strong>项目流程、参与方和技术目标</strong>，但不足以判断这套系统在该项目中的实际产能、精度或商业回报。</p>
+<h2 id="section-3">竞品调研时的口径提醒</h2>
+<p>不要把 OSARO 的通用产品参数直接填成这个项目的实测值。OSARO 其他资料曾披露特定系统的尺寸、重量或处理量指标，但鴻池合作公告没有确认该项目采用了相同配置，也没有公布该项目的测试 KPI。类似地，IHI 与 OSARO 共同开发的另一套系统公布过本体尺寸和识别率指标；那是另一项产品化合作，不能当作鴻池项目参数。<a href="https://www.ihi.co.jp/all_news/2019/industrial_general_machine/1190461_1593.html">IHI 产品公告</a></p>
+<p>鴻池运輸 2025 年的一篇技术革新访谈称，创新中心的机器人手臂拣选仍面临商品形状多样、速度与实用化等挑战，但文章<strong>没有点名 OSARO 项目</strong>，所以只能作为鴻池整体机器人拣选研发的背景，不能据此断定这个合作项目的最终结论。<a href="https://cmslb-073.customer.cmsod.jp/story/detail/2025101400000.html">鴻池运輸访谈</a></p>
+<p>**可直接用于调研表的结论：**这是一个于 2022 年启动、在 KITIC 验证“inVia AMR 搬运 + OSARO AI 单件拣选”的仓库自动化原型项目；技术目标和流程披露较清楚，但公开来源没有给出可用于横向比较的项目级产能、精度、成功率或 ROI 数据。</p>
+<hr />
+<h2 id="section-4">数据补充与口径说明</h2>
+<p>这个项目里的 AMR 是 <strong>inVia Robotics 的仓库移动机器人</strong>。外形大致是<strong>黑色低矮轮式底盘，上面有红色升降机构</strong>；它用吸盘抓住货架上的储物箱，再把箱子运到 OSARO 拣选机器人旁边。<a href="https://inviarobotics.com/our-system/invia-picker-robots/">inVia Picker 外观与工作方式</a></p>
+<p><img src="https://i.vimeocdn.com/video/715271392-3874858de0b3d81092633d6d9120f5d138328df7b2f94cdc7c6ee8c21612c920-d?f=webp" alt="inVia Picker 仓库机器人示意" /></p>
+<p>这张是 <strong>inVia Picker 产品示意图</strong>，不一定是鴻池项目现场的那一台。项目公告没有披露 AMR 的具体型号；<a href="https://youtu.be/mBwSaeGz6Ew">官方演示视频</a>可以看实际联动场景。</p>
+
+</article></main>
+<a class="top-link" href="../#case-index">返回目录</a>
+</body>
+</html>
