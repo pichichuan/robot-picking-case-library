@@ -1,0 +1,1247 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="按客户、供应商和项目类型查询仓储拣选与分拣案例，查看项目数据及公开出处。">
+<title>拣选机器人案例库</title>
+<link rel="stylesheet" href="styles.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+<header class="hero">
+  <div class="shell">
+    <nav aria-label="页面导航"><a href="#case-index">案例目录</a><a href="https://github.com/pichichuan/robot-picking-case-library">GitHub 仓库</a></nav>
+    <h1>拣选机器人案例库</h1>
+    <p>查阅仓储拣选与分拣项目的部署、现场数据及公开出处。</p>
+  </div>
+</header>
+<main class="shell">
+  <section class="catalog" id="case-index" aria-labelledby="catalog-heading">
+    <h2 id="catalog-heading">案例目录</h2>
+    <div class="controls">
+      <label class="search" for="case-search">搜索案例<input type="search" id="case-search" placeholder="输入客户名或供应商" autocomplete="off"></label>
+      <div class="filters" aria-label="项目类型筛选">
+        <button type="button" data-filter="all" aria-pressed="true">全部（37）</button>
+        <button type="button" data-filter="fixed" aria-pressed="false">固定式工作站（31）</button>
+        <button type="button" data-filter="mobile" aria-pressed="false">移动式拣选（4）</button>
+        <button type="button" data-filter="sortation" aria-pressed="false">分拣项目（2）</button>
+      </div>
+    </div>
+    <p id="result-count" role="status">显示 37 条案例</p>
+    <ul class="case-grid">
+<li><a class="case-link" href="#the-feed" data-type="mobile"><span class="case-supplier">Brightpick</span><span class="case-title">The Feed</span><span class="case-type">移动式拣选机器人</span></a></li>
+<li><a class="case-link" href="#dr-max-pavlov" data-type="mobile"><span class="case-supplier">Brightpick</span><span class="case-title">Dr. Max／ViaPharma Pavlov</span><span class="case-type">移动式拣选机器人</span></a></li>
+<li><a class="case-link" href="#superior-communications" data-type="mobile"><span class="case-supplier">Brightpick</span><span class="case-title">Superior Communications</span><span class="case-type">移动式拣选机器人</span></a></li>
+<li><a class="case-link" href="#napa-york" data-type="mobile"><span class="case-supplier">Brightpick</span><span class="case-title">NAPA Auto Parts｜York</span><span class="case-type">移动式拣选机器人</span></a></li>
+<li><a class="case-link" href="#schneider" data-type="fixed"><span class="case-supplier">极智嘉</span><span class="case-title">施耐德上海物流中心</span><span class="case-type">固定式拣选工作站</span></a></li>
+<li><a class="case-link" href="#obeta" data-type="fixed"><span class="case-supplier">KNAPP／Covariant</span><span class="case-title">Obeta／Technilog</span><span class="case-type">固定式拣选工作站</span></a></li>
+<li><a class="case-link" href="#mckesson" data-type="fixed"><span class="case-supplier">KNAPP／Covariant</span><span class="case-title">McKesson</span><span class="case-type">固定式拣选工作站</span></a></li>
+<li><a class="case-link" href="#gxo-tilburg" data-type="fixed"><span class="case-supplier">KNAPP／Covariant</span><span class="case-title">GXO Logistics</span><span class="case-type">固定式拣选工作站</span></a></li>
+<li><a class="case-link" href="#wuerth" data-type="fixed"><span class="case-supplier">KNAPP／Covariant</span><span class="case-title">W&#252;rth Industrie Service</span><span class="case-type">固定式拣选工作站</span></a></li>
+<li><a class="case-link" href="#brodrene-langhus" data-type="fixed"><span class="case-supplier">KNAPP／Covariant</span><span class="case-title">Br&#248;drene Dahl｜Langhus</span><span class="case-type">固定式拣选工作站</span></a></li>
+<li><a class="case-link" href="#brodrene-randers" data-type="fixed"><span class="case-supplier">KNAPP／Covariant</span><span class="case-title">Br&#248;drene Dahl｜Randers</span><span class="case-type">固定式拣选工作站</span></a></li>
+<li><a class="case-link" href="#emag" data-type="fixed"><span class="case-supplier">KNAPP／Covariant</span><span class="case-title">eMAG</span><span class="case-type">固定式拣选工作站</span></a></li>
+<li><a class="case-link" href="#shufersal" data-type="fixed"><span class="case-supplier">KNAPP／Covariant</span><span class="case-title">Shufersal Online</span><span class="case-type">固定式拣选工作站</span></a></li>
+<li><a class="case-link" href="#woolworths" data-type="fixed"><span class="case-supplier">KNAPP／Covariant</span><span class="case-title">Woolworths｜Auburn</span><span class="case-type">固定式拣选工作站</span></a></li>
+<li><a class="case-link" href="#apotek-1" data-type="fixed"><span class="case-supplier">KNAPP／Covariant</span><span class="case-title">Apotek 1</span><span class="case-type">固定式拣选工作站</span></a></li>
+<li><a class="case-link" href="#brack" data-type="fixed"><span class="case-supplier">Nomagic</span><span class="case-title">Brack.Alltron</span><span class="case-type">固定式拣选工作站</span></a></li>
+<li><a class="case-link" href="#komplett" data-type="fixed"><span class="case-supplier">Nomagic</span><span class="case-title">Komplett</span><span class="case-type">固定式拣选工作站</span></a></li>
+<li><a class="case-link" href="#fiege" data-type="fixed"><span class="case-supplier">Nomagic</span><span class="case-title">FIEGE Group</span><span class="case-type">固定式拣选工作站</span></a></li>
+<li><a class="case-link" href="#arvato" data-type="fixed"><span class="case-supplier">Nomagic</span><span class="case-title">Arvato</span><span class="case-type">固定式拣选工作站</span></a></li>
+<li><a class="case-link" href="#asos" data-type="sortation"><span class="case-supplier">Nomagic</span><span class="case-title">ASOS plc</span><span class="case-type">分拣项目</span></a></li>
+<li><a class="case-link" href="#zalando" data-type="sortation"><span class="case-supplier">Nomagic</span><span class="case-title">Zalando</span><span class="case-type">分拣项目</span></a></li>
+<li><a class="case-link" href="#apo-duiven" data-type="fixed"><span class="case-supplier">RightHand Robotics</span><span class="case-title">apo.com Group｜Duiven</span><span class="case-type">固定式拣选工作站</span></a></li>
+<li><a class="case-link" href="#apotea-morgongava" data-type="fixed"><span class="case-supplier">RightHand Robotics</span><span class="case-title">Apotea｜Morgong&#229;va</span><span class="case-type">固定式拣选工作站</span></a></li>
+<li><a class="case-link" href="#apotea-varberg" data-type="fixed"><span class="case-supplier">RightHand Robotics</span><span class="case-title">Apotea｜Varberg</span><span class="case-type">固定式拣选工作站</span></a></li>
+<li><a class="case-link" href="#paltac" data-type="fixed"><span class="case-supplier">RightHand Robotics</span><span class="case-title">PALTAC</span><span class="case-type">固定式拣选工作站</span></a></li>
+<li><a class="case-link" href="#solar" data-type="fixed"><span class="case-supplier">RightHand Robotics</span><span class="case-title">Solar A/S</span><span class="case-type">固定式拣选工作站</span></a></li>
+<li><a class="case-link" href="#hummel" data-type="fixed"><span class="case-supplier">RightHand Robotics</span><span class="case-title">hummel A/S</span><span class="case-type">固定式拣选工作站</span></a></li>
+<li><a class="case-link" href="#staples" data-type="fixed"><span class="case-supplier">RightHand Robotics</span><span class="case-title">Staples</span><span class="case-type">固定式拣选工作站</span></a></li>
+<li><a class="case-link" href="#zenni" data-type="fixed"><span class="case-supplier">OSARO</span><span class="case-title">Zenni Optical</span><span class="case-type">固定式拣选工作站</span></a></li>
+<li><a class="case-link" href="#konoike" data-type="fixed"><span class="case-supplier">OSARO</span><span class="case-title">鴻池運輸（Konoike）</span><span class="case-type">固定式拣选工作站</span></a></li>
+<li><a class="case-link" href="#askul-yokohama" data-type="fixed"><span class="case-supplier">Mujin</span><span class="case-title">ASKUL｜横滨</span><span class="case-type">固定式拣选工作站</span></a></li>
+<li><a class="case-link" href="#askul-kansai" data-type="fixed"><span class="case-supplier">Mujin</span><span class="case-title">ASKUL｜AVC 关西</span><span class="case-type">固定式拣选工作站</span></a></li>
+<li><a class="case-link" href="#logisteed-hyogo" data-type="fixed"><span class="case-supplier">Mujin</span><span class="case-title">LOGISTEED｜兵库</span><span class="case-type">固定式拣选工作站</span></a></li>
+<li><a class="case-link" href="#logisteed-chiba" data-type="fixed"><span class="case-supplier">Mujin</span><span class="case-title">LOGISTEED｜千叶</span><span class="case-type">固定式拣选工作站</span></a></li>
+<li><a class="case-link" href="#elecom" data-type="fixed"><span class="case-supplier">Mujin</span><span class="case-title">ELECOM</span><span class="case-type">固定式拣选工作站</span></a></li>
+<li><a class="case-link" href="#famme" data-type="fixed"><span class="case-supplier">AutoStore／Pio 与 Ocado</span><span class="case-title">Famme AS</span><span class="case-type">固定式拣选工作站</span></a></li>
+<li><a class="case-link" href="#ocado-luton" data-type="fixed"><span class="case-supplier">AutoStore／Pio 与 Ocado</span><span class="case-title">Ocado｜Luton CFC10</span><span class="case-type">固定式拣选工作站</span></a></li>
+</ul>
+</section>
+<section class="archive" aria-label="案例详情">
+<p><a id="supplier-brightpick"></a></p>
+<h2 id="brightpick">Brightpick</h2>
+<p><a href="#case-index">返回案例目录</a></p>
+<p>Brightpick 案例基于截至 2026 年 11 月 21 日的公开披露。</p>
+<table>
+<thead>
+<tr>
+<th>案例</th>
+<th>项目类型</th>
+<th>已确认的项目规模及数据口径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#the-feed">The Feed｜美国丹佛都会区</a></td>
+<td>移动式拣选机器人</td>
+<td><strong>103 台 Autopicker</strong>，于 2026 年 1 月公开。<strong>70,000 件/天</strong>为拣选量。</td>
+</tr>
+<tr>
+<td><a href="#dr-max-pavlov">Dr. Max／ViaPharma｜捷克 Pavlov</a></td>
+<td>移动式拣选机器人</td>
+<td>2026 年披露已投运 <strong>30 台 Autopicker</strong>，作业区最高 <strong>20,000 件/天</strong>。全仓 <strong>260,000 盒/天</strong>是 2023 年实际日均出库。</td>
+</tr>
+<tr>
+<td><a href="#superior-communications">Superior Communications｜美国 La Vergne</a></td>
+<td>移动式拣选机器人</td>
+<td>2026 年初扩至 <strong>50 台 Autopicker</strong>，系统峰值 <strong>3,500 件/小时</strong>和 <strong>1,000 订单行/小时</strong>。</td>
+</tr>
+<tr>
+<td><a href="#napa-york">NAPA Auto Parts｜美国 York</a></td>
+<td>移动式拣选机器人</td>
+<td>2026 年投运，<strong>超过 100 台</strong>为单站 Brightpick 车队总数，各型号数量未披露。</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><a id="the-feed"></a></p>
+<h3 id="brightpick-the-feedautopicker">Brightpick × The Feed｜Autopicker 仓库拣选项目</h3>
+<p><strong>项目类型</strong>　移动式拣选机器人</p>
+<p><a href="#case-index">返回案例目录</a></p>
+<p>截至 <strong>2026 年 11 月 21 日</strong>，原调研所载最新公开车队规模为 <strong>103 台 Brightpick Autopicker</strong>。这套系统在 The Feed 位于美国科罗拉多州丹佛都会区的履约中心运行，从一期 <strong>48 台</strong>扩到 <strong>73 台</strong>，再扩到 <strong>103 台</strong>。Brightpick 的正式案例披露 <strong>70,000 件/天、3,000 件/小时、每班 6–8 人</strong>。现场同时使用巷道内机器人拣选、货到人拣选和 Fast Lane 人工辅助拣选，并与 CMC Genesys 自动包装系统集成。〔1、6、8、11〕</p>
+<p>下文标注来源编号，同一链接只列一次。</p>
+<h4 id="section">一、项目进展</h4>
+<table>
+<thead>
+<tr>
+<th>时间</th>
+<th>已披露的项目进展</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2024 年 1 月 30 日</strong></td>
+<td>Brightpick 公布 The Feed 开始安装首批 Autopicker，原计划 <strong>3 月底</strong>上线。范围包括拣选、组套、已拣订单暂存和库存补货。</td>
+<td>〔1〕</td>
+</tr>
+<tr>
+<td><strong>2024 年 4 月</strong></td>
+<td>The Feed 迁入新配送中心，Brightpick 拣选系统和 CMC 包装系统投入运行。客户采访给出 <strong>4 月</strong>，Brightpick 后续里程碑帖写的是 <strong>第二季度</strong>。订单暂存功能在初次上线后加入。</td>
+<td>〔3、7〕</td>
+</tr>
+<tr>
+<td><strong>2025 年 1–3 月</strong></td>
+<td>The Feed 公开展示一期作业。Brightpick 宣布新增 Autopicker 和 Giraffe 高位料箱搬运机器人，行业媒体随后报道扩建正在进行。</td>
+<td>〔2–5〕</td>
+</tr>
+<tr>
+<td><strong>2025 年 6 月</strong></td>
+<td>Brightpick 确认首轮 Autopicker 扩容已完成，增加 <strong>25 台</strong>至 <strong>73 台</strong>，并称系统占地范围扩大到原来的两倍，工程用时数周。</td>
+<td>〔6〕</td>
+</tr>
+<tr>
+<td><strong>2025 年 10–11 月</strong></td>
+<td>Brightpick 公布累计拣选突破 <strong>1,000 万件</strong>，随后在夜间自动履约公告中确认 The Feed 已在运行夜间自主拣选和暂存。</td>
+<td>〔7、9〕</td>
+</tr>
+<tr>
+<td><strong>2026 年 1 月 16 日</strong></td>
+<td>Brightpick 发布正式扩容案例，披露 <strong>103 台 Autopicker</strong> 和扩容后的吞吐、人工及运营成本数据。</td>
+<td>〔8〕</td>
+</tr>
+<tr>
+<td><strong>2026 年 4–6 月</strong></td>
+<td>Brightpick 披露 The Feed 已在生产环境运行与 CMC 的直连包装流程。<strong>6 月 4 日</strong>现场展示页给出仓库地址 <strong>11715 W 112th Ave, Westminster, CO 80021</strong>。早期采访将项目地点写作 <strong>Broomfield</strong>，两份资料都指向丹佛都会区的项目。</td>
+<td>〔3、10、11〕</td>
+</tr>
+<tr>
+<td><strong>2026 年 9–10 月</strong></td>
+<td>Brightpick CEO 再次以 The Feed 为夜间作业案例，说明机器人会继续拣选和暂存，异常可远程处理或留待早班。A3 访谈也确认了 The Feed 在运行这种夜班。</td>
+<td>〔12、13〕</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关于 73 台的日期</strong>：Brightpick 视频案例页目前显示“73 台、70,000 件/天、每班 6 人”，页面日期标为 <strong>2024 年 11 月 5 日</strong>。但 Brightpick 在 <strong>2025 年 2 月</strong>仍明确写着 The Feed 正运行 <strong>48 台</strong>，到 <strong>6 月</strong>才发帖确认增至 <strong>73 台</strong>。因此，扩容时间以有明确完成表述的 6 月帖子为准。〔5、6、16〕</p>
+<h4 id="section-1">二、机器人和现场流程</h4>
+<ul>
+<li><strong>为什么上机器人。</strong> The Feed 销售运动营养品、补剂和装备，顾客常把不同口味和品牌的单份商品混搭成一单。SKU 销量分布较平，慢销品也经常要拣。原仓即使三班运行，仍受旺季招聘、拣选差错、人工成本和出库时效限制。创始人 Matt Johnson 看重的是仓储密度、巷道内单件拣选速度，以及后续通过增加货架和机器人扩容的能力。〔1、3、8、14〕</li>
+<li><strong>机器人怎样拣。</strong> Autopicker 是带机械臂的自主移动机器人（AMR）。它用双料箱结构从货架取下库存箱，利用 <strong>3D 视觉和 AI</strong>识别商品及可抓取位置，再把单件商品移到旁边的订单箱，沿巷道继续完成订单或批次。移动底盘用激光雷达导航。Brightpick <strong>Intuition</strong> 接收 The Feed 自研 ERP/WMS 的订单和库存数据，负责车队派单、路线调度、料箱跟踪和动态货位分配。〔1、3、14、15〕</li>
+<li><strong>机器人抓取、货到人和快拣并行。</strong> 适合机器抓取的商品在巷道完成。过重、形状复杂、不易抓稳，或同一 SKU 一次要拣多件的订单，可以由机器人送到 **G2P（货到人）**工位，操作员按平板指令完成。<strong>Fast Lane</strong> 用于高周转、促销和适合整箱或托盘备货的商品，员工直接从纸箱或托盘拣入机器人携带的订单箱，省去先拆箱入库再拣出的步骤。现场也有定制组合装和组套工位。〔3、4、8、14、15〕</li>
+<li><strong>收货、补货和扩仓。</strong> 到货扫码进入 WMS，员工拆箱并把商品装入库存料箱，机器人负责上架和补货。Giraffe 扩容方案把低周转商品放在高位，由 Giraffe 将库存箱移至 Autopicker 能取用的低位，拣完再送回。扩建目标之一是让更多到货直接进入拆箱环节，减少备用托盘库存。公开资料确认了 Autopicker 扩容，<strong>Giraffe 的实际投产数量和日期仍待核实</strong>。〔3–6、8〕</li>
+<li><strong>夜间作业与包装。</strong> 机器人可把已拣完或部分完成的订单放入缓冲区，按需要调出。夜间继续拣选，需现场人工处理的异常可留到早班。早期现场报道记录的是员工把订单送入包装线，CMC 随后完成按尺寸制箱、封箱和贴标。2026 年 Brightpick 披露了已在 The Feed 投产的直连流程，机器人把商品拣入 <strong>CMC Varytote</strong>，再将订单直接送入 <strong>CMC Genesys</strong>，省去这段人工交接。该直连流程覆盖的订单比例尚未披露。〔3、4、9–13〕</li>
+<li><strong>实施、采购与岗位。</strong> 一期使用标准货架和料箱，与客户自研系统集成，公告称仓库无需追加供电改造。客户采用 <strong>RaaS（机器人即服务）</strong>，合同包含支持服务，并把订阅费计入人工成本。Matt Johnson 表示员工没有因这次部署被裁减，部分人员转到收货、拆箱、质检、订单收尾、包装或出货。〔1–3、8、14〕</li>
+</ul>
+<h4 id="section-2">三、项目数据单列</h4>
+<h5 id="section-3">车队、仓库与实施</h5>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数值和口径</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Autopicker 车队</td>
+<td><strong>48 → 73 → 103 台</strong>。首轮增加 <strong>25 台</strong>，从一期至正式案例共增加 <strong>55 台</strong>。</td>
+<td>〔1、6、8〕</td>
+</tr>
+<tr>
+<td>Giraffe 扩建计划</td>
+<td>计划引入 <strong>6 台</strong>。发布时标称最高取箱高度 <strong>20 英尺（约 6 米）</strong>，与 Autopicker 交接的可达高度为 <strong>11 英尺（约 3.4 米）</strong>。</td>
+<td>〔3、5〕</td>
+</tr>
+<tr>
+<td>仓库面积</td>
+<td>原人工仓约 <strong>3,252 m²</strong>。2025 年报道的配送中心约 <strong>8,268 m²</strong>，当时计划扩到约 <strong>9,755 m²</strong>。扩建后最终面积待核实。</td>
+<td>〔4、14〕</td>
+</tr>
+<tr>
+<td>料箱库位</td>
+<td>一期现场报道为 <strong>10,190 个库位</strong>，早期导览以 <strong>约 11,000 个料箱容量、10 英尺高货架</strong>介绍。首轮扩建预计新增 <strong>11,340 个库位</strong>，Brightpick 公告称储存容量目标为翻倍。</td>
+<td>〔3–5、15〕</td>
+</tr>
+<tr>
+<td>部署周期</td>
+<td>初次安装和软件集成 <strong>3 个月</strong>，含 <strong>1 个月现场安装</strong>。首轮 Autopicker 扩容用时<strong>数周</strong>。</td>
+<td>〔3、6、8〕</td>
+</tr>
+<tr>
+<td>商品与订单结构</td>
+<td><strong>300 多个品牌、约 6,000 个 SKU</strong>。Brightpick 案例写平均 <strong>10 次拣取/单</strong>，客户现场采访写典型订单 <strong>10–12 个订单行</strong>。</td>
+<td>〔3、8〕</td>
+</tr>
+</tbody>
+</table>
+<h5 id="section-4">产能、拣选覆盖与服务</h5>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数值和口径</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>一期订单量</td>
+<td>公告目标 <strong>5,000 单/天</strong>。现场采访披露常态约 <strong>4,000 单/天</strong>、最高 <strong>2,100 件/小时</strong>。</td>
+<td>〔1、3〕</td>
+</tr>
+<tr>
+<td>一期日拣选量</td>
+<td>客户称最高 <strong>50,000 件/天</strong>，行业报道也以 <strong>50,000 次拣取/天</strong>描述当时的作业。</td>
+<td>〔2、4、15〕</td>
+</tr>
+<tr>
+<td>首轮扩建目标</td>
+<td>Brightpick 公告为 <strong>75,000 件/天</strong>，较原基准提高 <strong>50%</strong>。The Feed 在 2025 年 1 月预计同年 5 月接近 <strong>80,000 件/天</strong>，行业报道也把 <strong>80,000 件/天</strong>列为扩建设计值。</td>
+<td>〔2、4、5〕</td>
+</tr>
+<tr>
+<td>73 台阶段</td>
+<td>Brightpick 视频案例页披露 <strong>70,000 件/天、6 人/班</strong>。2025 年 10 月里程碑帖披露累计 <strong>1,000 万件、数十万份客户订单</strong>，当时称车队已增至 <strong>73 台</strong>。同帖还称节省“数百万人工工时”，未提供基准和算法。</td>
+<td>〔7、16〕</td>
+</tr>
+<tr>
+<td>103 台阶段</td>
+<td><strong>70,000 件/天、3,000 件/小时</strong>均为拣选量，正式案例列示 <strong>24/7</strong> 运行。103 台于 <strong>2026 年 1 月 16 日</strong>公开确认，实际扩到该规模的日期未披露。</td>
+<td>〔8〕</td>
+</tr>
+<tr>
+<td>103 台阶段日发货</td>
+<td>2026 年现场展示仅披露每天履约<strong>数千单</strong>。实际发出的件数、订单数和包裹数未公开。</td>
+<td>〔11〕</td>
+</tr>
+<tr>
+<td>G2P 与 Fast Lane</td>
+<td>一期现场报道有 <strong>2 个 G2P 工位</strong>。一期导览展示另有 <strong>2 个托盘拣选工位</strong>，每个 G2P 工位最多可同时接待 <strong>4 台机器人</strong>。扩容案例披露 <strong>4 个 G2P 工位</strong>，单工位最高 <strong>500 订单行/小时</strong>。</td>
+<td>〔3、8、14、15〕</td>
+</tr>
+<tr>
+<td>SKU 可抓取范围</td>
+<td>导入前送测约 <strong>500 个主力商品</strong>，Matt Johnson 在案例视频中称约 <strong>90%</strong> 可由机器人抓取。早期现场报道称，使用同一个末端执行器可覆盖 <strong>80% 以上 SKU</strong>。两组数字使用不同样本。</td>
+<td>〔3、14〕</td>
+</tr>
+<tr>
+<td>实际拣选方式占比</td>
+<td>一期采访披露约 <strong>40% 全自主机器人拣选、30% G2P、30% 托盘辅助拣选</strong>。这是早期作业结构，扩容后的占比未见披露。</td>
+<td>〔3、4〕</td>
+</tr>
+<tr>
+<td>错拣与抓取成功率</td>
+<td>Brightpick 称 The Feed 的拣选错误已接近消除，退货减少，项目页未给精确错误率。厂商另披露夜间运行中 <strong>99.7%</strong> 的抓取成功率，资料未给出 The Feed 单站的独立统计。</td>
+<td>〔8、20〕</td>
+</tr>
+<tr>
+<td>时效</td>
+<td>The Feed 称下单后约 <strong>1 小时内</strong>会派一台机器人处理整单。客户采访另提到多数订单争取在 <strong>1 小时内交承运商</strong>。正式案例提到 <strong>24 小时内送达</strong>的业务要求，以及下单后几分钟内完成履约的目标。这些描述对应不同环节。</td>
+<td>〔2、3、8〕</td>
+</tr>
+</tbody>
+</table>
+<h5 id="section-5">人工、成本与回收期</h5>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数值和口径</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>一期人员</td>
+<td>现场采访称约 <strong>30 名手工拣选员</strong>的订单量，可由 <strong>6 人</strong>配合机器人完成，其中 <strong>4 人辅助拣选、2 人拆箱上料</strong>。同期全仓各班合计约 <strong>50 名员工</strong>。</td>
+<td>〔3、4〕</td>
+</tr>
+<tr>
+<td>103 台阶段人员</td>
+<td>正式案例写 <strong>6–8 人/班</strong>。其中拣选及补货的对比为 <strong>42 → 8 人/班</strong>，8 人包括 <strong>4 人 G2P、2 人 Fast Lane、2 人拆箱上料</strong>。Brightpick 将降幅概括为 <strong>80%</strong>。</td>
+<td>〔8〕</td>
+</tr>
+<tr>
+<td>其他人员口径</td>
+<td>一期社媒宣传曾写 <strong>3–4 人/班、人工减少 90%</strong>。2026 年现场展示官网写 <strong>6 人/班</strong>，同场活动另有 Brightpick 员工帖写 <strong>4 人/班</strong>。宣传材料未说明这几个数字是否计入同样的岗位。</td>
+<td>〔11、17、18〕</td>
+</tr>
+<tr>
+<td>包装人员与步行</td>
+<td>旧仓包装出货通常需要 <strong>10–15 人</strong>，一期 CMC 流程只需少量人员上料。Matt Johnson 称，过去员工仅拣单每天就要走 <strong>10 英里以上（约 16 公里）</strong>。</td>
+<td>〔2、3〕</td>
+</tr>
+<tr>
+<td>运营成本与边际收益</td>
+<td>Brightpick 正式案例披露 <strong>运营支出下降 65%</strong>。The Feed CEO 在现场采访中称，每单贡献利润率提高 <strong>2–3 个百分点</strong>。早期案例视频中，他称按其人工成本口径，初期约节省 <strong>50%</strong>，随后成本比接近 <strong>3∶1</strong>。</td>
+<td>〔3、8、14〕</td>
+</tr>
+<tr>
+<td>回收期与现金流</td>
+<td>Brightpick 案例标注回收期 <strong>约 2 个月</strong>。The Feed CEO 的原始表述是采用 RaaS 后 <strong>60 天内现金流转正</strong>。项目租金、完整成本基准和回收期计算表未公开。</td>
+<td>〔3、8〕</td>
+</tr>
+<tr>
+<td>夜间增量</td>
+<td>Brightpick CEO 称，夜间拣选和缓冲让 The Feed 用既有设备增加约 <strong>30%–50% 产能</strong>，并称无需追加设备成本或用工。公开资料未附计算明细。</td>
+<td>〔12〕</td>
+</tr>
+<tr>
+<td>2026 年扩建补充</td>
+<td>项目参与者 Christopher Bowers 的个人项目页称，从 <strong>2026 年 5 月</strong>开始的仓库扩建涉及 Brightpick、CMC、CAD 布局及履约软件改造，<strong>可发运能力翻倍、平均订单履约时间缩短 30%</strong>。目前是参与者自述，双方正式案例未给出对应统计。</td>
+<td>〔19〕</td>
+</tr>
+</tbody>
+</table>
+<p><strong>仍待核实的项目数据</strong>包括 Giraffe 实际投产数量、103 台车队中各代 Autopicker 的数量、扩建后的最终面积与库位、自动包装覆盖率，以及 103 台阶段的精确日订单量。公开资料也没有证实阶段性 <strong>75,000 或 80,000 件/天</strong>目标已实现。〔3–5、8、10–13〕</p>
+<h4 id="section-6">出处</h4>
+<ol>
+<li><a href="https://brightpick.ai/the-feed-is-installing-brightpick/">Brightpick｜2024 年一期部署公告</a></li>
+<li><a href="https://thefeed.com/insider/how-our-robots-pick-your-orders-at-the-feed">The Feed｜Matt Johnson 介绍机器人怎样拣订单</a></li>
+<li><a href="https://stage.mmh.com/article/the_feed_delivers_on_personalization">Modern Materials Handling｜The Feed 客户采访与系统报告</a></li>
+<li><a href="https://stage.mmh.com/article/the_feed_nourishes_automation">Modern Materials Handling｜仓库面积、人员与作业动线</a></li>
+<li><a href="https://brightpick.ai/brightpick-launches-giraffe-an-autonomous-mobile-picking-system-that-triples-warehouse-storage-density/">Brightpick｜Giraffe 发布及 The Feed 扩容计划</a></li>
+<li><a href="https://www.linkedin.com/posts/brightpick_robots-supplychain-logistics-activity-7340677423937605634-3CPM">Brightpick｜确认扩至 73 台的官方帖子</a></li>
+<li><a href="https://www.linkedin.com/posts/brightpick_our-robots-have-picked-10-million-items-activity-7386722761441972224-9GLm">Brightpick｜累计拣选 1,000 万件的官方帖子</a></li>
+<li><a href="https://brightpick.ai/resources/the-feed/">Brightpick｜2026 年 103 台项目正式案例</a></li>
+<li><a href="https://brightpick.ai/brightpick-unlocks-lights-out-fulfillment/">Brightpick｜2025 年夜间自动拣选与暂存公告</a></li>
+<li><a href="https://www.linkedin.com/posts/brightpick_brightpick-partners-with-cmc-packaging-automation-activity-7452336511145922562-hJif">Brightpick｜与 CMC 的 Varytote 直连包装及 The Feed 投产披露</a></li>
+<li><a href="https://brightpick.ai/brightpick-site-showcase-the-feed/">Brightpick｜2026 年 The Feed 现场展示、仓库地址及 CMC Genesys</a></li>
+<li><a href="https://brightpick.ai/resources/when-robots-dont-sleep/">Brightpick｜Jan Zizka 详述 The Feed 夜班产能与异常处理</a></li>
+<li><a href="https://www.automate.org/automated-podcast/episodes/dr-jan-zizka">A3｜2026 年 10 月 Jan Zizka 访谈及文字稿</a></li>
+<li><a href="https://www.youtube.com/watch?v=GRZp8MZ6piA">Brightpick｜一期现场案例视频与 Matt Johnson 采访</a></li>
+<li><a href="https://brightpick.ai/videos/demo/">Brightpick｜一期仓库完整流程导览</a></li>
+<li><a href="https://brightpick.ai/videos/automated-fulfillment-feed-case-study/">Brightpick｜现标题为 73 台的案例视频页</a></li>
+<li><a href="https://www.linkedin.com/posts/matt-j-221262_thanks-jan-zizka-and-brightpick-for-a-great-activity-7246449293996220416-A_RX">Matt Johnson｜转发 Brightpick CEO 的一期运营数据</a></li>
+<li><a href="https://www.linkedin.com/posts/tom-freeman-2a7b9863_103-robots-70000-picks-a-day-4-people-activity-7457807171561623553-oDdA">Brightpick 员工 Tom Freeman｜2026 年现场展示推广帖</a></li>
+<li><a href="https://cbowers.dev/projects/feed-warehouse-expansion">Christopher Bowers｜The Feed 仓库扩建个人项目记录</a></li>
+<li><a href="https://brightpick.ai/resources/how-to-achieve-lights-out-warehousing/">Brightpick｜夜间抓取成功率和人工兜底机制</a></li>
+</ol>
+<hr />
+<p><a id="dr-max-pavlov"></a></p>
+<h3 id="dr.max-brightpick">Dr. Max × Brightpick｜医药仓单件拣选机器人项目</h3>
+<p><strong>项目类型</strong>　移动式拣选机器人</p>
+<p><a href="#case-index">返回案例目录</a></p>
+<p>截至 <strong>2026 年 11 月 21 日</strong>，Dr. Max 旗下 ViaPharma 在捷克 <strong>Pavlov 配送中心</strong>已投运 <strong>30 台 Brightpick Autopicker</strong>，用于为药房和医院拣选、补货。Brightpick 正式案例披露，该机器人区覆盖 <strong>8,000 个 SKU</strong>，最高 <strong>20,000 件/天</strong>。另有 <strong>Ostrava、Bratislava 各 22 台</strong>的扩建计划，两站完成后才达到集团合计 <strong>74 台</strong>。目前公开资料仍把这两个新站写作扩建项目。〔1、2、3〕</p>
+<p>Dr. Max 还在布尔诺、意大利 Telgate 和罗马尼亚布加勒斯特部署了 <strong>Geek+ 货到人系统</strong>。下文列有各站的作业方式，包括<strong>机器人抓单件、机器人送料箱给人拣、机器人搬货架给人拣</strong>。〔4、17、19、21〕</p>
+<h4 id="brightpick-1">一、Brightpick 项目信息</h4>
+<h5 id="pavlov">Pavlov｜已投运，为药房和医院补货</h5>
+<p><strong>项目位置与分工。</strong> Brightpick 材料里的“Prague 配送中心”是布拉格近郊的 <strong>ViaPharma Pavlov 仓</strong>，地址 <strong>Logistická 100, Pavlov, 273 51</strong>。ViaPharma 为 Dr. Max 提供医药批发配送。该仓原有 SSI SCHÄFER 的 <strong>A-frame 自动拣选设备、Miniload 料箱库、输送线和货架</strong>。快销 A 类商品主要走 A-frame，Autopicker 从需要人员走较长距离才能拣到的中低周转商品切入。〔4、5、6、7〕</p>
+<table>
+<thead>
+<tr>
+<th>环节</th>
+<th>现场做法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>收货与补货</strong></td>
+<td>员工在拆箱补货站把药品装入库存箱，扫描料箱后交给系统。机器人取箱并上架，系统按商品周转率等因素动态分配货位。</td>
+</tr>
+<tr>
+<td><strong>巷道内单件拣选</strong></td>
+<td>Autopicker 携带订单箱，到货架前抽出库存箱。3D 扫描把箱内图像数据送到本地服务器，AI 选抓取点，机械臂用真空吸盘把药盒放入订单箱。完成后机器人将订单箱自动交还输送线。现场报道还记录了窄药盒、软管和罐状商品。</td>
+</tr>
+<tr>
+<td><strong>人工兜底</strong></td>
+<td>现场保留 <strong>G2P 货到人工作站</strong>。包装破损、机器人无法可靠抓取，或同一订单行需要拿多件、人工更快时，订单可转给操作员。人员仍承担拆箱、补货和质检。</td>
+</tr>
+<tr>
+<td><strong>批次和效期</strong></td>
+<td><strong>Brightpick Intuition</strong> 按 SKU 和批次跟踪库存，支持盘点、问题批次止拣和召回。系统可按 **FEFO（先到期先出）**分配库存，并通过 API 与仓库 ERP 对接。</td>
+</tr>
+<tr>
+<td><strong>导航和夜间作业</strong></td>
+<td>Brightpick 项目页与技术演讲均写明 Autopicker 使用 <strong>LiDAR 和 AI 导航</strong>，无需地面二维码。Dr. Max 的报告把暗仓列为扩容目标，Brightpick 2026 年又确认该客户已有<strong>无需现场人员直接监督的完整班次</strong>。需现场处理的异常可以暂存，留待人员返回。公开材料未给出整个 Pavlov 仓的无人覆盖率。</td>
+</tr>
+</tbody>
+</table>
+<p>以上流程来自客户采访、现场报道和厂商正式案例。ViaPharma 采用 <strong>RaaS（机器人即服务）月租</strong>。客户称软件集成和现场安装用了数周，原拣选人员可调到质量控制岗位。2024 年该项目获 Robotics &amp; Automation Awards 的<strong>医疗领域最佳机器人或自动化应用奖</strong>。〔1、5、7–9、12、14、22〕</p>
+<h5 id="ostrava-bratislava">Ostrava 与 Bratislava｜扩建阶段</h5>
+<table>
+<thead>
+<tr>
+<th>站点</th>
+<th>已公开的任务与状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Ostrava，捷克</strong></td>
+<td>由 ViaPharma 运行，计划复制 Pavlov 的模式，做<strong>药房和医院的药品拣选及库存补货</strong>。ViaPharma 公布的当地仓地址为 <strong>17. listopadu 6244, Ostrava-Poruba</strong>。Brightpick 公告未披露机器人作业区面积、投产日或验收吞吐。〔2、15〕</td>
+</tr>
+<tr>
+<td><strong>Bratislava，斯洛伐克</strong></td>
+<td>计划做 <strong>Dr. Max 电商订单拣选</strong>。Dr. Max 已有位于 <strong>Prologis Park Bratislava、实际在 Senec</strong> 的电商仓。Brightpick 公告仅写 Bratislava，现有电商仓与此次新增机器人项目的具体楼栋关系未公开。〔2、16〕</td>
+</tr>
+</tbody>
+</table>
+<p>Brightpick 于 <strong>2026 年 8 月 18 日</strong>公布两站，计划在当年下半年完成。<strong>11 月 5 日</strong>斯洛伐克行业报道仍称车队正在扩建，只明确记载 Pavlov 的运行规模。截至检索日，未查到两站正式上线或验收的独立公告。〔2、3〕</p>
+<h4 id="section-7">二、项目数据单列</h4>
+<h5 id="pavlov-1">1. Pavlov 各阶段的车队与吞吐</h5>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>台数、吞吐和覆盖范围</th>
+<th>出处</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2023 年 11 月上线，2024 年初披露</strong></td>
+<td>当时公告写 <strong>8 台、最高 7,000 件/天</strong>。奖项申报写一期设计 <strong>5,000 次拣取/天</strong>，运行经常超过 <strong>7,000 次/天</strong>，约比设计高 <strong>40%</strong>。后期正式案例将首批写为 <strong>9 台</strong>，两份资料未交代相差一台的原因。</td>
+<td>〔1、10、11〕</td>
+</tr>
+<tr>
+<td><strong>2024 年 4 月会议披露</strong></td>
+<td>机器人区 <strong>470 m²</strong>，最多 <strong>4,050 个 SKU</strong>，最高 <strong>8,000 次拣取/天</strong>。两班合计 <strong>16 小时/天</strong>，设人工后备工位。</td>
+<td>〔7〕</td>
+</tr>
+<tr>
+<td><strong>2025 年春季现场采访</strong></td>
+<td><strong>10 台、约 500 m²、约 4,000 个 SKU、9,000 次拣取/天</strong>，最高 <strong>80 单/小时</strong>。每单平均涉及 <strong>3–4 种商品、共 10–15 件</strong>。当时计划再加 <strong>8–9 台</strong>。</td>
+<td>〔8〕</td>
+</tr>
+<tr>
+<td><strong>2025 年年中</strong></td>
+<td>Brightpick 6 月文章写扩至 <strong>19 台</strong>。7 月现场报道具体写 <strong>14 台运行＋5 台已到场待接入</strong>，单机平均 <strong>50 次拣取/小时</strong>。</td>
+<td>〔9、12〕</td>
+</tr>
+<tr>
+<td><strong>中途快照，日期未注明</strong></td>
+<td>Brightpick 技术摘要另有 <strong>21 台、15,000 次拣取/天、约 6,000 个 SKU</strong>，人工口径为 <strong>10 人/班降至 0.5 人当量</strong>。这里的 <strong>21 台</strong>是该快照车队总数。</td>
+<td>〔13〕</td>
+</tr>
+<tr>
+<td><strong>2026 年正式案例</strong></td>
+<td>厂商回顾口径为首批 <strong>9 台</strong>，2025–2026 年新增 <strong>21 台</strong>，共 <strong>30 台</strong>。覆盖 <strong>8,000 个 SKU</strong>，最高 <strong>20,000 件/天</strong>。</td>
+<td>〔1、2〕</td>
+</tr>
+<tr>
+<td><strong>两站扩建</strong></td>
+<td><strong>Ostrava 22 台＋Bratislava 22 台</strong>，合计拟新增 <strong>44 台</strong>。两站完成后 Brightpick 车队预计 <strong>74 台</strong>。站点产能和人员配置尚未公开。</td>
+<td>〔2、3〕</td>
+</tr>
+</tbody>
+</table>
+<h5 id="pavlov-2">2. Pavlov 的人工、准确性、设备与成本</h5>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据及口径</th>
+<th>出处</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>拣选用工</strong></td>
+<td>正式案例称减少 <strong>95%</strong>，口径为 <strong>15 人/班 → 0.5 人当量/班</strong>。现场由一人兼顾拆箱补货和 G2P。公开数据针对机器人区的拣选用工。</td>
+<td>〔1〕</td>
+</tr>
+<tr>
+<td><strong>同占地吞吐与储存能力</strong></td>
+<td>正式案例称均提高 <strong>40%</strong>。这是同占地前后对比。另一个 <strong>40%</strong> 来自一期运行量与原设计日拣量的对比。</td>
+<td>〔1、6、11〕</td>
+</tr>
+<tr>
+<td><strong>品类覆盖、错拣和可用率</strong></td>
+<td>Brightpick 称该项目范围内 <strong>100% 的商品品类可由机器人拣取</strong>、错拣接近消除，并报告 <strong>100% 系统可用率</strong>。公开案例未给错拣件数、观察周期或可用率计算方法。厂商另报 <strong>99.7%</strong> 的熄灯作业抓取成功率，文章同时涉及多个客户，未给出 Pavlov 单站统计。</td>
+<td>〔1、14〕</td>
+</tr>
+<tr>
+<td><strong>料箱、取箱和商品尺寸</strong></td>
+<td>2025 年现场记录的塑料周转箱为 <strong>600 × 400 × 220 mm</strong>，多数无隔板。现场设备取箱高度最高 <strong>3.6 m</strong>，能处理宽度不足 <strong>30 mm</strong> 的部分药盒。2024 年演讲介绍当期吸盘可举 <strong>2 kg</strong>。</td>
+<td>〔7、8〕</td>
+</tr>
+<tr>
+<td><strong>电池</strong></td>
+<td>2025 年现场报道为 <strong>48 V 锂电池</strong>，<strong>充 1 小时可工作约 5 小时</strong>。这是当时现场配置。</td>
+<td>〔8〕</td>
+</tr>
+<tr>
+<td><strong>实施、租赁与回收</strong></td>
+<td>软件集成和现场安装合计<strong>数周</strong>。ViaPharma 采用 <strong>RaaS 月租</strong>。2025 年现场报道给出的回收期是<strong>预计 2 年以内</strong>，项目实际租金、合同总额和回收结果未公开。</td>
+<td>〔6、8、9、12〕</td>
+</tr>
+</tbody>
+</table>
+<p><strong>尚未公开的 Autopicker 站点数据</strong>包括完整的抓取成功率和掉落率、30 台车队的代际构成、最终机器人区面积、运行班次的详细时长，以及 Ostrava、Bratislava 的验收结果。现场资料提到的 <strong>Autopicker 2.0</strong> 和 <strong>Giraffe</strong> 属产品介绍，Pavlov 的实际装机数量未获确认。〔1、2、8、9、14〕</p>
+<h5 id="pavlov-3">3. Pavlov 全仓运营和场地数据</h5>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据和口径</th>
+<th>出处</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>全仓日均发货量</strong></td>
+<td><strong>约 260,000 盒/天</strong>，ViaPharma 物流负责人披露的 <strong>2023 年实际日均出库量</strong>，涵盖药品、营养补充剂等药房商品。</td>
+<td>〔5〕</td>
+</tr>
+<tr>
+<td><strong>历史单日发货纪录</strong></td>
+<td><strong>498,000 件/天</strong>，由运营负责人在 2024 年采访中披露。确切发生日期及更新纪录未见披露。</td>
+<td>〔5〕</td>
+</tr>
+<tr>
+<td><strong>全仓面积</strong></td>
+<td>实际运营仓库约 <strong>20,000 m²</strong>。开发商披露的整栋建筑约 <strong>23,000 m²</strong>，含办公室、配套和药房。</td>
+<td>〔5、28〕</td>
+</tr>
+<tr>
+<td><strong>机器人作业区</strong></td>
+<td>2025 年 <strong>10 台</strong>阶段约 <strong>500 m²</strong>。2026 年 <strong>30 台</strong>阶段的作业区面积和箱位数未公开。</td>
+<td>〔1、8〕</td>
+</tr>
+<tr>
+<td><strong>全仓库存与温区</strong></td>
+<td>约 <strong>10,500 个 SKU、近 700 万件库存、5 个温区</strong>。</td>
+<td>〔5〕</td>
+</tr>
+<tr>
+<td><strong>配送范围与频次</strong></td>
+<td>约 <strong>260 家 Dr. Max 药房</strong>及部分医院。采访时通常向药房 <strong>每日配送 1 次</strong>。</td>
+<td>〔5〕</td>
+</tr>
+<tr>
+<td><strong>全仓用工</strong></td>
+<td>两个白班合计约 <strong>150 人</strong>，另有 <strong>6–8 人</strong>辅助夜班。</td>
+<td>〔5〕</td>
+</tr>
+<tr>
+<td><strong>既有设备与自动化覆盖</strong></td>
+<td>SSI SCHÄFER Miniload 可容纳约 <strong>55,000 个料箱</strong>。A-frame 最高为约 <strong>1,300 个药房周转箱/小时</strong>拣货。采访时约 <strong>78%</strong> 的全仓拣选件数经过自动化设备，其中约三分之一的全仓拣选件数走 A-frame。</td>
+<td>〔5〕</td>
+</tr>
+<tr>
+<td><strong>全仓日发货订单数、包裹数及周转箱数</strong></td>
+<td>未公开。全仓日均出库按商品盒数统计。</td>
+<td>〔1、5〕</td>
+</tr>
+</tbody>
+</table>
+<p>Ostrava 园区披露 ViaPharma 租赁面积<strong>超过 11,000 m²</strong>。两座扩建站的机器人区面积和实际投运规模仍待确认。〔2、29〕</p>
+<h4 id="dr.max">三、Dr. Max 的其他仓储自动化项目</h4>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>合作方及现场流程</th>
+<th>单列数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>捷克 Brno-Líšeň 电商仓</strong></td>
+<td><strong>Geek+、BITO、SSI SCHÄFER</strong>。大台 RoboShuttle 从货架取箱，小台 Runner 接箱送往人工工位。操作员按灯光提示拣货，输送线连接 <strong>Ranpak</strong> 包装和分拣设备，<strong>Körber Warehouse Advantage</strong> 管理作业。〔4、17、18〕</td>
+<td><strong>74 台＝24 台 RoboShuttle＋50 台小型 Runner</strong>。全仓 <strong>15,000 m²</strong>、机器人区 <strong>1,700 m²</strong>、约 <strong>24,500 个库位</strong>、最高 <strong>1,200 箱/小时</strong>。人工工位 <strong>250–300 订单行/小时</strong>，包装约 <strong>800 箱/小时</strong>，末端分拣最高 <strong>3,100 包裹/小时</strong>。客户管理层报告生产率提高 <strong>50%</strong>。客户负责人披露全仓处理能力最高 <strong>25,000 单/天</strong>，另有现场报道按 <strong>商品件数/天</strong>列示 25,000，分别保留。〔4、18、24、30〕</td>
+</tr>
+<tr>
+<td><strong>意大利 Telgate，Bergamo</strong></td>
+<td><strong>SSI SCHÄFER</strong> 总集成，<strong>Geek+ RoboShuttle＋P40</strong> 做料箱到人。RoboShuttle 负责双深货架取箱，P40 负责送箱，员工在灯光辅助工位直接把商品拣进出货纸箱。下游自动缩箱和封箱。仓库 2023 年启用，机器人方案于 2024 年公布。兼顾电商及药房供货。〔19、20、23〕</td>
+<td><strong>22 台 RoboShuttle＋50 台 P40</strong>，<strong>5 个拣选工位、4 个入库工位</strong>，IFOY 披露可并行处理 <strong>16 单</strong>，未明确是按工位还是拣选区统计，另列单工位平均 <strong>200 箱/小时以上</strong>。全仓 <strong>14,000 m²</strong>，一期机器人区 <strong>1,300 m²</strong>。IFOY 评估约 <strong>12,000 种商品、18,000 个料箱</strong>。客户披露准确率 <strong>99.9%</strong>、拣选效率提升 <strong>200%</strong>，未给出效率基准明细。〔20、23〕</td>
+</tr>
+<tr>
+<td><strong>罗马尼亚布加勒斯特电商仓</strong></td>
+<td><strong>Geek+ P500 货架到人</strong>。机器人移动整座商品货架至拣选工作站，配合人员和批量拣选流程。〔21、25〕</td>
+<td><strong>96 台 P500</strong>，机器人区 <strong>3,200 m²</strong>、项目仓面积 <strong>4,830 m²</strong>。峰季 <strong>180–190 订单行/小时</strong>，厂商未注明每人还是每站。正文列每月处理 <strong>25,000 多个 SKU</strong>，同页摘要使用 <em>items</em>，单位存在差异。<strong>99.99%</strong> 在指标栏标为包裹分类准确率，摘要另写拣选准确率 <strong>超过 99%</strong>。〔21〕</td>
+</tr>
+</tbody>
+</table>
+<p>此外，Dr. Max 捷克门店也有<strong>发药设备</strong>。例如 Roudnice nad Labem 医院药房于 2023 年上线 <strong>BD Rowa Easy Load</strong>，负责药盒入库、储存，并按药师指令送至柜台。斯洛伐克 Košice 门店披露的 <strong>Wallie</strong> 可储存约 <strong>24,000 盒</strong>、服务 <strong>4 个出药点</strong>。这两项数字对应门店发药。〔26、27〕</p>
+<h4 id="section-8">去重出处</h4>
+<p><strong>Brightpick 与 ViaPharma</strong></p>
+<ol>
+<li><a href="https://brightpick.ai/resources/dr-max/">Brightpick｜Dr. Max Pavlov 正式案例，30 台及运营数据</a></li>
+<li><a href="https://brightpick.ai/brightpick-expands-partnership-with-dr-max/">Brightpick｜2026 年 Ostrava、Bratislava 扩建公告</a></li>
+<li><a href="https://www.systemylogistiky.sk/2026/11/05/jedna-technologia-vychystavania-nestaci/">Systémy Logistiky Slovakia｜2026 年 11 月 5 日行业报道</a></li>
+<li><a href="https://maximum.drmax.cz/magazin/2-2025/to-capkovske-slovo-robot">Dr. Max 自有刊物｜Pavlov 和 Brno 两仓现场图文</a></li>
+<li><a href="https://www.systemylogistiky.cz/2024/03/28/tomas-seget-pristup-do-skladu-s-opiaty-ma-jen-par-lidi/">ViaPharma 物流负责人 Tomáš Seget 采访｜Pavlov 全仓、既有设备和试点</a></li>
+<li><a href="https://brightpick.ai/resources/cost-of-inaction-how-not-automating-costs-your-business-long-term/">Brightpick｜Tomáš Seget 谈商品选择、实施时间和运营变化</a></li>
+<li><a href="https://www.systemylogistiky.cz/2024/07/05/73245/">Systémy Logistiky｜2024 年 Brightpick 技术演讲及项目参数</a></li>
+<li><a href="https://www.systemylogistiky.cz/wp-content/uploads/2025/04/systemy_logistiky_cz_216-2.pdf">Systémy Logistiky｜2025 年春季 Pavlov 现场报道，第 32 页</a></li>
+<li><a href="https://www.systemylogistiky.cz/2025/07/14/roboty-vyuzivajici-ai-a-strojove-uceni-se-uplatnuji-v-distribucnim-centru-viapharma/">Systémy Logistiky｜2025 年 7 月车队、单机速度与 RaaS</a></li>
+<li><a href="https://brightpick.ai/the-feed-is-installing-brightpick/">Brightpick｜2024 年初公告内的 Dr. Max 一期部署披露</a></li>
+<li><a href="https://www.aurorainsights.co.uk/awards/european-pharmacy-giant-dr-max-automates-order-picking-and-replenishment-with-brightpick-autopicker/">Aurora Insights｜医疗奖项目申报与一期设计值</a></li>
+<li><a href="https://brightpick.ai/resources/how-brightpicks-raas-works/">Brightpick｜RaaS 与 Dr. Max 19 台阶段</a></li>
+<li><a href="https://brightpick.ai/ai-info/">Brightpick｜技术摘要中的 21 台阶段</a></li>
+<li><a href="https://brightpick.ai/resources/how-to-achieve-lights-out-warehousing/">Brightpick｜Dr. Max 熄灯班次与异常处理</a></li>
+<li><a href="https://www.viapharma.cz/Article.aspx?id=Kontakty_Ostrava">ViaPharma｜Ostrava 配送中心地址</a></li>
+<li><a href="https://www.drmax.eu/en/article/new-modern-warehouse-for-dr-max-slovakia-3gBM0W">Dr. Max 集团｜斯洛伐克 Prologis Park Bratislava 电商仓</a></li>
+</ol>
+<p><strong>集团合作和相关仓库</strong></p>
+<ol start="17">
+<li><p><a href="https://www.eastlog.cz/en/session/roboshuttles-in-the-e-commerce-of-the-dr-max-pharmacy-chain/">EASTLOG｜ViaPharma 与 BITO 介绍布尔诺电商仓</a></p>
+</li>
+<li><p><a href="https://www.systemylogistiky.cz/2025/08/20/farmalogistika-pod-tlakem-technologickych-i-regulatornich-zmen/">Systémy Logistiky｜布尔诺车队、工位、输送及包装数据</a></p>
+</li>
+<li><p><a href="https://www.geekplus.com/resources/news/italy-tote-robot">Geek+｜Telgate 项目部署公告</a></p>
+</li>
+<li><p><a href="https://www.ifoy.org/en/ifoy-2025/roboshuttle-p40-tote-to-person-solution-with-dr-max-italy/">IFOY｜Telgate RoboShuttle＋P40 项目与测评</a></p>
+</li>
+<li><p><a href="https://www.geekplus.com/case-studies/dr.max">Geek+｜布加勒斯特 P500 货架到人项目</a></p>
+</li>
+<li><p><a href="https://www.roboticsandautomationmagazine.co.uk/news/awards/robotics-automation-awards-2024-winners-announced.html">Robotics &amp; Automation Awards｜2024 年医疗与零售奖获奖名单</a></p>
+</li>
+<li><p><a href="https://www.drmax.it/drmax-informa/dr-max-vince-il-premio-the-best-use-of-robotics-in-retail-award-insieme-a-geekplus">Dr. Max Italia｜Telgate 客户数据与获奖公告</a></p>
+</li>
+<li><p><a href="https://www.newstream.cz/zpravy-z-firem/roboty-v-brne-obrazem-ve-velkoskladu-lekarenskeho-obra-zastanou-vetsinu-prace-autonomni-stroje">Newstream｜布尔诺现场采访及日出货口径</a></p>
+</li>
+<li><p><a href="https://www.geekplus.com/resources/robotics-blogs/drmax_playbook">Geek+｜Dr. Max 在罗马尼亚、意大利和捷克的部署历程</a></p>
+</li>
+<li><p><a href="https://www.drmax.cz/tiskove-centrum/dr-max-spustil-v-roudnici-nad-labem-robotizovany-vydej-leku">Dr. Max 捷克｜BD Rowa Easy Load 门店设备上线公告</a></p>
+</li>
+<li><p><a href="https://www.drmax.sk/tlacove-centrum/otvorenie-dalsej-lekarne-buducnosti">Dr. Max 斯洛伐克｜Košice 门店 Wallie 发药设备</a></p>
+</li>
+<li><p><a href="https://panattonieurope.com/en-cz/newsroom/panattoni-has-handed-over-the-most-environemtnally">Panattoni｜Pavlov 整栋建筑面积</a></p>
+</li>
+<li><p><a href="https://ctp.eu/cs/news/ctp-leases-so-far-over-400000-sqm-of-logistics-space-in-czech-republic-in-2023/">CTP｜ViaPharma 在 Ostrava 的租赁面积</a></p>
+</li>
+<li><p><a href="https://www.pse.cz/en/news/dr-max-pharmacy-chain-ups-sales-to-kc29-8bn-in-2024">布拉格证券交易所｜Dr. Max 捷克负责人披露 Brno 全仓日订单处理能力</a></p>
+</li>
+</ol>
+<p><strong>客户报告与现场资料</strong></p>
+<ul>
+<li><a href="https://www.drmax.eu/admin/fileGet.aspx?f=neyabsofb">Dr. Max 2024 年可持续发展报告｜慢周转单件拣选试点、扩容与暗仓计划</a></li>
+<li><a href="https://brightpick.ai/open-house-dr-max-nov-11-13/">Brightpick｜Pavlov 现场开放日及站点地址</a></li>
+</ul>
+<hr />
+<p><a id="superior-communications"></a></p>
+<h3 id="superior-communications-brightpick">Superior Communications × Brightpick｜手机配件拣选机器人项目</h3>
+<p><strong>项目类型</strong>　移动式拣选机器人</p>
+<p><a href="#case-index">返回案例目录</a></p>
+<p>截至 <strong>2026 年 11 月 21 日</strong>，Superior Communications 在美国田纳西州 <strong>La Vergne</strong> 的项目已部署 <strong>50 台 Brightpick Autopicker</strong>。项目用于支持两个配送中心的业务整合，已披露的拣选系统峰值为 <strong>3,500 件/小时、1,000 订单行/小时</strong>，系统占地约 <strong>2,323 平方米</strong>。客户确认了 <strong>50 台</strong>已部署。<strong>实际日发货量仍未公开</strong>，官网披露的是纳什维尔配送中心<strong>年处理超过 2,500 万件</strong>。〔1–5〕</p>
+<h4 id="section-9">一、项目与现场流程</h4>
+<p><strong>Superior Communications 属于手机及无线通信配件行业</strong>，为运营商、设备制造商和大型零售商提供配件分销与供应链服务。项目公开列出的商品包括<strong>手机壳、屏幕保护膜、其他手机配件和通信设备</strong>，主要用于零售门店补货。原有输送线占用较多空间，客户希望在维持吞吐的同时，把田纳西州两处配送业务集中到一处。Brightpick 的正式案例确认机器人已上线，并将两仓业务整合描述为正在推进。〔1、2、4〕</p>
+<table>
+<thead>
+<tr>
+<th>作业环节</th>
+<th>现场做法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>巷道内自主拣选</strong></td>
+<td>Autopicker 集成移动底盘、3D 视觉、激光雷达和机械臂。机器人在货架巷道中取出库存料箱，把单件商品拣入订单箱。正式案例中，这是拣量最大的流程。〔1、2〕</td>
+</tr>
+<tr>
+<td><strong>G2P 货到人</strong></td>
+<td>机器人把商品送到人工工位，由操作员完成抓取，处理不便由机械臂拣取的商品。〔1、2〕</td>
+</tr>
+<tr>
+<td><strong>Fast Lane 快拣</strong></td>
+<td>人员直接从托盘或原箱拣取高周转商品，放入机器人携带的同一订单箱。这样可省去先拆箱入库的步骤。Brightpick CEO 表示，其中不少商品机器人也能抓取，直接从托盘拣更快。〔1、6、7〕</td>
+</tr>
+<tr>
+<td><strong>暂存、合单和发运</strong></td>
+<td>车队负责已拣订单的暂存、合单及向出货环节交接，现场配有拆箱和包装出货人员。运营副总裁 Chad Sheppard 表示，原输送线留作后备，截至案例披露时未启用后备流程。〔1、2〕</td>
+</tr>
+<tr>
+<td><strong>部署和采购</strong></td>
+<td>采用分批上线及 <strong>RaaS（机器人即服务）</strong>。客户选择这套方案也看重货架和机器人可增配、重排或随业务迁移。〔1、2〕</td>
+</tr>
+</tbody>
+</table>
+<p><strong>同一客户另有 DCS 仓库系统项目。</strong> Designed Conveyor Systems 在 Brightpick 一期上线前已公开展示 Superior 的 <strong>DATUM 仓库执行系统（WES）</strong>。DATUM 接入原有 WMS、灯光拣选设备和输送线控制器，负责波次任务下发、补货、同单多箱关联和包装通道合流。公开资料未说明 <strong>DATUM 与 Brightpick</strong> 是否有直接接口。DCS 的效率数据单列在下文。〔8、9〕</p>
+<h4 id="section-10">二、项目数据单列</h4>
+<h5 id="section-11">1. 机器人车队、拣选和人员</h5>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>最新可核实数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>实际投运台数</strong></td>
+<td><strong>2025 年 7 月首期上线 25 台，2026 年初扩至 50 台</strong>。Brightpick 于 <strong>2026 年 5 月 14 日</strong>发布正式结果，Superior 也确认已部署 50 台。〔1、3〕</td>
+</tr>
+<tr>
+<td><strong>系统小时拣选量</strong></td>
+<td>最高 <strong>3,500 件/小时</strong>，按 Brightpick 的 <em>picks per hour</em> 口径。〔1〕</td>
+</tr>
+<tr>
+<td><strong>系统小时订单行</strong></td>
+<td>最高 <strong>1,000 订单行/小时</strong>。每张订单可含多行。〔1〕</td>
+</tr>
+<tr>
+<td><strong>单机拣选峰值</strong></td>
+<td>Brightpick 后续披露该站单台 Autopicker 最高 <strong>100 次拣取/小时</strong>。车队平均单机节拍未公开。〔10〕</td>
+</tr>
+<tr>
+<td><strong>拣选方式占比</strong></td>
+<td><strong>73% 巷道内全自主、10% G2P 货到人、17% Fast Lane 托盘辅助拣选</strong>。占比按拣取量统计。〔1〕</td>
+</tr>
+<tr>
+<td><strong>拣选人员</strong></td>
+<td>正式案例正文为 <strong>2–3 人/班</strong>，案例标题采用 <strong>2 人</strong>口径。〔1〕</td>
+</tr>
+<tr>
+<td><strong>补货、包装人员</strong></td>
+<td>另有 <strong>3–4 人/班拆箱上料</strong>，以及 <strong>4–5 人/班包装出货</strong>。〔1〕</td>
+</tr>
+<tr>
+<td><strong>准确性与质检</strong></td>
+<td>客户称错拣减少，出库前质检流程缩短。项目未披露准确率百分比、首抓成功率、掉落率或系统可用率。〔1〕</td>
+</tr>
+<tr>
+<td><strong>SKU 与设备配置</strong></td>
+<td>已披露产品类型，未公开机器人区的 <strong>SKU 总数、料箱数量、货架高度、工位总数、各代 Autopicker 配比</strong>。Giraffe 在早期公告中作为产品搭配能力介绍，Superior 的实装情况未见披露。〔1、2〕</td>
+</tr>
+<tr>
+<td><strong>实施成本与回报</strong></td>
+<td>已确认采用 <strong>RaaS</strong>。项目租金、合同额、实际成本降幅、投资回收期及从下单到验收的总工期未披露。〔1、2〕</td>
+</tr>
+</tbody>
+</table>
+<h5 id="section-12">2. 面积、发货及全仓口径</h5>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>最新可核实数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Brightpick 系统占地</strong></td>
+<td><strong>约 2,323 平方米</strong>。Brightpick 正式案例给出的是整套机器人履约系统的占地。〔1〕</td>
+</tr>
+<tr>
+<td><strong>Superior 公布的纳什维尔配送中心面积</strong></td>
+<td><strong>约 12,077 平方米</strong>，公开地址为 <strong>5301 Centre Pointe Drive, La Vergne, TN 37086</strong>。Superior 的收货指南同时列有 La Vergne 的另一个仓址，Brightpick 正式材料未公布 50 台车队所在建筑的门牌及合并后的全仓面积。〔4、5、11〕</td>
+</tr>
+<tr>
+<td><strong>配送中心年度处理量</strong></td>
+<td>Superior 官网列出纳什维尔配送中心<strong>年处理超过 25,000,000 件</strong>，未标注统计年份。口径为处理件数，未进一步列出发运件数。〔4〕</td>
+</tr>
+<tr>
+<td><strong>实际日发货量</strong></td>
+<td><strong>未公开</strong>。未找到全仓或 50 台机器人系统实际发出的<strong>件数、订单数、纸箱数或包裹数／天</strong>。〔1、4〕</td>
+</tr>
+<tr>
+<td><strong>实际日拣选量</strong></td>
+<td><strong>50 台阶段未公开</strong>。正式案例提供的是小时峰值。〔1〕</td>
+</tr>
+<tr>
+<td><strong>全仓排班与人数</strong></td>
+<td>Superior 的站点介绍列 <strong>两个班次、200 多名员工</strong>。DCS 在其项目调试期间记录了<strong>三班持续作业</strong>。两项披露的时间和业务范围不同，50 台机器人区全天运行时长未公开。〔4、8〕</td>
+</tr>
+</tbody>
+</table>
+<h5 id="dcs">3. 早期计划与 DCS 数据</h5>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>单独保留的公开数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Brightpick 2025 年 4 月计划</strong></td>
+<td>计划 <strong>19＋18＝37 台</strong>，预计 <strong>超过 4,000 件/小时、最高 88,000 次拣取/天</strong>。这组数字是立项时对拣选能力的预测。〔2〕</td>
+</tr>
+<tr>
+<td><strong>Brightpick 未注明日期的技术摘要</strong></td>
+<td>另有早期 <strong>21 台、约 2,000 次拣取/小时</strong>的描述，以及扩到 <strong>39 台、最高 76,000 次拣取/天</strong>的预测。车队实际进度以 2026 年正式案例的 <strong>25 → 50 台</strong>为准。〔1、12〕</td>
+</tr>
+<tr>
+<td><strong>DCS DATUM 改造</strong></td>
+<td>DCS 披露调试共 <strong>5 周</strong>，在班次间 <strong>4 小时</strong>窗口实施。客户称改造后<strong>拣选速率提高 40%、包装出货速率提高 20%</strong>，加箱产生的相关拣选差错接近消除。DCS 案例还引述客户称，业务订单量较五年前约为 <strong>10 倍</strong>、SKU 数约<strong>翻倍</strong>，未披露绝对数量。〔8、9〕</td>
+</tr>
+</tbody>
+</table>
+<p><strong>如果录入竞品对比表，建议把三个字段分别写清</strong>：系统面积 <strong>约 2,323 平方米</strong>，小时拣选量 <strong>最高 3,500 件/小时</strong>，实际日发货量 <strong>未披露</strong>。常见的 <strong>88,000 件/天</strong>来自早期拣选设计目标，<strong>2,500 万件以上</strong>来自客户的配送中心年度处理量。〔1、2、4〕</p>
+<h4 id="section-13">去重出处</h4>
+<ol>
+<li><a href="https://brightpick.ai/resources/superior-communications-case-study/">Brightpick｜2026 年 50 台正式案例及实际吞吐、人力、占地</a></li>
+<li><a href="https://brightpick.ai/superior-communications-to-deploy-brightpick/">Brightpick｜2025 年初始部署公告、商品类型及计划产能</a></li>
+<li><a href="https://www.linkedin.com/company/superior-communications">Superior Communications｜客户官方动态确认已部署 50 台</a></li>
+<li><a href="https://superiorcommunications.com/services/logistics/">Superior Communications｜纳什维尔配送中心面积、人员和年处理量</a></li>
+<li><a href="https://superiorcommunications.com/superior-communications-announces-opening-of-new-distribution-center-in-nashville-tn/">Superior Communications｜La Vergne 配送中心启用公告和地址</a></li>
+<li><a href="https://www.linkedin.com/posts/jzizka_pleased-to-finally-share-an-inside-look-at-activity-7475151780629143553-cXX7">Brightpick CEO｜Superior 现场项目与 Fast Lane 的用途</a></li>
+<li><a href="https://brightpick.ai/resources/why-the-fastest-moving-products-are-the-hardest-to-automate/">Brightpick｜Fast Lane 托盘直拣和同订单箱流程</a></li>
+<li><a href="https://www.designedconveyor.com/case-studies/dcs-deploys-datum-at-superior-communications/">Designed Conveyor Systems｜DATUM 项目、调试及效率数据</a></li>
+<li><a href="https://www.designedconveyor.com/case-studies/video-tours-superior-communications-datum-optimized-fulfillment-operations/">Designed Conveyor Systems｜2025 年 DATUM 现场流程导览</a></li>
+<li><a href="https://brightpick.ai/resources/why-mobile-manipulators-are-taking-over-warehouses/">Brightpick｜Superior 站点单机最高拣选节拍</a></li>
+<li><a href="https://superiorcommunications.com/wp-content/uploads/2024/05/Superior_IRG-2024May-Rev1_3.pdf">Superior Communications｜收货指南，两处 La Vergne 仓址</a></li>
+<li><a href="https://brightpick.ai/ai-info/">Brightpick｜21 台阶段与 39 台预测的技术摘要</a></li>
+<li><a href="https://www.youtube.com/watch?v=OvX82HopKu0">Brightpick｜Superior 手机配件履约现场视频</a></li>
+</ol>
+<hr />
+<p><a id="napa-york"></a></p>
+<h3 id="napa-auto-parts-brightpick">NAPA Auto Parts × Brightpick 拣选机器人项目</h3>
+<p><strong>项目类型</strong>　移动式拣选机器人</p>
+<p><a href="#case-index">返回案例目录</a></p>
+<p>截至 2026 年 11 月 21 日，<strong>NAPA 与 Brightpick 已从试点推进到正式投运。美国宾夕法尼亚州约克市的逆向物流中心已有超过 100 台 Brightpick 机器人运行。</strong> 该中心处理汽车配件退货、用于再制造的回收旧件，以及发往 NAPA 美国东北部配送网络的再分配库存。 〔1、2〕</p>
+<h4 id="section-14">一、项目信息</h4>
+<ul>
+<li><strong>客户与合作范围。</strong> NAPA 属于 Genuine Parts Company（GPC）的汽车零部件业务，主营汽车后市场替换件、配件及维修用品的零售和分销。Brightpick 称 NAPA 是其首个汽车行业客户，也是签约时其最大的美国客户。双方于 <strong>2025 年开始试点</strong>，Brightpick 称试点运行成功。<strong>2026 年初签约增加一个站点，2 月 18 日公开</strong>，协议也为后续地点扩展留有空间。项目采用<strong>货到人（G2P）机器人</strong>接入 NAPA 现有仓储技术，目标是改善库存搬运、门店补货和处理效率。 〔3〕</li>
+<li><strong>2025 年试点地点。</strong> 公开线索指向佐治亚州 <strong>Cartersville 的 NAPA Robotics Lab（Site Zero）</strong>。NAPA 供应链负责人确认该实验室用于自动化试验和验证。参与实施的顾问列出了 2025 年的 Site Zero 和 2026 年的约克中心，提到部署 <strong>Manhattan Active WM</strong>，以及与 Brightpick 物料搬运设备、JDE、MIF 和 Google Cloud 的集成。Brightpick 的合作公告未点名试点城市，因此 Cartersville 是有依据的地点推断。 〔4、5〕</li>
+<li><strong>约克中心的运营。</strong> 地址为 <strong>500 Willow Springs Lane, York, Pennsylvania</strong>。这是 NAPA 首个高度自动化的逆向物流中心，机器人与员工协同处理退回的配件和旧件，让可重新入库的库存更快进入东北部配送网络。中心于 <strong>2026 年 8 月投运</strong>，<strong>10 月举行剪彩</strong>，11 月发布开业报道。GPC 在第三季度电话会上表示，宾州东部新中心按计划、按预算上线，运营指标进展符合预期。 〔6、7、8〕</li>
+<li><strong>机器人型号与拣选分工。</strong> Brightpick 在 <strong>2026 年 5 月</strong>确认 NAPA 已部署 <strong>Giraffe</strong>，它负责从高层货架取出料箱并转交给低位作业机器人。Brightpick 在同一篇文章中介绍了 Giraffe 与 <strong>Autopicker</strong> 配合完成拣选的通用方案，但未列出 NAPA 各站点的配置。合作公告的配图文件名还点出了 <strong>Retriever 和 Giraffe</strong>。因此，<strong>约克站能确认的是 Brightpick 车队总量和货到人方案，Autopicker、Retriever、Giraffe 各有多少台，以及有多少商品由机械臂直接抓取，仍未披露。</strong> 〔9、10〕</li>
+</ul>
+<h4 id="section-15">二、项目数据</h4>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th style="text-align: right;">最新公开值</th>
+<th>口径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>约克在役机器人</strong></td>
+<td style="text-align: right;"><strong>超过 100 台</strong></td>
+<td>2026 年，约克单站 Brightpick 车队总量。精确台数及各型号数量未披露。〔1、2〕</td>
+</tr>
+<tr>
+<td><strong>约克中心面积</strong></td>
+<td style="text-align: right;"><strong>约 37,161 m²</strong></td>
+<td>开业披露的整座中心面积。机器人作业区面积未单独披露。〔2〕</td>
+</tr>
+<tr>
+<td>约克建筑租赁面积</td>
+<td style="text-align: right;"><strong>约 37,435 m²</strong></td>
+<td>同址物业的租赁口径。〔11〕</td>
+</tr>
+<tr>
+<td><strong>约克 SKU 容量</strong></td>
+<td style="text-align: right;"><strong>250,000 个独立 SKU</strong></td>
+<td>中心设计可支持的品项数。实际在库 SKU 数未披露。〔2〕</td>
+</tr>
+<tr>
+<td>库存再分配准备时间</td>
+<td style="text-align: right;"><strong>预计缩短 43%</strong></td>
+<td>从库存准备到可再分配这一环节的预期改善，实测值未披露。〔2〕</td>
+</tr>
+<tr>
+<td>库存准确率</td>
+<td style="text-align: right;"><strong>预计最高 99.5%</strong></td>
+<td>库存数据的准确率。订单拣选准确率另无公开数据。〔2〕</td>
+</tr>
+<tr>
+<td>Cartersville 实验室面积</td>
+<td style="text-align: right;"><strong>约 4,645 m²</strong></td>
+<td>整个机器人实验室面积。Brightpick 试点占用面积及试点台数未披露</td>
+</tr>
+<tr>
+<td><strong>日拣选量、小时拣选量</strong></td>
+<td style="text-align: right;"><strong>未披露</strong></td>
+<td>件/天、件/小时、订单行/小时及峰值产能均无公开值</td>
+</tr>
+<tr>
+<td><strong>日发货量、日订单量、日退货处理量</strong></td>
+<td style="text-align: right;"><strong>未披露</strong></td>
+<td>日再分配出库件数、箱数及发运量也未公开</td>
+</tr>
+<tr>
+<td>工位、班次及人员</td>
+<td style="text-align: right;">未披露</td>
+<td>人工货到人工位数、每班人数、运行时长和各拣选方式占比未公开</td>
+</tr>
+<tr>
+<td>机器人合同金额、回收期</td>
+<td style="text-align: right;">未披露</td>
+<td>未找到 Brightpick 合同金额、采购或租赁方式、节省人工及投资回收期</td>
+</tr>
+</tbody>
+</table>
+<h4 id="napa">三、NAPA 的另一项机器人合作</h4>
+<p><strong>2026 年 10 月 15 日，Hy-Tek Intralogistics 与海柔创新（Hai Robotics）宣布承接 NAPA 的 Flow Center 自动化项目。</strong> Hy-Tek 负责系统集成，海柔提供 <strong>HaiPick 多机器人自动存取系统</strong>。方案在 Hy-Tek 的测试仓内做过部署前验证，目标是提高储存密度、吞吐和订单准确率。NAPA 总裁另有披露，明确提到宾州 <strong>Manheim Flow Center</strong> 和 <strong>York 逆向物流中心</strong>。供应商公告未点名 HaiPick 的安装地址，也未公开细分型号、台数、投运日期或实际吞吐。约克的 <strong>超过 100 台</strong>有 Brightpick 的单独披露。 〔12、13〕</p>
+<h4 id="section-16">去重出处</h4>
+<ol>
+<li><a href="https://www.linkedin.com/in/kvetohecko">Brightpick CEO 的约克投运说明（LinkedIn 转载）</a></li>
+<li><a href="https://www.aftermarketnews.com/napa-opens-first-highly-automated-reverse-logistics-center/">约克中心开业披露</a></li>
+<li><a href="https://brightpick.ai/brightpick-napa-partnership/">Brightpick 合作公告</a></li>
+<li><a href="https://www.linkedin.com/posts/justin-ducharme_teamnapa-onegpc-activity-7424844210450644992-3qo2">NAPA 机器人实验室公告</a></li>
+<li><a href="https://us.bold.pro/my/chiranjeevi-garnepudi">实施顾问的项目记录</a></li>
+<li><a href="https://www.linkedin.com/posts/alain-masse_proud-to-see-our-newest-napa-auto-parts-distribution-activity-7500175304565612544-POAI">NAPA 总裁的投运说明</a></li>
+<li><a href="https://www.aftermarketmatters.com/mechanical-repair/napa-opens-automated-reverse-logistics-center-for-returns-and-redistribution/">投运及剪彩报道</a></li>
+<li><a href="https://stockanalysis.com/stocks/gpc/transcripts/711029-q3-2026/">GPC 第三季度电话会实录</a></li>
+<li><a href="https://brightpick.ai/resources/giraffe-wins-2026-rbr50-innovation-award/">Brightpick 的 Giraffe 部署披露</a></li>
+<li><a href="https://brightpick.ai/wp-content/uploads/2026/02/Brightpick-Retriever-and-Giraffe-1024x683.jpg">合作公告原始配图</a></li>
+<li><a href="https://platform.reverecre.com/project/0cbd1c26-c58c-4fec-a5f0-c5bf9870e97d">物业资料</a></li>
+<li><a href="https://hy-tek.com/resources/hy-tek-intralogistics-selected-to-deliver-advanced-warehouse-automation-for-napa-auto-parts/">Hy-Tek 与海柔项目公告</a></li>
+<li><a href="https://www.linkedin.com/in/alain-masse">NAPA 总裁的两站点说明</a></li>
+</ol>
+<hr />
+<p><a id="brightpick-related"></a></p>
+<h3 id="brightpick-2">Brightpick 总调研中的相关项目</h3>
+<p><a href="#case-index">返回案例目录</a></p>
+<ul>
+<li><strong>Rohlik 布拉格。</strong> 现场的单件拣选由 Runner 搬箱和固定机械臂完成。拣选区 <strong>2,500 SKU</strong>，设计 <strong>600 件/小时</strong>、运行 <strong>18 小时/天</strong>，案例称可用率 <strong>&gt;99.5%</strong>。全仓约 <strong>18,000 SKU、7,000 单/天</strong>。集团另公布 Autopicker 和 Dispatcher 推广，站点设备数量沿用各自项目披露。 <a href="https://brightpick.ai/rohlik-group-continues-innovating-in-automation-of-fulfilment-centres-by-piloting-fully-automated-flexible-fulfilment-solution-from-brightpick/">布拉格试点公告</a> · <a href="https://brightpick.ai/resources/rohlik-installs-brightpick/">布拉格项目案例</a> · <a href="https://brightpick.ai/brightpick-rohlik-group-announcement/">集团公告</a></li>
+<li><strong>McGuff，加州。</strong> 公布医药批发仓方案 <strong>12 台 Autopicker＋4 台 Giraffe</strong>，设计超过 <strong>850 件/小时</strong>，实际投运和验收数据待核实。出处见 The Feed 项目〔5〕。</li>
+<li><strong>Knuspr 慕尼黑、Netrush、MTBIKER。</strong> Knuspr 的 <strong>53 台 Dispatcher</strong>用于拣后发运。Netrush、MTBIKER 已披露的落地数据属于 Retriever 货到人，其中 MTBIKER 另有 Autopicker 扩建计划。 <a href="https://brightpick.ai/resources/knuspr/">Knuspr 案例</a> · <a href="https://brightpick.ai/resources/netrush/">Netrush 案例</a> · <a href="https://brightpick.ai/resources/mtbiker/">MTBIKER 案例</a></li>
+</ul>
+<hr />
+<p><a id="supplier-geekplus"></a></p>
+<h2 id="section-17">极智嘉｜1 条</h2>
+<p><a href="#case-index">返回案例目录</a></p>
+<table>
+<thead>
+<tr>
+<th>客户与场地</th>
+<th>项目类型</th>
+<th>作业及关键数据</th>
+<th>出处</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a id="schneider"></a><strong>施耐德电气上海物流中心 DCSH</strong></td>
+<td>固定式拣选工作站</td>
+<td>工业品 B2B 仓内的 RAPS 单件拣选试点。全仓 <strong>22,213 ㎡</strong>。2026 年 5 月披露试点拣选吞吐约为人工 <strong>2 倍</strong>、准确率 <strong>≥99.99%</strong>，部署后 <strong>48 小时内</strong>具备生产条件。7 月供应商供稿称试点通过验收。现场台数、绝对件速、长期表现、具体订单组织方式和接口仍待核实。</td>
+<td><a href="https://www.schneider-electric.cn/zh/about-us/contact-us/our-office/headquarters/">机构资料</a> · <a href="https://www.geekplus.com/resources/news/geekwins-2026-rbr50-innovation-award-for-robot-arm-picking-station?hs_amp=true">试点公告</a> · <a href="https://mh.jgvogel.cn/c/1607/1607317.shtml">验收与视频</a></td>
+</tr>
+</tbody>
+</table>
+<p>THG Ingenuity／THG Fulfil 在原调研中是客户交流线索，部署地点、台数及验收状态待确认。 <a href="https://www.linkedin.com/posts/geekplusrobotics_logisticsautomation-robotics-supplychain-activity-7463499350879395840-I5oD">THG 交流视频帖</a></p>
+<p><a id="supplier-knapp"></a></p>
+<h2 id="knappcovariant10">KNAPP／Covariant｜10 条</h2>
+<p><a href="#case-index">返回案例目录</a></p>
+<p>各站均涉及 Pick-it-Easy Robot，现场 AI 配置按项目资料确认。Woolworths、Apotek 1、eMAG 和 Shufersal 的原调研仍缺具体 AI 软件版本。</p>
+<table>
+<thead>
+<tr>
+<th>客户与场地</th>
+<th>项目类型</th>
+<th>作业及关键数据</th>
+<th>出处</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a id="obeta"></a><strong>Obeta／Technilog，德国 Ludwigsfelde</strong></td>
+<td>固定式拣选工作站</td>
+<td>电气用品从库存箱拣入订单箱。2019 年 9 月开始使用 AI，公开访谈记录 <strong>6 个拣选位中 1 个 AI 站</strong>。KNAPP 披露峰值 <strong>600 件/小时</strong>、准确率 <strong>99%</strong>、覆盖约 <strong>70% 的可拣 SKU</strong>。早期气动设备的 <strong>500 次/小时</strong>和维护商另报的 <strong>1,500 次/小时</strong>各有独立口径。</td>
+<td><a href="https://og.mhi.org/downloads/industrygroups/solutions-community/casestudies/obeta.pdf">KNAPP 案例 PDF</a> · <a href="https://digitalzentrum-augsburg.de/wp-content/uploads/2021/09/Leitfaden_ReinforcementLearning.pdf#page=10">客户访谈</a></td>
+</tr>
+<tr>
+<td><a id="mckesson"></a><strong>McKesson，美国医药配送</strong></td>
+<td>固定式拣选工作站</td>
+<td>Covariant Brain 辅助单件药品拣选，供应商披露可全天候作业，最迟 <strong>2021 年 12 月</strong>已有公开现场资料。具体仓址、装机台数、单机节拍和首抓成功率待核实。</td>
+<td><a href="https://www.knapp.com/en/insights/blog/logistics-robots-applications-best-practices/">现场案例</a> · <a href="https://www.knapp.com/en/newsroom/press/knapp-and-covariant-extend-their-success-story/">合作公告</a></td>
+</tr>
+<tr>
+<td><a id="gxo-tilburg"></a><strong>GXO Logistics，荷兰 Tilburg</strong></td>
+<td>固定式拣选工作站</td>
+<td>服装逐件抓取、扫码并投入吊袋，商品与吊袋条码绑定。<strong>2021 年 7 月</strong>开始运行，公开确认首套 <strong>1 台</strong>，另有 <strong>增配 4 台</strong>计划。实际扩容、单机节拍和投袋准确率待核实。</td>
+<td><a href="https://gxo.com/news_article/gxo-pilots-customised-robotic-arm/">GXO 公告</a> · <a href="https://www.knapp.com/wp-content/uploads/KNAPP-World-of-Solutions-032021_en-1.pdf">KNAPP 项目资料</a></td>
+</tr>
+<tr>
+<td><a id="wuerth"></a><strong>Würth Industrie Service，德国 Bad Mergentheim</strong></td>
+<td>固定式拣选工作站</td>
+<td>工业小件及包装单元拣选。物流中心约 <strong>70,000 ㎡</strong>，公开配置 <strong>5 台</strong>，Covariant 于 2023 年确认其中 <strong>4 台</strong>使用其 AI。项目单机峰值 <strong>300 次拣选/小时</strong>，对象最高 <strong>3.5 kg</strong>。</td>
+<td><a href="https://www.knapp.com/en/insights/case-studies/intelligent-automation-wuerth/">KNAPP 案例</a> · <a href="https://www.knapp.com/en/insights/blog/automation-in-intralogistics/">节拍出处</a> · <a href="https://vimeo.com/814411130">Covariant 视频</a></td>
+</tr>
+<tr>
+<td><a id="brodrene-langhus"></a><strong>Brødrene Dahl，挪威 Langhus</strong></td>
+<td>固定式拣选工作站</td>
+<td>暖通和工业小件从库存箱拣入发货纸箱。<strong>2021 年秋投用 1 台</strong>，FANUC 机械臂配真空吸具，现场商品最高 <strong>3 kg</strong>，披露抓取接触面 <strong>15 × 15 mm</strong>。早期现场最多尝试 <strong>5 次</strong>后转人工。</td>
+<td><a href="https://www.knapp.com/en/insights/case-studies/brodrene-dahl-banks-on-logistics-automation/">KNAPP 案例</a> · <a href="https://www.logistikkinside.no/ai-automasjon-brodrene-dahl-grossist/laerevillig-kollega-pa-lageret/914500">现场采访</a></td>
+</tr>
+<tr>
+<td><a id="brodrene-randers"></a><strong>Brødrene Dahl，丹麦 Randers LOGSTAR</strong></td>
+<td>固定式拣选工作站</td>
+<td><strong>2023 年 5 月投用 1 台</strong>，与 <strong>5 个人工位</strong>协同。机器人位接入 <strong>1 个源箱、4 个订单箱</strong>，约 <strong>7,000 件/日</strong>、最高约 <strong>1,100 订单行/日</strong>。LOGSTAR 小件自动化仓 <strong>8,500 ㎡</strong>。</td>
+<td><a href="https://valuechain.be/documents/43/KNAPP-Case_Study_Brodrene_Dahl_Randers_en.pdf">KNAPP 项目报告 PDF</a></td>
+</tr>
+<tr>
+<td><a id="emag"></a><strong>eMAG，罗马尼亚 Joița DC2</strong></td>
+<td>固定式拣选工作站</td>
+<td>主要处理电商单件订单，服饰和化妆品由真空吸取。<strong>2022 年 11 月投运 1 台</strong>，单机最高 <strong>600 次拣选/小时</strong>。DC2 <strong>129,690 ㎡</strong>，自动化仓区 <strong>44,600 ㎡</strong>。<strong>432 台</strong>为库内供料穿梭车。</td>
+<td><a href="https://www.knapp.com/en/insights/case-studies/automated_e-commerce_fulfillment_at_emag/">KNAPP 项目案例</a> · <a href="https://emagoperations.ro/second-warehouse/">DC2 建筑资料</a></td>
+</tr>
+<tr>
+<td><a id="shufersal"></a><strong>Shufersal Online，以色列 Modi’in</strong></td>
+<td>固定式拣选工作站</td>
+<td>线上杂货订单，机械臂把易损商品放入购物纸袋。Modi’in <strong>2023 年 3 月商业运营</strong>，公开资料描述至少 <strong>1 台</strong>，单机节拍未披露。配送中心约 <strong>43,000 ㎡</strong>，约 <strong>19,500 种</strong>可订购商品，整站约 <strong>6,800 单/日</strong>。同一客户 Kadima 站约 <strong>8,000 ㎡</strong>，单件机械臂配置待确认。</td>
+<td><a href="https://www.knapp.com/en/insights/case-studies/highly-automated-online-fulfillment-for-all-temperature-zones/">KNAPP 项目案例</a> · <a href="https://mayafiles.tase.co.il/rpdf/1734001-1735000/P1734231-00.pdf">客户年报</a> · <a href="https://www.frischelogistik.com/tiefkuehlautomatisierung-neu-gedacht/">冷链项目资料</a></td>
+</tr>
+<tr>
+<td><a id="woolworths"></a><strong>Woolworths，澳大利亚 Auburn CFC</strong></td>
+<td>固定式拣选工作站</td>
+<td>生鲜电商单件拣选并装入已打开的纸袋。<strong>2025 年 5 月启用时 2 台</strong>，另有 <strong>16 个人工工位</strong>，开业口径建筑约 <strong>22,000 ㎡</strong>。整仓设计最高 <strong>60,000 单/周</strong>，2026 年 8 月业绩披露实际约 <strong>30,000 单/周</strong>。投运前规划的约 <strong>5%</strong> 分母不清，单机实绩待核实。</td>
+<td><a href="https://www.knapp.com/en/newsroom/press/woolworths-and-knapp-set-a-new-benchmark-in-e-grocery-fulfillment/">KNAPP 开业公告</a> · <a href="https://announcements.asx.com.au/asxpdf/20260826/pdf/07373ly9qw4z2y.pdf">2026 财年披露</a> · <a href="https://www.fwc.gov.au/documents/transcripts/20230803_am202235.pdf">听证记录</a></td>
+</tr>
+<tr>
+<td><a id="apotek-1"></a><strong>Apotek 1，挪威 Lørenskog／Skårer</strong></td>
+<td>固定式拣选工作站</td>
+<td>医药配送，穿梭库和 A-frame 供货。<strong>2 台</strong>，最迟 2026 年 4 月已运行，双机最高 <strong>1,600 件/小时</strong>，单台最高 <strong>400 订单行/小时</strong>。约 <strong>60% SKU</strong> 可处理，承担约 <strong>12% 件数</strong>，现场商品最高 <strong>500 g</strong>。仓储面积 <strong>11,316 ㎡</strong>，整仓约 <strong>35 万件/日</strong>。</td>
+<td><a href="https://www.knapp.us/wp-content/uploads/2026/05/case-study-apotek-1.pdf">KNAPP 项目报告 PDF</a> · <a href="https://www.logistikkinside.no/apotek-1-knapp-lagerautomasjon/automatisering-gir-apotek-1-pusterom/1244305">现场采访</a></td>
+</tr>
+</tbody>
+</table>
+<p><a id="knapp-related"></a></p>
+<p>原总报告还收录 <strong>EDEKA NORDfrische</strong>（鲜肉冷链，2026 年新增 <strong>2 台</strong>，每台约 <strong>450 次/小时</strong>，作业环境 <strong>+2°C</strong>）、<strong>Basiq Dental</strong>（2014 年早期投产）和 <strong>Novaltia Zaragoza</strong>（客户确认部署）。这三项来自供应商总调研。 <a href="https://www.knapp.com/en/insights/case-studies/pick-it-easy-robot-edeka-nordfrische/">EDEKA 项目</a> · <a href="https://studylib.net/doc/8268253/knapp-ag-annual-report">Basiq Dental 年报资料</a> · <a href="https://www.novaltia.es/novaltia-comunica/el-almacen-de-novaltia-en-zaragoza-ejemplo-internacional-de-automatizacion">Novaltia 客户披露</a></p>
+<p><a id="supplier-nomagic"></a></p>
+<h2 id="nomagic6">Nomagic｜6 条</h2>
+<p><a href="#case-index">返回案例目录</a></p>
+<table>
+<thead>
+<tr>
+<th>客户与场地</th>
+<th>项目类型</th>
+<th>作业及关键数据</th>
+<th>出处</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a id="brack"></a><strong>Brack.Alltron，瑞士</strong></td>
+<td>固定式拣选工作站</td>
+<td>AutoStore 供料，最多 <strong>8 格</strong>分隔，单件订单拣入运输纸箱。2023 年行业报道最高 <strong>200 件/小时</strong>。支持夜间及周日自主班次，当前节拍、总台数和现场准确率待核实。</td>
+<td><a href="https://nomagic.ai/case-study/brack-ch/">Nomagic 案例</a> · <a href="https://invision-news.com/3d-bildverarbeitung-3db/automated-picking-at-autostore-systems/">2023 年报道</a></td>
+</tr>
+<tr>
+<td><a id="komplett"></a><strong>Komplett，挪威 Sandefjord</strong></td>
+<td>固定式拣选工作站</td>
+<td>justPick 接入既有 AutoStore，支持自动选吸盘和按箱内空间安排投放。2024 年计划 <strong>2 台</strong>，2025 年集成方确认上线，实际总台数待核实。主仓近 <strong>30,000 ㎡</strong>，商品目录约 <strong>13,000 种</strong>，整仓约 <strong>12,000 件/日</strong>。单机节拍及实际可拣 SKU 数未披露。</td>
+<td><a href="https://nomagic.ai/komplett-no-cooperates-with-nomagic/">合作公告</a> · <a href="https://ito.no/se-komplett-groups-automation-video">集成方上线资料</a> · <a href="https://www.amnytt.no/komplett-logistikkautomatisering-naa-med-ki-drevne-roboter.6749061-304919.html">现场报道</a></td>
+</tr>
+<tr>
+<td><a id="fiege"></a><strong>FIEGE Group</strong></td>
+<td>固定式拣选工作站</td>
+<td><strong>2023 年 12 月</strong>验收投运 <strong>1 台 justPick＋1 台 justInduct</strong>。前者订单拣选，后者向吊袋分拣机供料。供应商公布 <strong>99.8%</strong> 拣选准确率，统计口径未详。**生产率提升 150%**为 AutoStore 加机器人后的整体变化。</td>
+<td><a href="https://www.fiege.com/en/newsroom/fiege-installs-intelligent-picking-robots">FIEGE 公告</a> · <a href="https://nomagic.ai/case-study/fiege/">Nomagic 案例</a> · <a href="https://www.linkedin.com/posts/nomagic_warehouseautomation-robotics-ai-activity-7212031991569907712-WeRP">数据发布</a></td>
+</tr>
+<tr>
+<td><a id="asos"></a><strong>ASOS plc，德国柏林附近 Eurohub</strong></td>
+<td>分拣项目</td>
+<td><strong>4 套 justInduct</strong> 自 <strong>2022 年 9 月初</strong>起交付，负责吊袋分拣供料。案例称持续超过每台 <strong>600 件/小时</strong>的目标，供应商另报 <strong>650 件/小时</strong>，测试条件未详。</td>
+<td><a href="https://nomagic.ai/case-study/asos/">Nomagic 案例</a> · <a href="https://www.intratrend.de/2022/11/29/nomagic-bringt-die-systemloesung-justinduct-mit-asos-als-erstem-kunden-auf-den-markt/">2022 年 11 月发布</a></td>
+</tr>
+<tr>
+<td><a id="zalando"></a><strong>Zalando，Lahr／Mönchengladbach／Verona</strong></td>
+<td>分拣项目</td>
+<td>Richard 承担常规商品逐件抓取、扫码及分拣机供料，Shoebox Picker 处理鞋盒。2026 年 3 月公告披露首批 <strong>10 台</strong>，欧洲计划最多 <strong>50 台</strong>。试点整体最高 <strong>10 万次拣选/日</strong>，各站及各型号分配、单机产能待核实。</td>
+<td><a href="https://corporate.zalando.de/de/technologie/effizienz-der-logistik-zalando-rollt-ki-roboter-von-nomagic-europaweit-aus">Zalando 公告</a> · <a href="https://nomagic.ai/case-study/zalando/">Nomagic 案例</a></td>
+</tr>
+<tr>
+<td><a id="arvato"></a><strong>Arvato，德国 Dortmund</strong></td>
+<td>固定式拣选工作站</td>
+<td>justPick 在 AutoStore 端口兼做订单拣选与退货回补，支持竖放服装夹取、RFID 防多件同抓及换箱期间换工具。2024 年 1 月公布试点，配送中心 <strong>30,000 ㎡</strong>。客户公布技术吞吐 <strong>550 件/小时</strong>订单拣选、<strong>420 件/小时</strong>退货回补。</td>
+<td><a href="https://arvato.com/about/insights/we-collaborate-with-robot-specialist-nomagic">Arvato 试点公告</a> · <a href="https://arvato.com/our-focus/automated-warehouses">Arvato 速度出处</a> · <a href="https://nomagic.ai/case-study/arvato/">Nomagic 案例</a></td>
+</tr>
+</tbody>
+</table>
+<p><a id="supplier-righthand"></a></p>
+<h2 id="righthand-robotics7">RightHand Robotics｜7 条</h2>
+<p><a href="#case-index">返回案例目录</a></p>
+<table>
+<thead>
+<tr>
+<th>客户与场地</th>
+<th>项目类型</th>
+<th>作业及关键数据</th>
+<th>出处</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a id="apo-duiven"></a><strong>apo.com Group，荷兰 Duiven</strong></td>
+<td>固定式拣选工作站</td>
+<td>医药订单从 AutoStore 料箱拣出、扫码并装入订单纸箱。约 <strong>20,000 ㎡</strong>、<strong>85,000 个料箱</strong>。2025 年 11 月客户公布 <strong>17 台</strong>、累计 <strong>5,000 万次拣选</strong>。2024 年采访披露当时设备能力约 <strong>6–8 万次/日</strong>，2025 年整站约 <strong>25,000 单/日</strong>。</td>
+<td><a href="https://group-apo.com/en/2025/11/10/expansion-technology-leadership-pharmaceutical-logistics-duiven/">客户里程碑</a> · <a href="https://righthandrobotics.com/resources/apo-com-group-netherlands">RightHand 案例</a> · <a href="https://www.klinkhammer.com/fileadmin/Presse_Pdf/LO0724_06-11_Reportage-Aprocom_Klinkhammer_Low.pdf">2024 年现场报道</a></td>
+</tr>
+<tr>
+<td><a id="apotea-morgongava"></a><strong>Apotea，瑞典 Morgongåva</strong></td>
+<td>固定式拣选工作站</td>
+<td>Element Logic eOperator 接入 AutoStore。<strong>2022 年初期配置 3 台 RightPick 3</strong>，整仓 <strong>38,000 ㎡</strong>，初期系统估算 <strong>800 订单行/小时</strong>。2023 年扩建后整仓能力约 <strong>6 万→10 万单/日</strong>，涉及多套自动化设备。</td>
+<td><a href="https://www.elementlogic.net/us/cases/online-pharmacy-apotea-with-the-worlds-first-robot-piece-picking-solution-integrated-with-autostore/">Element Logic 案例</a> · <a href="https://ir.apotea.se/media/Apotea%20AB%20%28publ%29%20-%20Offering%20Circular.pdf">Apotea 招股资料</a></td>
+</tr>
+<tr>
+<td><a id="apotea-varberg"></a><strong>Apotea，瑞典 Varberg</strong></td>
+<td>固定式拣选工作站</td>
+<td>SSI Schäfer 供料，机器人抓取药妆商品并放入目标容器，覆盖四种订单纸箱规格。<strong>2025 年开仓确认 5 台</strong>，报道的单台能力 <strong>450 订单行/小时</strong>。新仓 <strong>30,000 ㎡</strong>，整仓设计 <strong>5 万单/日</strong>。</td>
+<td><a href="https://dagenslogistik.se/invigningsfest-for-apotea-i-varberg/">开仓报道</a> · <a href="https://righthandrobotics.com/the-latest/apotea-expands-agreement-with-righthand-robotics-to-deploy-rightpick-item-handling-system-in-new-logistics-center">RightHand 项目公告</a></td>
+</tr>
+<tr>
+<td><a id="paltac"></a><strong>PALTAC，日本 RDC Saitama</strong></td>
+<td>固定式拣选工作站</td>
+<td>为门店订单拣散件，机器人与人工并行。<strong>2019 年 11 月</strong>开始运营，开仓报道列 <strong>10 台 RightPick 2</strong>。占地约 <strong>67,000 ㎡</strong>，建筑约 <strong>45,000 ㎡</strong>，约 <strong>20,000 SKU</strong>。后续散件拣选生产率达传统模式 <strong>2 倍以上</strong>，是整体新物流模式口径。</td>
+<td><a href="https://md-next.jp/13687">开仓报道</a> · <a href="https://www.paltac.co.jp/pdf/ir/library/integrated_report/backnumber_2022_en.pdf">PALTAC 综合报告</a></td>
+</tr>
+<tr>
+<td><a id="solar"></a><strong>Solar A/S，挪威仓</strong></td>
+<td>固定式拣选工作站</td>
+<td>从 AutoStore Carousel 拣出商品并放入客户包裹。集成商案例确认 <strong>1 台 eOperator</strong>，页面未注明日期。网格 <strong>1,150 ㎡</strong>、<strong>35,000 个料箱</strong>、<strong>40 台</strong>搬箱机器人。单机节拍、准确率待核实。</td>
+<td><a href="https://www.elementlogic.net/cases/robotic-arm-connected-to-autostore-at-solar/">Element Logic 案例</a></td>
+</tr>
+<tr>
+<td><a id="hummel"></a><strong>hummel A/S，丹麦 hDC</strong></td>
+<td>固定式拣选工作站</td>
+<td>AutoStore＋eOperator 服饰订单拣选。中心 <strong>31,000 ㎡</strong>、<strong>97,000 个料箱</strong>、<strong>100 台</strong>储存搬运机器人。客户披露黑五单日纪录 <strong>4,934 次拣选</strong>，披露未明确具体日期和机械臂总数。</td>
+<td><a href="https://www.elementlogic.net/sg/news/hummel-future-proofs-fulfilment-with-ai-powered-piece-picking-from-element-logic/">Element Logic 项目</a> · <a href="https://www.linkedin.com/posts/hummel_innovation-and-technology-are-part-of-our-activity-7401629275893719040-FT1c">客户纪录</a></td>
+</tr>
+<tr>
+<td><a id="staples"></a><strong>Staples，美国 Montgomery</strong></td>
+<td>固定式拣选工作站</td>
+<td>办公用品订单拣选。2025 年报道列 <strong>3 个 RightPick 单元</strong>，通常每天运行 <strong>14 小时</strong>，合计约 <strong>4,200 箱/日</strong>。可处理 SKU 占比由早期约 **20%**升至约 <strong>60%</strong>。全仓约 <strong>74,322 ㎡</strong>。</td>
+<td><a href="https://www.manitoudealers.com/article/system_report_staples_does_robotics_one_better">现场报道</a> · <a href="https://www.globenewswire.com/news-release/2024/02/13/2828329/0/en/righthand-robotics-signs-multi-year-agreement-with-staples-to-deploy-ai-powered-picking-robots-in-fulfillment-centers.html">多年合作公告</a></td>
+</tr>
+</tbody>
+</table>
+<p><a id="capacity"></a></p>
+<p><strong>Capacity LLC</strong> 另有 RightHand 合作公告，以及 Covariant Robotic Put Wall 的项目资料。<strong>515 件/小时</strong>是首个 <strong>Covariant</strong> 工作站的最高值。原调研还记录了 Capacity 的人工灯光拣选和 Put Wall 分单口径。 <a href="https://www.prnewswire.com/news-releases/capacity-partners-with-righthand-robotics-to-further-automate-fulfillment-operations-300686137.html">RightHand 合作公告</a> · <a href="https://scg-mmh.s3.amazonaws.com/pdfs/covariant_wp_capacity_case_study_042222.pdf">Covariant 案例 PDF</a></p>
+<p><a id="supplier-osaro"></a></p>
+<h2 id="osaro2">OSARO｜2 条</h2>
+<p><a href="#case-index">返回案例目录</a></p>
+<table>
+<thead>
+<tr>
+<th>客户与场地</th>
+<th>项目类型</th>
+<th>作业及关键数据</th>
+<th>出处</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a id="zenni"></a><strong>Zenni Optical，美国 Novato</strong></td>
+<td>固定式拣选工作站</td>
+<td>从来料抓取眼镜盒，旋转呈码并投入自动装袋设备。2022 年计划 <strong>3 套</strong>，最终在役总数待核实。处理 <strong>350–410 盒/小时</strong>，案例称吞吐提升 <strong>80%</strong>。采用 <strong>4 个 Cognex 读码器</strong>。自动化前约 <strong>20 个错误/10 万件</strong>，后降至少于 <strong>3 个/10 万件</strong>。各来源的读码率和系统准确率须按原指标引用。</td>
+<td><a href="https://www.osaro.com/blog/osaro-and-zenni-deploy-robotic-bagging-system">OSARO 公告</a> · <a href="https://www.osaro.com/blog/cognex-brings-scanning-expertise-to-osaro-partners-alliance">读码资料</a> · <a href="https://www.fanucamerica.com/case-studies/how-zenni-optical-built-a-faster-smarter-more-scalable-fulfillment-line">FANUC 案例</a></td>
+</tr>
+<tr>
+<td><a id="konoike"></a><strong>鴻池運輸 Konoike Transport，日本东京 KITIC</strong></td>
+<td>固定式拣选工作站</td>
+<td><strong>2022 年</strong>联合验证，inVia AMR 搬运供料，OSARO 做 AI 单件抓取，验证透明、反光、易变形及不规则商品。台数、吞吐、验收和商业部署情况待核实。</td>
+<td><a href="https://www.konoike.net/news/news_file/file/2022022100.pdf">鴻池運輸公告 PDF</a> · <a href="https://www.osaro.com/blog/a-robotic-first-in-japan">OSARO 项目介绍</a></td>
+</tr>
+</tbody>
+</table>
+<p><a id="supplier-mujin"></a></p>
+<h2 id="mujin5">Mujin｜5 条</h2>
+<p><a href="#case-index">返回案例目录</a></p>
+<table>
+<thead>
+<tr>
+<th>客户与场地</th>
+<th>项目类型</th>
+<th>作业及关键数据</th>
+<th>出处</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a id="askul-yokohama"></a><strong>ASKUL，日本横滨</strong></td>
+<td>固定式拣选工作站</td>
+<td>2016 年前后的早期电商拣选项目。JARA 案例列出三菱电机机械臂，作业人数 <strong>6→2 人</strong>，同为 8 小时的产量 <strong>200→207</strong>，原资料未明确产量单位。人均劳动生产率约 <strong>3.1 倍</strong>。开发阶段报道约 <strong>110→450 次抓取/小时</strong>。</td>
+<td><a href="https://www.jara.jp/navi/material/dl/2017robothb.pdf">JARA 案例 PDF</a> · <a href="https://news.mynavi.jp/techplus/article/20211011-2021427/">开发报道</a></td>
+</tr>
+<tr>
+<td><a id="askul-kansai"></a><strong>ASKUL，日本 AVC 关西</strong></td>
+<td>固定式拣选工作站</td>
+<td><strong>2019 年 10 月 2 台</strong>，安川机械臂搭载 Mujin 控制器。历史记录约 <strong>1,200／120,000 个 SKU</strong>可由机器人处理。行业报道相对效率约为人工的 <strong>70%</strong>，绝对节拍待核实。</td>
+<td><a href="https://www.askul.co.jp/kaisya/dx/stories/00027.html">ASKUL 项目</a> · <a href="https://pdf.irpocket.com/C0032/FgNv/MwDt/IK0R.pdf">2019 年资料汇总</a></td>
+</tr>
+<tr>
+<td><a id="logisteed-hyogo"></a><strong>LOGISTEED，日本兵库</strong></td>
+<td>固定式拣选工作站</td>
+<td>总拣后的医药品按订单或去向做二次分拣并装箱。供应商 <strong>2020 年</strong>公布案例，设备数量、投运日期和现场吞吐均待核实。</td>
+<td><a href="https://www.mujin.co.jp/example/hitachi-transport/">Mujin 医药案例</a></td>
+</tr>
+<tr>
+<td><a id="logisteed-chiba"></a><strong>LOGISTEED，日本千叶</strong></td>
+<td>固定式拣选工作站</td>
+<td>从外装箱取出鞋盒，投入门店分拣容器，同时处理空外装箱。<strong>2021 年公开 3 台</strong>，鞋盒尺寸重量范围和单机／整线实绩待核实。</td>
+<td><a href="https://www.mujin.co.jp/example/hitachi-transport-3piecepickers/">Mujin 鞋盒案例</a></td>
+</tr>
+<tr>
+<td><a id="elecom"></a><strong>ELECOM，日本神奈川</strong></td>
+<td>固定式拣选工作站</td>
+<td>总拣后从混装容器抓取电气产品并投入分拣机，现场公开节拍 <strong>900 次以上抓取/小时</strong>。Mujin 通用规格另列最高 <strong>1,000 件/小时</strong>、最大 <strong>2 kg</strong>。仓名、设备台数和持续产能待核实。</td>
+<td><a href="https://www.mujin.co.jp/example/elecom/">ELECOM 现场案例</a> · <a href="https://www.mujin.co.jp/solution/distribution/picking/">产品通用规格</a></td>
+</tr>
+</tbody>
+</table>
+<p><a id="supplier-autostore-ocado"></a></p>
+<h2 id="autostorepio-ocado2">AutoStore／Pio 与 Ocado｜2 条</h2>
+<p><a href="#case-index">返回案例目录</a></p>
+<table>
+<thead>
+<tr>
+<th>客户与场地</th>
+<th>项目类型</th>
+<th>作业及关键数据</th>
+<th>出处</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a id="famme"></a><strong>Famme AS，挪威 Sandefjord</strong></td>
+<td>固定式拣选工作站</td>
+<td>AutoStore VersaAI 由 Pio 以 <strong>Pio Pal</strong> 交付，机械臂位于网格上方，可预拣、箱到箱转移和同款合箱。试点仓约 <strong>3,000 ㎡</strong>，网格约占 <strong>70%</strong>，约 <strong>35,000 个料箱、16 台网格搬运机器人</strong>。使用多订单行预拣后，拣选加包装人效由 <strong>170→540 订单行/人·小时</strong>。机械臂总数及实测单机节拍待核实。</td>
+<td><a href="https://pio.com/content/pio-for-industrial-retail-and-pio-pal">Pio 现场数据</a> · <a href="https://www.autostoresystem.com/insights/versaai-brings-robotic-piece-picking-inside-the-grid">AutoStore 试点</a></td>
+</tr>
+<tr>
+<td><a id="ocado-luton"></a><strong>Ocado Retail，英国 Luton CFC10</strong></td>
+<td>固定式拣选工作站</td>
+<td>Ocado Retail 使用，Ocado Logistics 运营，OGRP 用于网格上方拣选。<strong>2023 年 9 月投产时 22 台机械臂</strong>。2024 年 11 月现场记录 <strong>45 台</strong>，其中常温 <strong>22 台</strong>、冷藏 <strong>23 台</strong>，另有约 <strong>20 万个料箱、500 多台网格搬运机器人</strong>。租赁面积约 <strong>32,157 ㎡</strong>，用地约 <strong>68,800 ㎡</strong>。2026 年披露约 <strong>45,000 SKU</strong>、机器人承担约 <strong>50% 商品拣选量</strong>，单臂现场节拍待核实。</td>
+<td><a href="https://logisticsbusiness.com/transport-distribution/high-throughput-tried-tested/">现场设备记录</a> · <a href="https://panattoni.co.uk/panattoni-leases-346000-sq-ft-speculative-warehouse-in-luton-to-ocado-retail-limited/">租赁面积</a> · <a href="https://www.ocadogroup.com/newsroom/stories/the-technology-re-imagining-online-grocery">Ocado 技术披露</a></td>
+</tr>
+</tbody>
+</table>
+<p><a id="other-cases"></a></p>
+<p><strong>ABB Robotic Item Picker</strong> 有一份匿名的多品种随机物品分拣资料，客户、场地和验收数据未公开。<strong>Mecalux × Minoterie Planchot</strong> 是具名面粉厂案例，机器人处理面粉袋和托盘订单。 <a href="https://www.jesk.co.jp/wp-content/uploads/2025/12/abb_casestudy_202512_02.pdf">ABB 匿名案例 PDF</a> · <a href="https://www.mecalux.com/clients/minoterie-planchot-flour-warehouse">Mecalux 面粉厂案例</a></p>
+
+</section>
+</main>
+<a class="top-link" href="#case-index">返回目录</a>
+</body>
+</html>
